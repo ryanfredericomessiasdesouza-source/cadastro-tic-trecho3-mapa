@@ -33,7 +33,7 @@
   .brand{pointer-events:auto;display:flex;align-items:center;gap:12px;padding:12px 18px;
     background:linear-gradient(120deg,var(--navy) 0%,var(--navy2) 100%);
     border-bottom-right-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,.45);border-right:2px solid var(--orange)}
-  .brand img{height:30px;background:#fff;border-radius:5px;padding:3px 5px}
+  .brand img.tic{height:40px;background:#fff;border-radius:6px;padding:4px 8px;box-shadow:0 0 0 1px var(--line)}
   .brand .logos{display:flex;align-items:center;gap:7px}
   .brand .sep{width:1px;height:26px;background:var(--line)}
   .brand .t{line-height:1.15}
@@ -148,10 +148,7 @@
 
 <div class="topbar">
   <div class="brand">
-    <div class="logos">
-      <img src="logo_tic_trens.png" alt="TIC Trens">
-      <img src="logo_esg_urbes.png" alt="ESG URBES">
-    </div>
+    <img class="tic" src="logo_tic_trens.png" alt="TIC Trens">
     <span class="sep"></span>
     <div class="t"><b>Cadastro Georreferenciado</b><span>Trem Intercidades · Cadastro em campo — Jundiaí/SP</span></div>
   </div>
@@ -160,7 +157,9 @@
 </div>
 
 <div class="console">
-  <h3><span>Camadas</span> <span class="eyebrow">status</span></h3>
+  <h3><span>Camadas</span></h3>
+  <div class="flist" id="layerlist"></div>
+  <div class="subhead">Status</div>
   <div class="flist" id="flist"></div>
   <div class="subhead">Faixas de domínio</div>
   <div class="flist" id="faixalist" style="padding-top:2px"></div>
@@ -182,7 +181,8 @@
 </div>
 
 <div class="loader" id="loader">
-  <div class="lgs"><img src="logo_tic_trens.png" alt="TIC Trens"><img src="logo_esg_urbes.png" alt="ESG URBES"></div>
+  <img src="logo_tic_trens.png" alt="TIC Trens" style="height:64px">
+
   <div class="lt">Carregando levantamento</div>
   <div class="bar"><i></i></div>
 </div>
@@ -297,15 +297,23 @@ fetch('dados.geojson').then(r=>r.json()).then(gj=>{
   render();
   if(bounds.length)map.fitBounds(bounds,{padding:[70,70]});
 
+  // camada mestre TIC-JU014
+  document.getElementById('layerlist').insertAdjacentHTML('beforeend',
+    '<label class="frow" id="row_lyrju"><input type="checkbox" id="lyrju" checked>'+
+    '<span class="chip" style="background:var(--slate)"></span>'+
+    '<span class="nm">TIC-JU014</span><span class="ct">'+feats.length+'</span></label>');
+  setTimeout(()=>document.getElementById('lyrju').addEventListener('change',e=>{
+    e.target.checked?grupo.addTo(map):map.removeLayer(grupo);
+    document.getElementById('row_lyrju').classList.toggle('off',!e.target.checked);}),0);
+
   // extensao (diagonal do bbox)
   const lats=bounds.map(b=>b[0]),lons=bounds.map(b=>b[1]);
   const ext=haversine([Math.min(...lats),Math.min(...lons)],[Math.max(...lats),Math.max(...lons)]);
   // KPIs
   document.getElementById('kpis').innerHTML=
     kpi(feats.length,'Imóveis mapeados')+
-    kpi(ext,'Extensão','km')+
     kpi(52,'Atributos / ficha')+
-    kpi(10,'Fotos / imóvel');
+    '<div class="kpi"><div class="n" style="font-size:19px;letter-spacing:.01em">TIC-JU014</div><div class="l">Área de levantamento</div></div>';
   // filtro/legenda
   const ordem=['Concluído','Em andamento','Não iniciado'];
   const fl=document.getElementById('flist');
