@@ -152,8 +152,6 @@
 <div class="console">
   <h3><span>Camadas</span> <span class="eyebrow">status</span></h3>
   <div class="flist" id="flist"></div>
-  <div class="subhead">Faixas de domínio</div>
-  <div class="flist" id="faixalist" style="padding-top:2px"></div>
   <div class="capbar">
     <span class="cap">GPS em campo</span><span class="cap">Fotos + croqui</span>
     <span class="cap">Ficha FC automática</span><span class="cap">Sync em nuvem</span>
@@ -194,18 +192,10 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}',{maxZoom:20,opacity:.85}).addTo(map);
 
 // ---- faixas de domínio (polígonos sob os pontos) ----
-const FAIXA={RUMO:{url:'faixa_rumo.geojson',cor:'#FF7021'},CPTM:{url:'faixa_cptm.geojson',cor:'#35D0E0'}};
-Object.entries(FAIXA).forEach(([nome,cfg])=>{
+const FAIXA=[{url:'faixa_rumo.geojson',cor:'#FF7021'},{url:'faixa_cptm.geojson',cor:'#35D0E0'}];
+FAIXA.forEach(cfg=>{
   fetch(cfg.url).then(r=>r.json()).then(gj=>{
-    const ly=L.geoJSON(gj,{interactive:false,style:{color:cfg.cor,weight:1.2,fillColor:cfg.cor,fillOpacity:.14}}).addTo(map);
-    const id='fx_'+nome;
-    document.getElementById('faixalist').insertAdjacentHTML('beforeend',
-      '<label class="frow" id="row_'+id+'"><input type="checkbox" id="'+id+'" checked>'+
-      '<span class="swatch" style="background:'+cfg.cor+'40;border:1.5px solid '+cfg.cor+'"></span>'+
-      '<span class="nm">'+nome+'</span></label>');
-    setTimeout(()=>document.getElementById(id).addEventListener('change',e=>{
-      e.target.checked?ly.addTo(map):map.removeLayer(ly);
-      document.getElementById('row_'+id).classList.toggle('off',!e.target.checked);}),0);
+    L.geoJSON(gj,{interactive:false,style:{color:cfg.cor,weight:1.2,fillColor:cfg.cor,fillOpacity:.14}}).addTo(map);
   }).catch(()=>{});
 });
 
