@@ -3,103 +3,285 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Cadastro TIC Trens — Trecho 3</title>
+<title>TIC Trens · Cadastro Georreferenciado — Trecho 3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <style>
-  html,body{margin:0;height:100%;font-family:Arial,Helvetica,sans-serif}
-  #map{position:absolute;top:0;bottom:0;left:0;right:0}
-  .titulo{position:absolute;z-index:1000;top:10px;left:10px;background:#281872;color:#fff;
-          padding:8px 12px;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.3);
-          display:flex;align-items:center;gap:10px}
-  .titulo img{height:34px;background:#fff;border-radius:4px;padding:2px}
-  .titulo b{font-size:15px}.titulo small{opacity:.85}
-  .filtro{position:absolute;z-index:1000;top:10px;right:10px;background:#fff;padding:8px 10px;
-          border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.3);font-size:12px}
-  .filtro b{color:#281872;font-size:12px}
-  .filtro label{display:block;margin-top:4px;cursor:pointer}
-  .filtro .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;border:1px solid #333;vertical-align:middle}
-  .filtro .cnt{color:#777}
-  .lbl{background:transparent;border:none;box-shadow:none;color:#fff;font-size:11px;font-weight:bold;
-       text-shadow:0 0 2px #000,0 0 2px #000,0 0 3px #000;padding:0;margin-left:3px}
-  .lbl:before{display:none}
-  .leaflet-popup-content{margin:8px 10px;width:280px!important}
-  .fc h4{margin:0;background:#281872;color:#fff;font-size:12px;padding:3px 6px;border-radius:3px}
-  .fc .sec{color:#281872;font-weight:bold;font-size:11px;margin:7px 0 2px;border-bottom:1px solid #FF7021}
-  .fc table{width:100%;border-collapse:collapse;font-size:11px}
-  .fc td{padding:1px 3px;vertical-align:top}
-  .fc td.k{color:#555;width:46%}
-  .fc .body{max-height:300px;overflow:auto}
+  :root{
+    --navy:#281872; --navy2:#1a1147; --ink:#0c0f2b; --ink2:#141a3a;
+    --orange:#FF7021; --orange-soft:#ff9a5b;
+    --text:#EEF0FB; --muted:#9aa0c8; --line:rgba(255,255,255,.10);
+    --slate:#7C84D6; --amber:#F5A623; --green:#25C685;
+    --panel:rgba(16,20,48,.72);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--ink);color:var(--text);
+    font-family:Inter,system-ui,sans-serif;overflow:hidden}
+  #map{position:absolute;inset:0;z-index:1;background:#0a0d22}
+  /* vinheta para legibilidade dos paineis */
+  .vinheta{position:absolute;inset:0;z-index:2;pointer-events:none;
+    box-shadow:inset 0 90px 120px -60px rgba(8,10,30,.95), inset 0 -120px 120px -70px rgba(8,10,30,.85);}
+  .mono{font-family:'JetBrains Mono',monospace}
+  .eyebrow{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--orange-soft)}
+
+  /* ---------- TOPO ---------- */
+  .topbar{position:absolute;z-index:10;top:0;left:0;right:0;display:flex;align-items:stretch;
+    gap:0;pointer-events:none}
+  .brand{pointer-events:auto;display:flex;align-items:center;gap:12px;padding:12px 18px;
+    background:linear-gradient(120deg,var(--navy) 0%,var(--navy2) 100%);
+    border-bottom-right-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,.45);border-right:2px solid var(--orange)}
+  .brand img{height:30px;background:#fff;border-radius:5px;padding:3px 5px}
+  .brand .t{line-height:1.15}
+  .brand .t b{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;letter-spacing:.02em}
+  .brand .t span{display:block;font-size:11px;color:var(--muted)}
+  .spacer{flex:1}
+
+  /* ---------- KPIs ---------- */
+  .kpis{pointer-events:auto;display:flex;gap:1px;background:var(--line);
+    border-bottom-left-radius:14px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.45);
+    backdrop-filter:blur(8px)}
+  .kpi{background:var(--panel);padding:11px 18px 10px;min-width:120px}
+  .kpi .n{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;line-height:1;
+    color:#fff;display:flex;align-items:baseline;gap:4px}
+  .kpi .n u{font-family:'JetBrains Mono',monospace;text-decoration:none;font-size:12px;color:var(--orange)}
+  .kpi .l{font-size:10.5px;color:var(--muted);letter-spacing:.03em;margin-top:5px;text-transform:uppercase}
+
+  /* ---------- CONSOLE (filtro/legenda) ---------- */
+  .console{position:absolute;z-index:10;left:16px;bottom:16px;width:236px;
+    background:var(--panel);backdrop-filter:blur(10px);border:1px solid var(--line);
+    border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,.5);overflow:hidden}
+  .console h3{margin:0;padding:11px 14px 9px;font-family:'Space Grotesk',sans-serif;font-size:12px;
+    letter-spacing:.04em;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+  .console h3 .eyebrow{font-size:9px}
+  .flist{padding:8px 12px 12px}
+  .frow{display:flex;align-items:center;gap:9px;padding:6px 6px;border-radius:8px;cursor:pointer;
+    transition:background .15s}
+  .frow:hover{background:rgba(255,255,255,.05)}
+  .frow input{display:none}
+  .chip{width:13px;height:13px;border-radius:3px;transform:rotate(45deg);flex:0 0 auto;
+    box-shadow:0 0 0 1px rgba(255,255,255,.25) inset}
+  .frow.off{opacity:.4}
+  .frow .nm{flex:1;font-size:12.5px}
+  .frow .ct{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
+  .capbar{display:flex;flex-wrap:wrap;gap:5px;padding:0 12px 12px}
+  .cap{font-size:10px;color:var(--text);background:rgba(255,112,33,.13);border:1px solid rgba(255,112,33,.35);
+    padding:3px 8px;border-radius:20px}
+
+  /* ---------- INSPECTOR (ficha) ---------- */
+  .inspector{position:absolute;z-index:20;top:0;right:0;height:100%;width:360px;max-width:88vw;
+    background:linear-gradient(180deg,rgba(20,26,58,.96),rgba(10,13,34,.97));
+    backdrop-filter:blur(12px);border-left:2px solid var(--orange);
+    box-shadow:-18px 0 50px rgba(0,0,0,.55);transform:translateX(100%);transition:transform .38s cubic-bezier(.2,.8,.2,1);
+    display:flex;flex-direction:column}
+  .inspector.open{transform:translateX(0)}
+  .insp-head{padding:16px 18px 14px;border-bottom:1px solid var(--line);position:relative}
+  .insp-head .eyebrow{margin-bottom:6px}
+  .insp-head h2{margin:0;font-family:'Space Grotesk',sans-serif;font-size:22px;letter-spacing:.01em}
+  .insp-head .coord{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--slate);margin-top:6px}
+  .insp-close{position:absolute;top:12px;right:12px;width:30px;height:30px;border-radius:8px;border:1px solid var(--line);
+    background:rgba(255,255,255,.04);color:var(--text);cursor:pointer;font-size:16px;line-height:1}
+  .insp-close:hover{background:var(--orange);border-color:var(--orange);color:#111}
+  .insp-body{overflow:auto;padding:6px 18px 24px;flex:1}
+  .sec{margin-top:16px}
+  .sec .st{font-family:'Space Grotesk',sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--orange-soft);display:flex;align-items:center;gap:8px}
+  .sec .st:after{content:"";flex:1;height:1px;background:var(--line)}
+  .frm{margin-top:8px}
+  .frm .kv{display:flex;justify-content:space-between;gap:12px;padding:5px 0;border-bottom:1px dashed rgba(255,255,255,.06)}
+  .frm .kv .k{font-size:12px;color:var(--muted)}
+  .frm .kv .v{font-size:12.5px;text-align:right;color:var(--text);font-weight:500}
+  .frm .kv .v.empty{color:#5a5f85}
+  .badge{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11px;padding:2px 9px;border-radius:20px}
+
+  /* ---------- LOADER ---------- */
+  .loader{position:absolute;inset:0;z-index:60;background:radial-gradient(120% 120% at 30% 20%,#1a1147,#0a0d22);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;transition:opacity .6s;opacity:1}
+  .loader.gone{opacity:0;pointer-events:none}
+  .loader img{height:52px;background:#fff;border-radius:8px;padding:6px 8px}
+  .loader .bar{width:220px;height:3px;background:rgba(255,255,255,.12);border-radius:3px;overflow:hidden}
+  .loader .bar i{display:block;height:100%;width:35%;background:linear-gradient(90deg,transparent,var(--orange));
+    animation:scan 1.1s infinite}
+  .loader .lt{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase}
+  @keyframes scan{0%{transform:translateX(-120%)}100%{transform:translateX(360%)}}
+
+  .attrib{position:absolute;z-index:5;right:8px;bottom:6px;font-size:10px;color:rgba(255,255,255,.5)}
+  .leaflet-container{background:#0a0d22}
+  /* marcador */
+  .mk{filter:drop-shadow(0 0 4px rgba(0,0,0,.6))}
+  .mk.pop{animation:pop .5s cubic-bezier(.2,1.4,.4,1) backwards}
+  @keyframes pop{from{opacity:0;transform:scale(.2)}to{opacity:1;transform:scale(1)}}
+  .lblc{background:transparent;border:none;box-shadow:none;color:#fff;font-family:'JetBrains Mono',monospace;
+    font-size:10px;font-weight:500;text-shadow:0 0 3px #000,0 0 3px #000;margin-left:2px}
+  .lblc:before{display:none}
+
+  @media(max-width:720px){
+    .kpis{display:none}
+    .console{left:10px;right:10px;bottom:10px;width:auto}
+    .capbar{display:none}
+    .inspector{width:100%}
+    .brand .t span{display:none}
+  }
+  @media(prefers-reduced-motion:reduce){.mk.pop{animation:none}.loader .bar i{animation:none;width:100%}}
 </style>
 </head>
 <body>
-<div class="titulo"><img src="logo_tic_trens.png" alt="TIC Trens"><div><b>Cadastro de Imóveis — Trecho 3</b><br><small>Levantamento cadastral</small></div></div>
-<div class="filtro" id="filtro"><b>Status</b></div>
 <div id="map"></div>
+<div class="vinheta"></div>
+
+<div class="topbar">
+  <div class="brand">
+    <img src="logo_tic_trens.png" alt="TIC Trens">
+    <div class="t"><b>Cadastro Georreferenciado</b><span>Trem Intercidades · Trecho 3 — Jundiaí/SP</span></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="kpis" id="kpis"></div>
+</div>
+
+<div class="console">
+  <h3><span>Camadas</span> <span class="eyebrow">status</span></h3>
+  <div class="flist" id="flist"></div>
+  <div class="capbar">
+    <span class="cap">GPS em campo</span><span class="cap">Fotos + croqui</span>
+    <span class="cap">Ficha FC automática</span><span class="cap">Sync em nuvem</span>
+  </div>
+</div>
+
+<div class="inspector" id="insp">
+  <div class="insp-head">
+    <button class="insp-close" onclick="fecharInsp()">×</button>
+    <div class="eyebrow">Ficha de cadastro</div>
+    <h2 id="insp-cod">—</h2>
+    <div class="coord mono" id="insp-coord"></div>
+    <div id="insp-status" style="margin-top:10px"></div>
+  </div>
+  <div class="insp-body" id="insp-body"></div>
+</div>
+
+<div class="loader" id="loader">
+  <img src="logo_tic_trens.png" alt="TIC Trens">
+  <div class="lt">Carregando levantamento</div>
+  <div class="bar"><i></i></div>
+</div>
+
+<div class="attrib">Esri World Imagery · RGPI/ESG</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
-const map=L.map('map');
-L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:20,attribution:'Esri World Imagery'}).addTo(map);
-L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}',{maxZoom:20,opacity:.9}).addTo(map);
-L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',{maxZoom:20,opacity:.9}).addTo(map);
+const ST={
+ 'Concluído':{cor:'#25C685',lbl:'Concluído'},
+ 'Em andamento':{cor:'#F5A623',lbl:'Em andamento'},
+ 'Não iniciado':{cor:'#7C84D6',lbl:'A cadastrar'}
+};
+const stInfo=s=>ST[s]||ST['Não iniciado'];
 
-const FILL='rgb(152,125,183)',STROKE='rgb(109,89,131)';
-const diamante=()=>L.divIcon({className:'',iconSize:[14,14],iconAnchor:[7,7],
-  html:'<svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><rect x="3.2" y="3.2" width="7.6" height="7.6" transform="rotate(45 7 7)" fill="'+FILL+'" stroke="'+STROKE+'" stroke-width="1.2"/></svg>'});
+const map=L.map('map',{zoomControl:false,attributionControl:false});
+L.control.zoom({position:'bottomright'}).addTo(map);
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:20}).addTo(map);
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}',{maxZoom:20,opacity:.85}).addTo(map);
 
-// definicao do formulario (secoes -> [campo,rotulo])
-const MEL=[["mel_calcada","Calçada"],["mel_iluminacao","Iluminação Pública"],["mel_coleta_lixo","Coleta de Lixo"],["mel_internet","Internet"],["mel_esgoto","Esgoto"],["mel_luz","Luz Domiciliar"],["mel_fossa","Fossa"],["mel_pavimentacao","Pavimentação"],["mel_gas","Gás"],["mel_telefone","Telefone"]];
-const SECOES=[
- ["1. Ocupante",[["nome","Nome"],["municipio","Município"],["bairro","Bairro"],["endereco","Endereço"]]],
- ["2. Características da Região",[["infraestrutura_local","Infraestrutura"],["padrao_ocupacao","Padrão de ocupação"],["vias_acesso","Vias de acesso"],["localizacao_lote","Localização"],["greide","Greide"],["topografia","Topografia"],["aproveitamento_uso","Aproveitamento/Uso"],["obs_regiao","Observação"]]],
- ["3. Habitação e Serviços",[["tamanho_edificacao","Tamanho"],["tempo_residencia","Tempo de residência"],["material_paredes","Paredes"],["material_cobertura","Cobertura"],["material_piso","Piso"],["agua_canalizada","Água canalizada"],["agua_proveniente","Água proveniente"],["escoadouro","Escoadouro"],["mais_uma_familia","+1 família?"],["num_pavimentos","Pavimentos"],["pavimentos_ocupante","Pav. do ocupante"],["num_comodos","Nº cômodos"],["comodos_dormitorio","Dormitórios"],["num_banheiros","Banheiros"]]],
- ["4. Construção e Demolição",[["constr_descricao","Descrição"],["constr_idade","Idade"],["constr_estado","Estado conserv."],["constr_perimetro","Perímetro (m)"],["constr_area","Área (m²)"],["tipo_edificacao","Tipo edificação"],["faixa_dominio","Faixa de domínio"],["em_desnivel","Desnível"],["prioridade_demo","Prioridade"],["risco_impacto","Risco impacto"]]],
- ["Classificação",[["tipo_imovel","Tipo imóvel"],["classificacao_padrao","Padrão (A–H)"],["status","Status"]]],
+function icone(cor,i){
+  const svg='<svg class="mk pop" style="animation-delay:'+(i*14)+'ms" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">'+
+   '<rect x="3.4" y="3.4" width="9.2" height="9.2" rx="1.4" transform="rotate(45 8 8)" fill="'+cor+'" stroke="#fff" stroke-width="1.3"/></svg>';
+  return L.divIcon({html:svg,className:'',iconSize:[16,16],iconAnchor:[8,8]});
+}
+
+// ---- formulario (secoes iguais ao QGIS) ----
+const MEL=[["mel_calcada","Calçada"],["mel_iluminacao","Iluminação"],["mel_coleta_lixo","Coleta de lixo"],["mel_internet","Internet"],["mel_esgoto","Esgoto"],["mel_luz","Luz domiciliar"],["mel_fossa","Fossa"],["mel_pavimentacao","Pavimentação"],["mel_gas","Gás"],["mel_telefone","Telefone"]];
+const SEC=[
+ ["Ocupante",[["nome","Nome"],["municipio","Município"],["bairro","Bairro"],["endereco","Endereço"]]],
+ ["Características da região",[["infraestrutura_local","Infraestrutura"],["padrao_ocupacao","Padrão de ocupação"],["vias_acesso","Vias de acesso"],["localizacao_lote","Localização"],["greide","Greide"],["topografia","Topografia"],["aproveitamento_uso","Aproveitamento/Uso"]]],
+ ["Habitação e serviços",[["tamanho_edificacao","Tamanho"],["tempo_residencia","Tempo de residência"],["material_paredes","Paredes"],["material_cobertura","Cobertura"],["material_piso","Piso"],["agua_canalizada","Água canalizada"],["agua_proveniente","Água proveniente"],["escoadouro","Escoadouro"],["mais_uma_familia","+1 família?"],["num_pavimentos","Pavimentos"],["num_comodos","Nº cômodos"],["comodos_dormitorio","Dormitórios"],["num_banheiros","Banheiros"]]],
+ ["Construção e demolição",[["constr_descricao","Descrição"],["constr_idade","Idade"],["constr_estado","Estado conserv."],["constr_area","Área (m²)"],["tipo_edificacao","Tipo edificação"],["faixa_dominio","Faixa de domínio"],["em_desnivel","Desnível"],["prioridade_demo","Prioridade"],["risco_impacto","Risco impacto"]]],
+ ["Classificação",[["tipo_imovel","Tipo imóvel"],["classificacao_padrao","Padrão (A–H)"]]],
 ];
-const val=v=>v==null||v===''?'—':v;
-function linhas(p,campos){
-  return campos.map(([k,l])=>`<tr><td class="k">${l}</td><td>${val(p[k])}</td></tr>`).join('');
-}
-function popupHTML(p){
-  const mel=MEL.filter(([k])=>p[k]==1||p[k]===true||p[k]==='1').map(([,l])=>l).join(', ')||'—';
-  let h=`<div class="fc"><h4>${p.codigo||'—'}</h4><div class="body">`;
-  for(const [nome,campos] of SECOES){
-    h+=`<div class="sec">${nome}</div><table>${linhas(p,campos)}`;
-    if(nome.startsWith('2.')) h+=`<tr><td class="k">Melhoramentos</td><td>${mel}</td></tr>`;
-    h+=`</table>`;
+const has=v=>!(v==null||v==='');
+function fichaHTML(p){
+  let h='';
+  for(const [nome,campos] of SEC){
+    h+='<div class="sec"><div class="st">'+nome+'</div><div class="frm">';
+    for(const [k,l] of campos){
+      const v=p[k]; h+='<div class="kv"><span class="k">'+l+'</span><span class="v'+(has(v)?'':' empty')+'">'+(has(v)?v:'—')+'</span></div>';
+    }
+    if(nome.startsWith('Características')){
+      const mel=MEL.filter(([k])=>p[k]==1||p[k]==='1'||p[k]===true).map(([,l])=>l).join(', ');
+      h+='<div class="kv"><span class="k">Melhoramentos</span><span class="v'+(mel?'':' empty')+'">'+(mel||'—')+'</span></div>';
+    }
+    h+='</div></div>';
   }
-  return h+`</div></div>`;
+  return h;
 }
+function abrirInsp(p,lat,lon){
+  const si=stInfo(p.status);
+  document.getElementById('insp-cod').textContent=p.codigo||'—';
+  document.getElementById('insp-coord').textContent=(lat!=null?lat.toFixed(6):'—')+', '+(lon!=null?lon.toFixed(6):'—');
+  document.getElementById('insp-status').innerHTML='<span class="badge" style="background:'+si.cor+'22;color:'+si.cor+';border:1px solid '+si.cor+'55">● '+si.lbl+'</span>';
+  document.getElementById('insp-body').innerHTML=fichaHTML(p);
+  document.getElementById('insp').classList.add('open');
+}
+function fecharInsp(){document.getElementById('insp').classList.remove('open');}
+
+// ---- KPIs (count-up) ----
+function kpi(n,label,suf){return '<div class="kpi"><div class="n"><span data-n="'+n+'">0</span>'+(suf?'<u>'+suf+'</u>':'')+'</div><div class="l">'+label+'</div></div>';}
+function haversine(a,b){const R=6371,rad=x=>x*Math.PI/180;
+  const dLat=rad(b[0]-a[0]),dLon=rad(b[1]-a[1]);
+  const s=Math.sin(dLat/2)**2+Math.cos(rad(a[0]))*Math.cos(rad(b[0]))*Math.sin(dLon/2)**2;
+  return 2*R*Math.asin(Math.sqrt(s));}
+function countUp(){document.querySelectorAll('.kpi .n span[data-n]').forEach(el=>{
+  const t=parseFloat(el.dataset.n),dec=(t%1!==0)?1:0; let s=null;
+  function step(ts){if(!s)s=ts;const p=Math.min((ts-s)/900,1);el.textContent=(t*(0.15+0.85*(1-Math.pow(1-p,3)))).toFixed(dec);if(p<1)requestAnimationFrame(step);}
+  requestAnimationFrame(step);});}
+
 const grupo=L.layerGroup().addTo(map);
 const marcadores=[]; const ativos=new Set();
-function render(){
-  grupo.clearLayers();
-  marcadores.forEach(m=>{ if(ativos.has(m.status)) grupo.addLayer(m.mk); });
-}
+function render(){grupo.clearLayers();marcadores.forEach(m=>{if(ativos.has(m.status))grupo.addLayer(m.mk);});}
+
 fetch('dados.geojson').then(r=>r.json()).then(gj=>{
-  const bounds=[]; const cont={};
-  gj.features.forEach(f=>{
-    const p=f.properties, c=f.geometry&&f.geometry.coordinates; if(!c) return;
-    const ll=[c[1],c[0]]; bounds.push(ll);
-    const st=p.status||'Não iniciado'; cont[st]=(cont[st]||0)+1;
-    const mk=L.marker(ll,{icon:diamante()});
-    if(p.codigo) mk.bindTooltip(String(p.codigo),{permanent:true,direction:'right',className:'lbl',offset:[6,0]});
-    mk.bindPopup(popupHTML(p),{maxWidth:300});
+  const feats=gj.features.filter(f=>f.geometry&&f.geometry.coordinates);
+  // ordena por latitude p/ varredura
+  feats.sort((a,b)=>b.geometry.coordinates[1]-a.geometry.coordinates[1]);
+  const cont={}, bounds=[];
+  feats.forEach((f,i)=>{
+    const p=f.properties,c=f.geometry.coordinates,ll=[c[1],c[0]];bounds.push(ll);
+    const st=p.status||'Não iniciado';cont[st]=(cont[st]||0)+1;
+    const mk=L.marker(ll,{icon:icone(stInfo(st).cor,i)});
+    if(p.codigo)mk.bindTooltip(String(p.codigo),{permanent:true,direction:'right',className:'lblc',offset:[6,0]});
+    mk.on('click',()=>abrirInsp(p,c[1],c[0]));
     marcadores.push({mk,status:st});
   });
-  // monta filtro
-  const fdiv=document.getElementById('filtro');
-  Object.keys(cont).sort().forEach(st=>{
-    ativos.add(st);
-    const id='f_'+st.replace(/\W/g,'');
-    fdiv.insertAdjacentHTML('beforeend',
-      `<label><input type="checkbox" id="${id}" checked> ${st} <span class="cnt">(${cont[st]})</span></label>`);
-    setTimeout(()=>document.getElementById(id).addEventListener('change',e=>{
-      e.target.checked?ativos.add(st):ativos.delete(st); render();
-    }),0);
-  });
+  Object.keys(cont).forEach(s=>ativos.add(s));
   render();
-  if(bounds.length) map.fitBounds(bounds,{padding:[40,40]});
-}).catch(e=>{document.querySelector('.titulo').innerHTML+='<br><small style=color:#ffb0b0>Erro ao carregar dados</small>';});
+  if(bounds.length)map.fitBounds(bounds,{padding:[70,70]});
+
+  // extensao (diagonal do bbox)
+  const lats=bounds.map(b=>b[0]),lons=bounds.map(b=>b[1]);
+  const ext=haversine([Math.min(...lats),Math.min(...lons)],[Math.max(...lats),Math.max(...lons)]);
+  // KPIs
+  document.getElementById('kpis').innerHTML=
+    kpi(feats.length,'Imóveis mapeados')+
+    kpi(ext,'Extensão','km')+
+    kpi(52,'Atributos / ficha')+
+    kpi(10,'Fotos / imóvel');
+  // filtro/legenda
+  const ordem=['Concluído','Em andamento','Não iniciado'];
+  const fl=document.getElementById('flist');
+  ordem.filter(s=>cont[s]).forEach(s=>{
+    const si=stInfo(s),id='c_'+s.replace(/\W/g,'');
+    fl.insertAdjacentHTML('beforeend',
+      '<label class="frow" id="row_'+id+'"><input type="checkbox" id="'+id+'" checked>'+
+      '<span class="chip" style="background:'+si.cor+'"></span><span class="nm">'+si.lbl+'</span>'+
+      '<span class="ct">'+cont[s]+'</span></label>');
+    setTimeout(()=>{const cb=document.getElementById(id);cb.addEventListener('change',e=>{
+      e.target.checked?ativos.add(s):ativos.delete(s);
+      document.getElementById('row_'+id).classList.toggle('off',!e.target.checked);render();});},0);
+  });
+  // finaliza loader + anima
+  setTimeout(()=>{document.getElementById('loader').classList.add('gone');countUp();},550);
+}).catch(e=>{
+  document.getElementById('loader').innerHTML='<div class="lt" style="color:#ff9a5b">Erro ao carregar os dados</div>';
+});
 </script>
 </body>
 </html>
