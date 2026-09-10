@@ -34,6 +34,8 @@
     background:linear-gradient(120deg,var(--navy) 0%,var(--navy2) 100%);
     border-bottom-right-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,.45);border-right:2px solid var(--orange)}
   .brand img{height:30px;background:#fff;border-radius:5px;padding:3px 5px}
+  .brand .logos{display:flex;align-items:center;gap:7px}
+  .brand .sep{width:1px;height:26px;background:var(--line)}
   .brand .t{line-height:1.15}
   .brand .t b{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;letter-spacing:.02em}
   .brand .t span{display:block;font-size:11px;color:var(--muted)}
@@ -66,7 +68,10 @@
   .frow.off{opacity:.4}
   .frow .nm{flex:1;font-size:12.5px}
   .frow .ct{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
-  .capbar{display:flex;flex-wrap:wrap;gap:5px;padding:0 12px 12px}
+  .subhead{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--muted);padding:8px 18px 0;border-top:1px solid var(--line);margin-top:2px}
+  .swatch{width:13px;height:13px;border-radius:3px;flex:0 0 auto}
+  .capbar{display:flex;flex-wrap:wrap;gap:5px;padding:8px 12px 12px}
   .cap{font-size:10px;color:var(--text);background:rgba(255,112,33,.13);border:1px solid rgba(255,112,33,.35);
     padding:3px 8px;border-radius:20px}
 
@@ -133,7 +138,11 @@
 
 <div class="topbar">
   <div class="brand">
-    <img src="logo_tic_trens.png" alt="TIC Trens">
+    <div class="logos">
+      <img src="logo_tic_trens.png" alt="TIC Trens">
+      <img src="logo_esg_urbes.png" alt="ESG URBES">
+    </div>
+    <span class="sep"></span>
     <div class="t"><b>Cadastro Georreferenciado</b><span>Trem Intercidades · Trecho 3 — Jundiaí/SP</span></div>
   </div>
   <div class="spacer"></div>
@@ -143,6 +152,8 @@
 <div class="console">
   <h3><span>Camadas</span> <span class="eyebrow">status</span></h3>
   <div class="flist" id="flist"></div>
+  <div class="subhead">Faixas de domínio</div>
+  <div class="flist" id="faixalist" style="padding-top:2px"></div>
   <div class="capbar">
     <span class="cap">GPS em campo</span><span class="cap">Fotos + croqui</span>
     <span class="cap">Ficha FC automática</span><span class="cap">Sync em nuvem</span>
@@ -181,6 +192,22 @@ const map=L.map('map',{zoomControl:false,attributionControl:false});
 L.control.zoom({position:'bottomright'}).addTo(map);
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:20}).addTo(map);
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}',{maxZoom:20,opacity:.85}).addTo(map);
+
+// ---- faixas de domínio (polígonos sob os pontos) ----
+const FAIXA={RUMO:{url:'faixa_rumo.geojson',cor:'#FF7021'},CPTM:{url:'faixa_cptm.geojson',cor:'#35D0E0'}};
+Object.entries(FAIXA).forEach(([nome,cfg])=>{
+  fetch(cfg.url).then(r=>r.json()).then(gj=>{
+    const ly=L.geoJSON(gj,{interactive:false,style:{color:cfg.cor,weight:1.2,fillColor:cfg.cor,fillOpacity:.14}}).addTo(map);
+    const id='fx_'+nome;
+    document.getElementById('faixalist').insertAdjacentHTML('beforeend',
+      '<label class="frow" id="row_'+id+'"><input type="checkbox" id="'+id+'" checked>'+
+      '<span class="swatch" style="background:'+cfg.cor+'40;border:1.5px solid '+cfg.cor+'"></span>'+
+      '<span class="nm">'+nome+'</span></label>');
+    setTimeout(()=>document.getElementById(id).addEventListener('change',e=>{
+      e.target.checked?ly.addTo(map):map.removeLayer(ly);
+      document.getElementById('row_'+id).classList.toggle('off',!e.target.checked);}),0);
+  }).catch(()=>{});
+});
 
 function icone(cor,i){
   const svg='<svg class="mk pop" style="animation-delay:'+(i*14)+'ms" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">'+
