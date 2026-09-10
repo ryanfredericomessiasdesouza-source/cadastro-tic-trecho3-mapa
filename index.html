@@ -312,8 +312,7 @@ fetch('dados.geojson').then(r=>r.json()).then(gj=>{
   // KPIs
   document.getElementById('kpis').innerHTML=
     kpi(feats.length,'Imóveis mapeados')+
-    kpi(52,'Atributos / ficha')+
-    '<div class="kpi"><div class="n" style="font-size:19px;letter-spacing:.01em">TIC-JU014</div><div class="l">Área de levantamento</div></div>';
+    kpi(52,'Atributos / ficha');
   // filtro/legenda
   const ordem=['Concluído','Em andamento','Não iniciado'];
   const fl=document.getElementById('flist');
