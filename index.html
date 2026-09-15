@@ -363,6 +363,25 @@ fetch('dados.geojson').then(r=>r.json()).then(gj=>{
     e.target.checked?ju014Raster.addTo(map):map.removeLayer(ju014Raster);
     syncRasterUI(e.target.checked);}),0);
 
+  // demais imagens de voo disponíveis no projeto QGIS
+  const OUTROS_VOOS=[
+    {id:'lo002',nome:'LO_002 · imagem aérea',arquivo:'LO_002_web.webp',bounds:[[-22.9696576,-46.9952151],[-22.966826,-46.9925139]]},
+    {id:'lo003',nome:'LO_003 · imagem aérea',arquivo:'LO_003_web.webp',bounds:[[-23.1048959,-46.9438006],[-23.1007857,-46.9401037]]},
+    {id:'va004',nome:'VA_004 · imagem aérea',arquivo:'VA_004_web.webp',bounds:[[-23.0953735,-46.9490163],[-23.0919928,-46.9463874]]}
+  ];
+  OUTROS_VOOS.forEach(cfg=>{
+    const raster=L.imageOverlay(cfg.arquivo,cfg.bounds,{opacity:.82,interactive:false});
+    const inputId='lyr_'+cfg.id;
+    document.getElementById('layerlist').insertAdjacentHTML('beforeend',
+      '<label class="frow off" id="row_'+inputId+'"><input type="checkbox" id="'+inputId+'">'+
+      '<span class="chip" style="background:var(--orange)"></span>'+ '<span class="nm">'+cfg.nome+'</span></label>');
+    document.getElementById(inputId).addEventListener('change',e=>{
+      if(e.target.checked){raster.addTo(map);map.fitBounds(cfg.bounds,{padding:[70,70]});}
+      else map.removeLayer(raster);
+      document.getElementById('row_'+inputId).classList.toggle('off',!e.target.checked);
+    });
+  });
+
   // extensao (diagonal do bbox)
   const lats=bounds.map(b=>b[0]),lons=bounds.map(b=>b[1]);
   const ext=haversine([Math.min(...lats),Math.min(...lons)],[Math.max(...lats),Math.max(...lons)]);
