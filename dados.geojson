@@ -6119,6 +6119,258 @@
           0.0
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo": "OC-TIC-LO-003-RE-001 O",
+        "nome": "",
+        "municipio": "Jundiaí",
+        "bairro": "",
+        "endereco": "",
+        "status": "Concluído",
+        "classificacao_dwg": "OCUPAÇÕES CADASTRADAS",
+        "latitude": -23.094106436626596,
+        "longitude": -46.94761252486348
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94761252486348,
+          -23.094106436626596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo": "OC-TIC-LO-003-RE-002 O",
+        "nome": "",
+        "municipio": "Jundiaí",
+        "bairro": "",
+        "endereco": "",
+        "status": "A cadastrar",
+        "classificacao_dwg": "OCUPAÇÕES NÃO CADASTRADAS",
+        "latitude": -23.094037845855148,
+        "longitude": -46.94753419316584
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94753419316584,
+          -23.094037845855148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo": "OC-TIC-LO-003-RE-003 O",
+        "nome": "",
+        "municipio": "Jundiaí",
+        "bairro": "",
+        "endereco": "",
+        "status": "A cadastrar",
+        "classificacao_dwg": "OCUPAÇÕES NÃO CADASTRADAS",
+        "latitude": -23.09379570009951,
+        "longitude": -46.947498148841866
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.947498148841866,
+          -23.09379570009951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo": "OC-TIC-LO-003-RE-004 O",
+        "nome": "",
+        "municipio": "Jundiaí",
+        "bairro": "",
+        "endereco": "",
+        "status": "Concluído",
+        "classificacao_dwg": "OCUPAÇÕES CADASTRADAS",
+        "latitude": -23.09380422604774,
+        "longitude": -46.94763978700045
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94763978700045,
+          -23.09380422604774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo": "OC-TIC-LO-003-RE-006 O",
+        "nome": "",
+        "municipio": "Jundiaí",
+        "bairro": "",
+        "endereco": "",
+        "status": "Concluído",
+        "classificacao_dwg": "OCUPAÇÕES CADASTRADAS",
+        "latitude": -23.093710867074805,
+        "longitude": -46.94770306734284
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94770306734284,
+          -23.093710867074805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo": "OC-TIC-LO-003-RE-007 O",
+        "nome": "",
+        "municipio": "Jundiaí",
+        "bairro": "",
+        "endereco": "",
+        "status": "Concluído",
+        "classificacao_dwg": "OCUPAÇÕES CADASTRADAS",
+        "latitude": -23.093644975800988,
+        "longitude": -46.94773854749059
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94773854749059,
+          -23.093644975800988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo": "OC-TIC-LO-003-RE-008 O",
+        "nome": "",
+        "municipio": "Jundiaí",
+        "bairro": "",
+        "endereco": "",
+        "status": "Concluído",
+        "classificacao_dwg": "OCUPAÇÕES CADASTRADAS",
+        "latitude": -23.093616942942084,
+        "longitude": -46.947778424777
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.947778424777,
+          -23.093616942942084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo": "OC-TIC-LO-003-RE-009 O",
+        "nome": "",
+        "municipio": "Jundiaí",
+        "bairro": "",
+        "endereco": "",
+        "status": "Concluído",
+        "classificacao_dwg": "OCUPAÇÕES CADASTRADAS",
+        "latitude": -23.093420974113805,
+        "longitude": -46.94772633764315
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94772633764315,
+          -23.093420974113805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo": "OC-TIC-LO-003-RE-010 O",
+        "nome": "",
+        "municipio": "Jundiaí",
+        "bairro": "",
+        "endereco": "",
+        "status": "A cadastrar",
+        "classificacao_dwg": "OCUPAÇÕES NÃO CADASTRADAS",
+        "latitude": -23.093313338352154,
+        "longitude": -46.947879073865856
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.947879073865856,
+          -23.093313338352154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo": "OC-TIC-LO-003-RE-011 O",
+        "nome": "",
+        "municipio": "Jundiaí",
+        "bairro": "",
+        "endereco": "",
+        "status": "A cadastrar",
+        "classificacao_dwg": "OCUPAÇÕES NÃO CADASTRADAS",
+        "latitude": -23.093147773627667,
+        "longitude": -46.947734703458195
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.947734703458195,
+          -23.093147773627667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo": "OC-TIC-LO-003-RE-005 O",
+        "nome": "",
+        "municipio": "Jundiaí",
+        "bairro": "",
+        "endereco": "",
+        "status": "Concluído",
+        "classificacao_dwg": "OCUPAÇÕES CADASTRADAS",
+        "latitude": -23.09377856652368,
+        "longitude": -46.9476404094747
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.9476404094747,
+          -23.09377856652368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo": "OC-TIC-LO-003-RE-012 O",
+        "nome": "",
+        "municipio": "Jundiaí",
+        "bairro": "",
+        "endereco": "",
+        "status": "Concluído",
+        "classificacao_dwg": "OCUPAÇÕES CADASTRADAS",
+        "latitude": -23.093746750658216,
+        "longitude": -46.947635928398036
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.947635928398036,
+          -23.093746750658216
+        ]
+      }
     }
   ]
 }
