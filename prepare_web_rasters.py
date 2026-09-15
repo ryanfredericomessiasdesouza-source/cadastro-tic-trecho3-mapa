@@ -2,13 +2,14 @@
 from pathlib import Path
 import json
 import math
+import os
 from collections import deque
 from osgeo import gdal
 from PIL import Image
 import numpy as np
 
-ROOT = Path('/home/ubuntu/work/cadastro-tic-trecho3-mapa')
-SRC = Path('/home/ubuntu/work/qfield-tic-fixed')
+ROOT = Path(__file__).resolve().parent
+SRC = Path(os.environ.get('QGIS_RASTER_DIR', ROOT))
 items = [
     ('LO_002', SRC / 'odm_orthophoto.tif'),
     ('LO_003', SRC / 'odm_orthophoto1.tif'),
