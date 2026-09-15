@@ -11,9 +11,9 @@ import numpy as np
 ROOT = Path(__file__).resolve().parent
 SRC = Path(os.environ.get('QGIS_RASTER_DIR', ROOT))
 items = [
-    ('LO_002', SRC / 'odm_orthophoto.tif'),
-    ('LO_003', SRC / 'odm_orthophoto1.tif'),
-    ('VA_004', SRC / 'odm_orthophoto2.tif'),
+    ('LO_002', SRC / 'odm_orthophoto1.tif'),
+    ('LO_003', SRC / 'odm_orthophoto2.tif'),
+    ('VA_004', SRC / 'odm_orthophoto.tif'),
 ]
 
 def bounds_from_extent(extent):

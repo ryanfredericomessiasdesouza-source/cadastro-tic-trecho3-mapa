@@ -6,6 +6,8 @@ A versão publicada aqui é uma cópia compactada do raster usada para respeitar
 
 O arquivo `Cadastro_Campo_cloud.qgs` referencia o raster relativo `./JU0014_sem_borda.tif`. As demais camadas e bases do projeto permanecem gerenciadas no QFieldCloud e não são duplicadas nesta pasta.
 
+As outras imagens seguem a associação do projeto QGIS: `LO_002` usa `odm_orthophoto1.tif`, `LO_003` usa `odm_orthophoto2.tif` e `VA_004` usa `odm_orthophoto.tif`. Os nomes dos arquivos são mantidos por compatibilidade com o projeto; a conferência espacial confirmou que os pontos `LO-001`, `LO-003` e `VA-004` caem, respectivamente, nas áreas das camadas `LO_002`, `LO_003` e `VA_004`.
+
 ## Classificação cadastral
 
 Os pontos públicos do mapa usam a mesma separação operacional do DWG: **Concluído** para `OCUPAÇÕES CADASTRADAS`, **A cadastrar** para `OCUPAÇÕES NÃO CADASTRADAS` e **Recusa** para a camada `RECUSA`. Os dados públicos não incluem nomes, CPF, telefone ou outros dados pessoais dos ocupantes.
