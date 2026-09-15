@@ -42,6 +42,12 @@
   .brand .t b{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;letter-spacing:.02em}
   .brand .t span{display:block;font-size:11px;color:var(--muted)}
   .spacer{flex:1}
+  .raster-toggle{pointer-events:auto;margin:10px 8px;padding:8px 12px;border:1px solid rgba(255,112,33,.65);
+    border-radius:9px;background:rgba(16,20,48,.88);color:var(--text);font:500 11px Inter,system-ui,sans-serif;
+    letter-spacing:.02em;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.35);transition:.18s ease}
+  .raster-toggle:hover:not(:disabled){background:var(--orange);border-color:var(--orange);color:#111;transform:translateY(-1px)}
+  .raster-toggle.on{background:rgba(255,112,33,.22);border-color:var(--orange);color:#fff}
+  .raster-toggle:disabled{opacity:.55;cursor:wait}
 
   /* ---------- KPIs ---------- */
   .kpis{pointer-events:auto;display:flex;gap:1px;background:var(--line);
@@ -155,6 +161,7 @@
     <div class="t"><b>Cadastro Georreferenciado</b><span>Trem Intercidades · Cadastro em campo — Jundiaí/SP</span></div>
   </div>
   <div class="spacer"></div>
+  <button class="raster-toggle" id="rasterToggle" type="button" aria-pressed="false" disabled>JU0014 · imagem desligada</button>
   <div class="kpis" id="kpis"></div>
 </div>
 
@@ -327,13 +334,24 @@ fetch('dados.geojson').then(r=>r.json()).then(gj=>{
   // imagem aérea JU0014 — camada opcional, desligada por padrão para preservar a leitura do mapa
   const ju014Bounds=[[-23.1720833,-46.9016044],[-23.1673148,-46.8977407]];
   const ju014Raster=L.imageOverlay('JU0014_web.webp',ju014Bounds,{opacity:.82,interactive:false});
+  const rasterToggle=document.getElementById('rasterToggle');
+  const syncRasterUI=on=>{
+    rasterToggle.classList.toggle('on',on); rasterToggle.setAttribute('aria-pressed',String(on));
+    rasterToggle.textContent=on?'JU0014 · imagem ligada':'JU0014 · imagem desligada';
+    const cb=document.getElementById('lyrju014'); if(cb)cb.checked=on;
+    const row=document.getElementById('row_lyrju014'); if(row)row.classList.toggle('off',!on);
+  };
+  rasterToggle.disabled=false;
+  rasterToggle.addEventListener('click',()=>{
+    const on=!map.hasLayer(ju014Raster); on?ju014Raster.addTo(map):map.removeLayer(ju014Raster); syncRasterUI(on);
+  });
   document.getElementById('layerlist').insertAdjacentHTML('beforeend',
     '<label class="frow off" id="row_lyrju014"><input type="checkbox" id="lyrju014">'+
     '<span class="chip" style="background:var(--orange)"></span>'+
     '<span class="nm">JU0014 · imagem aérea</span></label>');
   setTimeout(()=>document.getElementById('lyrju014').addEventListener('change',e=>{
     e.target.checked?ju014Raster.addTo(map):map.removeLayer(ju014Raster);
-    document.getElementById('row_lyrju014').classList.toggle('off',!e.target.checked);}),0);
+    syncRasterUI(e.target.checked);}),0);
 
   // extensao (diagonal do bbox)
   const lats=bounds.map(b=>b[0]),lons=bounds.map(b=>b[1]);
