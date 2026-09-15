@@ -2640,12 +2640,6 @@ def my_form_open(diálogo, camada, feição):
           <attributeEditorField index="99" name="selagem" showLabel="1" horizontalStretch="0" verticalStretch="0">
             <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0"/>
           </attributeEditorField>
-          <attributeEditorField index="100" name="codigo_tic" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0"/>
-          </attributeEditorField>
-          <attributeEditorField index="103" name="status_dwg" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0"/>
-          </attributeEditorField>
           <attributeEditorField index="1" name="codigo" showLabel="1" horizontalStretch="0" verticalStretch="0">
             <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
               <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
