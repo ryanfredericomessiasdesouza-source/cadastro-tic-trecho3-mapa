@@ -209,6 +209,8 @@
 const ST={
  'Concluído':{cor:'#25C685',lbl:'Concluído'},
  'Em andamento':{cor:'#F5A623',lbl:'Em andamento'},
+ 'A cadastrar':{cor:'#7C84D6',lbl:'A cadastrar'},
+ 'Recusa':{cor:'#E34B4B',lbl:'Recusa'},
  'Não iniciado':{cor:'#7C84D6',lbl:'A cadastrar'}
 };
 const stInfo=s=>ST[s]||ST['Não iniciado'];
@@ -391,7 +393,7 @@ fetch('dados.geojson').then(r=>r.json()).then(gj=>{
     kpi(feats.length,'Imóveis mapeados')+
     kpi(52,'Atributos / ficha');
   // filtro/legenda
-  const ordem=['Concluído','Em andamento','Não iniciado'];
+  const ordem=['Concluído','Em andamento','A cadastrar','Recusa'];
   const fl=document.getElementById('flist');
   ordem.filter(s=>cont[s]).forEach(s=>{
     const si=stInfo(s),id='c_'+s.replace(/\W/g,'');

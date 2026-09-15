@@ -6,6 +6,10 @@ A versão publicada aqui é uma cópia compactada do raster usada para respeitar
 
 O arquivo `Cadastro_Campo_cloud.qgs` referencia o raster relativo `./JU0014_sem_borda.tif`. As demais camadas e bases do projeto permanecem gerenciadas no QFieldCloud e não são duplicadas nesta pasta.
 
+## Classificação cadastral
+
+Os pontos públicos do mapa usam a mesma separação operacional do DWG: **Concluído** para `OCUPAÇÕES CADASTRADAS`, **A cadastrar** para `OCUPAÇÕES NÃO CADASTRADAS` e **Recusa** para a camada `RECUSA`. Os dados públicos não incluem nomes, CPF, telefone ou outros dados pessoais dos ocupantes.
+
 ## Verificação
 
 | Item | Resultado |
