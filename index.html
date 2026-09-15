@@ -317,12 +317,23 @@ fetch('dados.geojson').then(r=>r.json()).then(gj=>{
 
   // camada mestre TIC-JU014
   document.getElementById('layerlist').insertAdjacentHTML('beforeend',
-    '<label class="frow" id="row_lyrju"><input type="checkbox" id="lyrju" checked>'+
-    '<span class="chip" style="background:var(--slate)"></span>'+
+    '<label class="frow" id="row_lyrju"><input type="checkbox" id="lyrju" checked>'+ 
+    '<span class="chip" style="background:var(--slate)"></span>'+ 
     '<span class="nm">TIC-JU014</span><span class="ct">'+feats.length+'</span></label>');
   setTimeout(()=>document.getElementById('lyrju').addEventListener('change',e=>{
     e.target.checked?grupo.addTo(map):map.removeLayer(grupo);
     document.getElementById('row_lyrju').classList.toggle('off',!e.target.checked);}),0);
+
+  // imagem aérea JU0014 — camada opcional, desligada por padrão para preservar a leitura do mapa
+  const ju014Bounds=[[-23.1720833,-46.9016044],[-23.1673148,-46.8977407]];
+  const ju014Raster=L.imageOverlay('JU0014_web.webp',ju014Bounds,{opacity:.82,interactive:false});
+  document.getElementById('layerlist').insertAdjacentHTML('beforeend',
+    '<label class="frow off" id="row_lyrju014"><input type="checkbox" id="lyrju014">'+
+    '<span class="chip" style="background:var(--orange)"></span>'+
+    '<span class="nm">JU0014 · imagem aérea</span></label>');
+  setTimeout(()=>document.getElementById('lyrju014').addEventListener('change',e=>{
+    e.target.checked?ju014Raster.addTo(map):map.removeLayer(ju014Raster);
+    document.getElementById('row_lyrju014').classList.toggle('off',!e.target.checked);}),0);
 
   // extensao (diagonal do bbox)
   const lats=bounds.map(b=>b[0]),lons=bounds.map(b=>b[1]);
