@@ -66,6 +66,10 @@
   .console h3{margin:0;padding:11px 14px 9px;font-family:'Space Grotesk',sans-serif;font-size:12px;
     letter-spacing:.04em;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
   .console h3 .eyebrow{font-size:9px}
+  .layers-toggle{border:1px solid var(--line);border-radius:6px;background:rgba(255,255,255,.06);color:var(--text);
+    width:24px;height:22px;line-height:18px;font-size:16px;cursor:pointer;transition:.15s ease}
+  .layers-toggle:hover{background:var(--orange);border-color:var(--orange);color:#111}
+  .console.collapsed .console-body{display:none}
   .flist{padding:8px 12px 12px}
   .frow{display:flex;align-items:center;gap:9px;padding:6px 6px;border-radius:8px;cursor:pointer;
     transition:background .15s}
@@ -161,21 +165,22 @@
     <div class="t"><b>Cadastro Georreferenciado</b><span>Trem Intercidades · Cadastro em campo — Jundiaí/SP</span></div>
   </div>
   <div class="spacer"></div>
-  <button class="raster-toggle" id="rasterToggle" type="button" aria-pressed="false" disabled>JU0014 · imagem carregando</button>
   <button class="raster-toggle" id="mapToggle" type="button" aria-pressed="false">Mapa base desligado</button>
   <div class="kpis" id="kpis"></div>
 </div>
 
 <div class="console">
-  <h3><span>Camadas</span></h3>
-  <div class="flist" id="layerlist"></div>
-  <div class="subhead">Status</div>
-  <div class="flist" id="flist"></div>
-  <div class="subhead">Faixas de domínio</div>
-  <div class="flist" id="faixalist" style="padding-top:2px"></div>
-  <div class="capbar">
-    <span class="cap">GPS em campo</span><span class="cap">Fotos + croqui</span>
-    <span class="cap">Ficha FC automática</span><span class="cap">Sync em nuvem</span>
+  <h3><span>Camadas</span><button class="layers-toggle" id="layersToggle" type="button" aria-expanded="true" aria-controls="layersBody" title="Recolher camadas">−</button></h3>
+  <div class="console-body" id="layersBody">
+    <div class="flist" id="layerlist"></div>
+    <div class="subhead">Status</div>
+    <div class="flist" id="flist"></div>
+    <div class="subhead">Faixas de domínio</div>
+    <div class="flist" id="faixalist" style="padding-top:2px"></div>
+    <div class="capbar">
+      <span class="cap">GPS em campo</span><span class="cap">Fotos + croqui</span>
+      <span class="cap">Ficha FC automática</span><span class="cap">Sync em nuvem</span>
+    </div>
   </div>
 </div>
 
@@ -218,6 +223,13 @@ mapToggle.addEventListener('click',()=>{
   mapToggle.classList.toggle('on',!on); mapToggle.setAttribute('aria-pressed',String(on));
   mapToggle.textContent=on?'Mapa base ligado':'Mapa base desligado';
   if(on)setTimeout(()=>map.invalidateSize(),0);
+});
+const layersToggle=document.getElementById('layersToggle');
+layersToggle.addEventListener('click',()=>{
+  const expanded=!document.querySelector('.console').classList.toggle('collapsed');
+  layersToggle.setAttribute('aria-expanded',String(expanded));
+  layersToggle.setAttribute('title',expanded?'Recolher camadas':'Expandir camadas');
+  layersToggle.textContent=expanded?'−':'+';
 });
 L.control.zoom({position:'bottomright'}).addTo(map);
 
@@ -343,25 +355,14 @@ fetch('dados.geojson').then(r=>r.json()).then(gj=>{
   // imagem aérea JU0014 — ligada por padrão; o mapa-base permanece opcional
   const ju014Bounds=[[-23.1720833,-46.9016044],[-23.1673148,-46.8977407]];
   const ju014Raster=L.imageOverlay('JU0014_web.webp',ju014Bounds,{opacity:.82,interactive:false});
-  const rasterToggle=document.getElementById('rasterToggle');
-  const syncRasterUI=on=>{
-    rasterToggle.classList.toggle('on',on); rasterToggle.setAttribute('aria-pressed',String(on));
-    rasterToggle.textContent=on?'JU0014 · imagem ligada':'JU0014 · imagem desligada';
-    const cb=document.getElementById('lyrju014'); if(cb)cb.checked=on;
-    const row=document.getElementById('row_lyrju014'); if(row)row.classList.toggle('off',!on);
-  };
-  rasterToggle.disabled=false;
-  rasterToggle.addEventListener('click',()=>{
-    const on=!map.hasLayer(ju014Raster); on?ju014Raster.addTo(map):map.removeLayer(ju014Raster); syncRasterUI(on);
-  });
   document.getElementById('layerlist').insertAdjacentHTML('beforeend',
     '<label class="frow" id="row_lyrju014"><input type="checkbox" id="lyrju014" checked>'+ 
-    '<span class="chip" style="background:var(--orange)"></span>'+
+    '<span class="chip" style="background:var(--orange)"></span>'+ 
     '<span class="nm">JU0014 · imagem aérea</span></label>');
-  ju014Raster.addTo(map); syncRasterUI(true);
+  ju014Raster.addTo(map);
   setTimeout(()=>document.getElementById('lyrju014').addEventListener('change',e=>{
     e.target.checked?ju014Raster.addTo(map):map.removeLayer(ju014Raster);
-    syncRasterUI(e.target.checked);}),0);
+    document.getElementById('row_lyrju014').classList.toggle('off',!e.target.checked);}),0);
 
   // demais imagens de voo disponíveis no projeto QGIS
   const OUTROS_VOOS=[
