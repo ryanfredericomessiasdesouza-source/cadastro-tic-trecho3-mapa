@@ -48,6 +48,7 @@
   .raster-toggle:hover:not(:disabled){background:var(--orange);border-color:var(--orange);color:#111;transform:translateY(-1px)}
   .raster-toggle.on{background:rgba(255,112,33,.22);border-color:var(--orange);color:#fff}
   .raster-toggle:disabled{opacity:.55;cursor:wait}
+  #map.map-off{visibility:hidden}
 
   /* ---------- KPIs ---------- */
   .kpis{pointer-events:auto;display:flex;gap:1px;background:var(--line);
@@ -162,6 +163,7 @@
   </div>
   <div class="spacer"></div>
   <button class="raster-toggle" id="rasterToggle" type="button" aria-pressed="false" disabled>JU0014 · imagem desligada</button>
+  <button class="raster-toggle" id="mapToggle" type="button" aria-pressed="true">Mapa ligado</button>
   <div class="kpis" id="kpis"></div>
 </div>
 
@@ -208,6 +210,13 @@ const ST={
 const stInfo=s=>ST[s]||ST['Não iniciado'];
 
 const map=L.map('map',{zoomControl:false,attributionControl:false});
+const mapToggle=document.getElementById('mapToggle');
+mapToggle.addEventListener('click',()=>{
+  const on=document.getElementById('map').classList.toggle('map-off')===false;
+  mapToggle.classList.toggle('on',!on); mapToggle.setAttribute('aria-pressed',String(on));
+  mapToggle.textContent=on?'Mapa ligado':'Mapa desligado';
+  if(on)setTimeout(()=>map.invalidateSize(),0);
+});
 L.control.zoom({position:'bottomright'}).addTo(map);
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:20}).addTo(map);
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}',{maxZoom:20,opacity:.85}).addTo(map);
