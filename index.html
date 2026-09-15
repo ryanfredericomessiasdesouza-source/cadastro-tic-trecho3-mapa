@@ -324,7 +324,7 @@ const grupo=L.layerGroup().addTo(map);
 const marcadores=[]; const ativos=new Set();
 function render(){grupo.clearLayers();marcadores.forEach(m=>{if(ativos.has(m.status))grupo.addLayer(m.mk);});}
 
-fetch('dados.geojson').then(r=>r.json()).then(gj=>{
+fetch('dados.geojson?v=5243706').then(r=>r.json()).then(gj=>{
   const feats=gj.features.filter(f=>f.geometry&&f.geometry.coordinates);
   // ordena por latitude p/ varredura
   feats.sort((a,b)=>b.geometry.coordinates[1]-a.geometry.coordinates[1]);
