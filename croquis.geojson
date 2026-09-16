@@ -13,7 +13,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4B4D",
         "municipio": "Louveira",
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 42.19,
+        "perimetro_m": 29.76
       },
       "geometry": {
         "type": "Polygon",
@@ -59,7 +61,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4B4E",
         "municipio": "Louveira",
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 259.09,
+        "perimetro_m": 71.77
       },
       "geometry": {
         "type": "Polygon",
@@ -120,7 +124,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4B60",
         "municipio": "Louveira",
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 291.39,
+        "perimetro_m": 75.54
       },
       "geometry": {
         "type": "Polygon",
@@ -191,7 +197,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4B69",
         "municipio": "Louveira",
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 134.44,
+        "perimetro_m": 55.13
       },
       "geometry": {
         "type": "Polygon",
@@ -252,7 +260,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4B72",
         "municipio": "Louveira",
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 194.9,
+        "perimetro_m": 74.27
       },
       "geometry": {
         "type": "Polygon",
@@ -318,7 +328,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4B7B",
         "municipio": "Louveira",
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 271.81,
+        "perimetro_m": 82.61
       },
       "geometry": {
         "type": "Polygon",
@@ -369,7 +381,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4B84",
         "municipio": "Louveira",
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 401.07,
+        "perimetro_m": 96.82
       },
       "geometry": {
         "type": "Polygon",
@@ -415,7 +429,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4B8D",
         "municipio": "Louveira",
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 425.91,
+        "perimetro_m": 104.7
       },
       "geometry": {
         "type": "Polygon",
@@ -466,7 +482,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4B96",
         "municipio": "Louveira",
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 507.44,
+        "perimetro_m": 112.11
       },
       "geometry": {
         "type": "Polygon",
@@ -512,7 +530,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4BA0",
         "municipio": "Louveira",
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 567.27,
+        "perimetro_m": 113.76
       },
       "geometry": {
         "type": "Polygon",
@@ -573,7 +593,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4BAC",
         "municipio": "Louveira",
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 300.61,
+        "perimetro_m": 69.84
       },
       "geometry": {
         "type": "Polygon",
@@ -629,7 +651,9 @@
         "dwg_layer": "OCUPAÇÕES NÃO CADASTRADAS",
         "dwg_handle": "4BB5",
         "municipio": "Louveira",
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 231.91,
+        "perimetro_m": 60.97
       },
       "geometry": {
         "type": "Polygon",
@@ -675,7 +699,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4C3B",
         "municipio": "Valinhos",
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 460.94,
+        "perimetro_m": 88.76
       },
       "geometry": {
         "type": "Polygon",
@@ -731,7 +757,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4C3E",
         "municipio": "Valinhos",
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 247.31,
+        "perimetro_m": 64.08
       },
       "geometry": {
         "type": "Polygon",
@@ -777,7 +805,9 @@
         "dwg_layer": "RECUSA",
         "dwg_handle": "4C3D",
         "municipio": "Valinhos",
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 186.79,
+        "perimetro_m": 54.72
       },
       "geometry": {
         "type": "Polygon",
@@ -823,7 +853,9 @@
         "dwg_layer": "RECUSA",
         "dwg_handle": "4C40",
         "municipio": "Valinhos",
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 288.04,
+        "perimetro_m": 70.38
       },
       "geometry": {
         "type": "Polygon",
@@ -869,7 +901,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4C5C",
         "municipio": null,
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 144.85,
+        "perimetro_m": 54.71
       },
       "geometry": {
         "type": "Polygon",
@@ -935,7 +969,9 @@
         "dwg_layer": "OCUPAÇÕES NÃO CADASTRADAS",
         "dwg_handle": "4C5D",
         "municipio": null,
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 115.74,
+        "perimetro_m": 44.9
       },
       "geometry": {
         "type": "Polygon",
@@ -986,7 +1022,9 @@
         "dwg_layer": "OCUPAÇÕES NÃO CADASTRADAS",
         "dwg_handle": "4E4C",
         "municipio": null,
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 121.04,
+        "perimetro_m": 54.62
       },
       "geometry": {
         "type": "Polygon",
@@ -1082,7 +1120,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4E55",
         "municipio": null,
-        "origem": "ProjetoTICGeral15-09-26.dwg (geometria compartilhada no DWG)"
+        "origem": "ProjetoTICGeral15-09-26.dwg (geometria compartilhada no DWG)",
+        "area_m2": 268.3,
+        "perimetro_m": 79.33
       },
       "geometry": {
         "type": "Polygon",
@@ -1228,7 +1268,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4E52",
         "municipio": null,
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 234.61,
+        "perimetro_m": 72.84
       },
       "geometry": {
         "type": "Polygon",
@@ -1299,7 +1341,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4E51",
         "municipio": null,
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 187.48,
+        "perimetro_m": 73.62
       },
       "geometry": {
         "type": "Polygon",
@@ -1350,7 +1394,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4E50",
         "municipio": null,
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 175.4,
+        "perimetro_m": 79.79
       },
       "geometry": {
         "type": "Polygon",
@@ -1406,7 +1452,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4ECF",
         "municipio": null,
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 55.91,
+        "perimetro_m": 29.65
       },
       "geometry": {
         "type": "Polygon",
@@ -1467,7 +1515,9 @@
         "dwg_layer": "OCUPAÇÕES NÃO CADASTRADAS",
         "dwg_handle": "4E4E",
         "municipio": null,
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 1055.45,
+        "perimetro_m": 170.01
       },
       "geometry": {
         "type": "Polygon",
@@ -1533,7 +1583,9 @@
         "dwg_layer": "OCUPAÇÕES NÃO CADASTRADAS",
         "dwg_handle": "4E96",
         "municipio": null,
-        "origem": "ProjetoTICGeral15-09-26.dwg"
+        "origem": "ProjetoTICGeral15-09-26.dwg",
+        "area_m2": 89.37,
+        "perimetro_m": 51.13
       },
       "geometry": {
         "type": "Polygon",
@@ -1579,7 +1631,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4E55",
         "municipio": null,
-        "origem": "ProjetoTICGeral15-09-26.dwg (geometria compartilhada no DWG)"
+        "origem": "ProjetoTICGeral15-09-26.dwg (geometria compartilhada no DWG)",
+        "area_m2": 268.3,
+        "perimetro_m": 79.33
       },
       "geometry": {
         "type": "Polygon",
@@ -1725,7 +1779,9 @@
         "dwg_layer": "OCUPAÇÕES CADASTRADAS",
         "dwg_handle": "4E55",
         "municipio": null,
-        "origem": "ProjetoTICGeral15-09-26.dwg (geometria compartilhada no DWG)"
+        "origem": "ProjetoTICGeral15-09-26.dwg (geometria compartilhada no DWG)",
+        "area_m2": 268.3,
+        "perimetro_m": 79.33
       },
       "geometry": {
         "type": "Polygon",

@@ -5819,7 +5819,9 @@
         "km": "73+730",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4B4D",
         "fid_planilha": 93,
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 42.19,
+        "constr_perimetro": 29.76
       },
       "geometry": {
         "type": "Point",
@@ -5876,7 +5878,9 @@
         "km": "73+700",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4B4E",
         "fid_planilha": 94,
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 259.09,
+        "constr_perimetro": 71.77
       },
       "geometry": {
         "type": "Point",
@@ -5934,7 +5938,9 @@
         "km": "73+680",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4B60",
         "fid_planilha": 95,
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 291.39,
+        "constr_perimetro": 75.54
       },
       "geometry": {
         "type": "Point",
@@ -5992,7 +5998,9 @@
         "km": "73+670",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4B69",
         "fid_planilha": 96,
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 134.44,
+        "constr_perimetro": 55.13
       },
       "geometry": {
         "type": "Point",
@@ -6050,7 +6058,9 @@
         "km": "73+660",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4B72",
         "fid_planilha": 97,
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 194.9,
+        "constr_perimetro": 74.27
       },
       "geometry": {
         "type": "Point",
@@ -6108,7 +6118,9 @@
         "km": "73+650",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4B7B",
         "fid_planilha": 98,
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 271.81,
+        "constr_perimetro": 82.61
       },
       "geometry": {
         "type": "Point",
@@ -6166,7 +6178,9 @@
         "km": "73+640",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4B84",
         "fid_planilha": 99,
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 401.07,
+        "constr_perimetro": 96.82
       },
       "geometry": {
         "type": "Point",
@@ -6224,7 +6238,9 @@
         "km": "73+630",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4B8D",
         "fid_planilha": 100,
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 425.91,
+        "constr_perimetro": 104.7
       },
       "geometry": {
         "type": "Point",
@@ -6282,7 +6298,9 @@
         "km": "73+620",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4B96",
         "fid_planilha": 101,
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 507.44,
+        "constr_perimetro": 112.11
       },
       "geometry": {
         "type": "Point",
@@ -6340,7 +6358,9 @@
         "km": "73+600",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4BA0",
         "fid_planilha": 102,
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 567.27,
+        "constr_perimetro": 113.76
       },
       "geometry": {
         "type": "Point",
@@ -6398,7 +6418,9 @@
         "km": "73+580",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4BAC",
         "fid_planilha": 103,
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 300.61,
+        "constr_perimetro": 69.84
       },
       "geometry": {
         "type": "Point",
@@ -6420,7 +6442,9 @@
         "status": "A cadastrar",
         "classificacao_dwg": "OCUPAÇÕES NÃO CADASTRADAS",
         "latitude": -23.10391703382205,
-        "longitude": -46.941573637689615
+        "longitude": -46.941573637689615,
+        "constr_area": 231.91,
+        "constr_perimetro": 60.97
       },
       "geometry": {
         "type": "Point",
@@ -6493,7 +6517,9 @@
         "km": "91+300",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4C3E",
         "fid_planilha": 106,
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 247.31,
+        "constr_perimetro": 64.08
       },
       "geometry": {
         "type": "Point",
@@ -6515,7 +6541,9 @@
         "status": "Recusa",
         "classificacao_dwg": "RECUSA",
         "latitude": -22.96830491171823,
-        "longitude": -46.993755100259676
+        "longitude": -46.993755100259676,
+        "constr_area": 186.79,
+        "constr_perimetro": 54.72
       },
       "geometry": {
         "type": "Point",
@@ -6537,7 +6565,9 @@
         "status": "Recusa",
         "classificacao_dwg": "RECUSA",
         "latitude": -22.968184212304607,
-        "longitude": -46.99379178232968
+        "longitude": -46.99379178232968,
+        "constr_area": 288.04,
+        "constr_perimetro": 70.38
       },
       "geometry": {
         "type": "Point",
@@ -6612,7 +6642,9 @@
         "km": "91+250",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4C3B",
         "fid_planilha": 109,
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 460.94,
+        "constr_perimetro": 88.76
       },
       "geometry": {
         "type": "Point",
@@ -6639,7 +6671,9 @@
         "observacoes": "Código TIC: OC-TIC-LO-003-RE-001 O | Sem FID na planilha | Origem: ProjetoTICGeral15-09-26.dwg",
         "codigo_tic": "OC-TIC-LO-003-RE-001 O",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4C5C",
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 144.85,
+        "constr_perimetro": 54.71
       },
       "geometry": {
         "type": "Point",
@@ -6660,7 +6694,9 @@
         "status": "A cadastrar",
         "classificacao_dwg": "OCUPAÇÕES NÃO CADASTRADAS",
         "latitude": -23.094037845855148,
-        "longitude": -46.94753419316584
+        "longitude": -46.94753419316584,
+        "constr_area": 115.74,
+        "constr_perimetro": 44.9
       },
       "geometry": {
         "type": "Point",
@@ -6681,7 +6717,9 @@
         "status": "A cadastrar",
         "classificacao_dwg": "OCUPAÇÕES NÃO CADASTRADAS",
         "latitude": -23.09379570009951,
-        "longitude": -46.947498148841866
+        "longitude": -46.947498148841866,
+        "constr_area": 121.04,
+        "constr_perimetro": 54.62
       },
       "geometry": {
         "type": "Point",
@@ -6707,7 +6745,9 @@
         "observacoes": "Código TIC: OC-TIC-LO-003-RE-004 O | Sem FID na planilha | Origem: ProjetoTICGeral15-09-26.dwg",
         "codigo_tic": "OC-TIC-LO-003-RE-004 O",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4E55",
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 268.3,
+        "constr_perimetro": 79.33
       },
       "geometry": {
         "type": "Point",
@@ -6733,7 +6773,9 @@
         "observacoes": "Código TIC: OC-TIC-LO-003-RE-006 O | Sem FID na planilha | Origem: ProjetoTICGeral15-09-26.dwg",
         "codigo_tic": "OC-TIC-LO-003-RE-006 O",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4E52",
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 234.61,
+        "constr_perimetro": 72.84
       },
       "geometry": {
         "type": "Point",
@@ -6759,7 +6801,9 @@
         "observacoes": "Código TIC: OC-TIC-LO-003-RE-007 O | Sem FID na planilha | Origem: ProjetoTICGeral15-09-26.dwg",
         "codigo_tic": "OC-TIC-LO-003-RE-007 O",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4E51",
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 187.48,
+        "constr_perimetro": 73.62
       },
       "geometry": {
         "type": "Point",
@@ -6785,7 +6829,9 @@
         "observacoes": "Código TIC: OC-TIC-LO-003-RE-008 O | Sem FID na planilha | Origem: ProjetoTICGeral15-09-26.dwg",
         "codigo_tic": "OC-TIC-LO-003-RE-008 O",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4E50",
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 175.4,
+        "constr_perimetro": 79.79
       },
       "geometry": {
         "type": "Point",
@@ -6811,7 +6857,9 @@
         "observacoes": "Código TIC: OC-TIC-LO-003-RE-009 O | Sem FID na planilha | Origem: ProjetoTICGeral15-09-26.dwg",
         "codigo_tic": "OC-TIC-LO-003-RE-009 O",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4ECF",
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 55.91,
+        "constr_perimetro": 29.65
       },
       "geometry": {
         "type": "Point",
@@ -6832,7 +6880,9 @@
         "status": "A cadastrar",
         "classificacao_dwg": "OCUPAÇÕES NÃO CADASTRADAS",
         "latitude": -23.093313338352154,
-        "longitude": -46.947879073865856
+        "longitude": -46.947879073865856,
+        "constr_area": 1055.45,
+        "constr_perimetro": 170.01
       },
       "geometry": {
         "type": "Point",
@@ -6853,7 +6903,9 @@
         "status": "A cadastrar",
         "classificacao_dwg": "OCUPAÇÕES NÃO CADASTRADAS",
         "latitude": -23.093147773627667,
-        "longitude": -46.947734703458195
+        "longitude": -46.947734703458195,
+        "constr_area": 89.37,
+        "constr_perimetro": 51.13
       },
       "geometry": {
         "type": "Point",
@@ -6879,7 +6931,9 @@
         "observacoes": "Código TIC: OC-TIC-LO-003-RE-005 O | Sem FID na planilha | Origem: ProjetoTICGeral15-09-26.dwg",
         "codigo_tic": "OC-TIC-LO-003-RE-005 O",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4E55",
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 268.3,
+        "constr_perimetro": 79.33
       },
       "geometry": {
         "type": "Point",
@@ -6905,7 +6959,9 @@
         "observacoes": "Código TIC: OC-TIC-LO-003-RE-012 O | Sem FID na planilha | Origem: ProjetoTICGeral15-09-26.dwg",
         "codigo_tic": "OC-TIC-LO-003-RE-012 O",
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4E55",
-        "status_dwg": "OCUPAÇÕES CADASTRADAS"
+        "status_dwg": "OCUPAÇÕES CADASTRADAS",
+        "constr_area": 268.3,
+        "constr_perimetro": 79.33
       },
       "geometry": {
         "type": "Point",

@@ -261,10 +261,10 @@ const CROQUI_STYLE={
   'OCUPAÇÕES NÃO CADASTRADAS':{cor:'#F5A623',fill:'#F5A623'},
   'RECUSA':{cor:'#E34B4B',fill:'#E34B4B'}
 };
-fetch('croquis.geojson?v=20260916-croquis').then(r=>r.json()).then(gj=>{
+fetch('croquis.geojson?v=20260916-dimensoes').then(r=>r.json()).then(gj=>{
   const croquiLayer=L.geoJSON(gj,{
     style:f=>{const s=CROQUI_STYLE[f.properties.classificacao_dwg]||CROQUI_STYLE['OCUPAÇÕES NÃO CADASTRADAS'];return {color:s.cor,weight:4,opacity:.98,fillColor:s.fill,fillOpacity:.10};},
-    onEachFeature:(f,l)=>{const p=f.properties;l.bindTooltip(String(p.codigo||'Croqui'),{sticky:true,opacity:.92});}
+    onEachFeature:(f,l)=>{const p=f.properties;const d=p.area_m2!=null?'<br>Área: '+p.area_m2.toFixed(2)+' m² · Perímetro: '+p.perimetro_m.toFixed(2)+' m':'';l.bindTooltip(String(p.codigo||'Croqui')+d,{sticky:true,opacity:.92});}
   }).addTo(map);
   document.getElementById('layerlist').insertAdjacentHTML('beforeend',
     '<label class="frow" id="row_croquis"><input type="checkbox" id="lyr_croquis" checked>'+
@@ -304,7 +304,7 @@ const SEC=[
  ["1. Ocupante",[["selagem","Selagem"],["codigo","Código"],["cpf_cnpj","CPF/RG"],["nome","Nome do ocupante"],["telefone","Telefone"],["municipio","Município"],["endereco","Endereço"],["bairro","Bairro"]]],
  ["2. Região",[["infraestrutura_local","Infraestrutura do local"],["padrao_ocupacao","Padrão de ocupação da região"],["vias_acesso","Vias de acesso"],["localizacao_lote","Localização"],["greide","Greide"],["topografia","Topografia"],["aproveitamento_uso","Aproveitamento/Uso"],["obs_regiao","Observações"]]],
  ["3. Habitação e Serviços",[["tamanho_edificacao","Tamanho"],["tempo_residencia","Tempo de residência"],["material_paredes","Paredes"],["material_cobertura","Cobertura"],["material_piso","Piso"],["agua_canalizada","Água canalizada"],["agua_proveniente","Água proveniente"],["escoadouro","Escoadouro"],["mais_uma_familia","+1 família?"],["num_pavimentos","Pavimentos"],["pavimentos_ocupante","Pavimentos do ocupante"],["num_comodos","Nº cômodos"],["comodos_dormitorio","Dormitórios"],["num_banheiros","Banheiros"]]],
- ["4. Construção e Demolição",[["constr_descricao","Descrição"],["constr_idade","Idade"],["constr_estado","Estado de conservação"],["constr_perimetro","Perímetro (m)"],["constr_area","Área construída (m²)"],["tipo_edificacao","Tipo de edificação"],["faixa_dominio","Faixa de domínio"],["em_desnivel","Desnível"],["prioridade_demo","Prioridade"],["risco_impacto","Risco de impacto"]]],
+ ["4. Construção e Demolição",[["constr_descricao","Descrição"],["constr_idade","Idade"],["constr_estado","Estado de conservação"],["constr_perimetro","Perímetro (m)"],["constr_area","Área (m²)"],["tipo_edificacao","Tipo de edificação"],["faixa_dominio","Faixa de domínio"],["em_desnivel","Desnível"],["prioridade_demo","Prioridade"],["risco_impacto","Risco de impacto"]]],
  ["5. Croqui e Fotos",[["croqui","Croqui"],["croqui_dwg","Croqui do DWG"]]],
 ];
 const has=v=>!(v==null||v==='');
@@ -349,7 +349,7 @@ const grupo=L.layerGroup().addTo(map);
 const marcadores=[]; const ativos=new Set();
 function render(){grupo.clearLayers();marcadores.forEach(m=>{if(ativos.has(m.status))grupo.addLayer(m.mk);});}
 
-fetch('dados.geojson?v=20260916-completos').then(r=>r.json()).then(gj=>{
+fetch('dados.geojson?v=20260916-dimensoes').then(r=>r.json()).then(gj=>{
   const feats=gj.features.filter(f=>f.geometry&&f.geometry.coordinates);
   // ordena por latitude p/ varredura
   feats.sort((a,b)=>b.geometry.coordinates[1]-a.geometry.coordinates[1]);
