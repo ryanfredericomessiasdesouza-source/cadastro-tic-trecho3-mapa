@@ -4944,7 +4944,7 @@ def my_form_open(diálogo, camada, feição):
         <provider>
           <resampling zoomedOutResamplingMethod="nearestNeighbour" maxOversampling="2" enabled="false" zoomedInResamplingMethod="nearestNeighbour"/>
         </provider>
-        <rasterrenderer greenBand="2" blueBand="3" nodataColor="" type="multibandcolor" redBand="1" opacity="1" alphaBand="-1">
+        <rasterrenderer greenBand="2" blueBand="3" nodataColor="" type="multibandcolor" redBand="1" opacity="1" alphaBand="4">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>MinMax</limits>
