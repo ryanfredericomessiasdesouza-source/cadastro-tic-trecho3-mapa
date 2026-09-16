@@ -1884,6 +1884,29 @@
             </config>
           </editWidget>
         </field>
+        <field name="demolicao_parcial" configurationFlags="NoFlag">
+          <editWidget type="ValueMap">
+            <config>
+              <Option type="Map">
+                <Option name="map" type="List">
+                  <Option type="Map">
+                    <Option name="Sim" type="QString" value="Sim"/>
+                  </Option>
+                  <Option type="Map">
+                    <Option name="Não" type="QString" value="Não"/>
+                  </Option>
+                </Option>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="justificativa_demolicao" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
       </fieldConfiguration>
       <aliases>
         <alias field="fid" index="0" name=""/>
@@ -1988,6 +2011,8 @@
         <alias field="selagem" index="99" name="Selagem"/>
         <alias field="codigo_tic" index="100" name="Ocupante"/>
         <alias field="status_dwg" index="103" name="Classificação DWG"/>
+        <alias field="demolicao_parcial" index="104" name="Pode ocorrer demolição parcial?"/>
+        <alias field="justificativa_demolicao" index="105" name="Justificativa da não demolição parcial"/>
       </aliases>
       <splitPolicies>
         <policy field="fid" policy="Duplicate"/>
@@ -2291,6 +2316,8 @@
         <default field="mel_pavimentacao" applyOnUpdate="0" expression=""/>
         <default field="mel_gas" applyOnUpdate="0" expression=""/>
         <default field="mel_telefone" applyOnUpdate="0" expression=""/>
+        <default field="demolicao_parcial" applyOnUpdate="0" expression=""/>
+        <default field="justificativa_demolicao" applyOnUpdate="0" expression=""/>
       </defaults>
       <constraints>
         <constraint field="fid" constraints="3" exp_strength="0" notnull_strength="1" unique_strength="1"/>
@@ -2392,6 +2419,8 @@
         <constraint field="mel_pavimentacao" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
         <constraint field="mel_gas" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
         <constraint field="mel_telefone" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="demolicao_parcial" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="justificativa_demolicao" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
       </constraints>
       <constraintExpressions>
         <constraint field="fid" exp="" desc=""/>
@@ -2924,6 +2953,21 @@ def my_form_open(diálogo, camada, feição):
                 <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
               </labelStyle>
             </attributeEditorField>
+            <attributeEditorField index="104" name="demolicao_parcial" showLabel="1" horizontalStretch="0" verticalStretch="0">
+              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
+                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
+              </labelStyle>
+            </attributeEditorField>
+            <attributeEditorContainer visibilityExpressionEnabled="1" visibilityExpression="&quot;demolicao_parcial&quot; = 'Não'" collapsed="0" collapsedExpression="" columnCount="1" name="Justificativa da não demolição parcial" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
+              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
+                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
+              </labelStyle>
+              <attributeEditorField index="105" name="justificativa_demolicao" showLabel="1" horizontalStretch="0" verticalStretch="0">
+                <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
+                  <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
+                </labelStyle>
+              </attributeEditorField>
+            </attributeEditorContainer>
           </attributeEditorContainer>
         </attributeEditorContainer>
         <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="5. Croqui e Fotos" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
@@ -3045,6 +3089,8 @@ def my_form_open(diálogo, camada, feição):
         <field editable="1" name="vias_acesso"/>
         <field editable="1" name="vida_util"/>
         <field editable="1" name="zona"/>
+        <field editable="1" name="demolicao_parcial"/>
+        <field editable="1" name="justificativa_demolicao"/>
       </editable>
       <labelOnTop>
         <field labelOnTop="0" name="agua_canalizada"/>
@@ -3146,6 +3192,8 @@ def my_form_open(diálogo, camada, feição):
         <field labelOnTop="0" name="vias_acesso"/>
         <field labelOnTop="0" name="vida_util"/>
         <field labelOnTop="0" name="zona"/>
+        <field labelOnTop="0" name="demolicao_parcial"/>
+        <field labelOnTop="0" name="justificativa_demolicao"/>
       </labelOnTop>
       <reuseLastValue>
         <field reuseLastValue="0" name="agua_canalizada"/>
@@ -3247,6 +3295,8 @@ def my_form_open(diálogo, camada, feição):
         <field reuseLastValue="0" name="vias_acesso"/>
         <field reuseLastValue="0" name="vida_util"/>
         <field reuseLastValue="0" name="zona"/>
+        <field reuseLastValue="0" name="demolicao_parcial"/>
+        <field reuseLastValue="0" name="justificativa_demolicao"/>
       </reuseLastValue>
       <dataDefinedFieldProperties/>
       <widgets/>
