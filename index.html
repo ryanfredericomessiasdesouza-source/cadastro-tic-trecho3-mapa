@@ -370,11 +370,11 @@ fetch('dados.geojson?v=20260916-completos').then(r=>r.json()).then(gj=>{
   render();
   if(bounds.length)map.fitBounds(bounds,{padding:[70,70]});
 
-  // camada mestre TIC-JU014
+  // pontos de cadastro
   document.getElementById('layerlist').insertAdjacentHTML('beforeend',
     '<label class="frow" id="row_lyrju"><input type="checkbox" id="lyrju" checked>'+ 
     '<span class="chip" style="background:var(--slate)"></span>'+ 
-    '<span class="nm">TIC-JU014</span><span class="ct">'+feats.length+'</span></label>');
+    '<span class="nm">Pontos de Cadastro</span><span class="ct">'+feats.length+'</span></label>');
   setTimeout(()=>document.getElementById('lyrju').addEventListener('change',e=>{
     e.target.checked?grupo.addTo(map):map.removeLayer(grupo);
     document.getElementById('row_lyrju').classList.toggle('off',!e.target.checked);}),0);
