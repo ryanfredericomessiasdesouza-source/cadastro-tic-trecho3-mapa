@@ -277,19 +277,23 @@ function icone(cor,i){
 // ---- formulario (secoes iguais ao QGIS) ----
 const MEL=[["mel_calcada","Calçada"],["mel_iluminacao","Iluminação"],["mel_coleta_lixo","Coleta de lixo"],["mel_internet","Internet"],["mel_esgoto","Esgoto"],["mel_luz","Luz domiciliar"],["mel_fossa","Fossa"],["mel_pavimentacao","Pavimentação"],["mel_gas","Gás"],["mel_telefone","Telefone"]];
 const SEC=[
- ["Ocupante",[["nome","Nome"],["municipio","Município"],["bairro","Bairro"],["endereco","Endereço"]]],
- ["Características da região",[["infraestrutura_local","Infraestrutura"],["padrao_ocupacao","Padrão de ocupação"],["vias_acesso","Vias de acesso"],["localizacao_lote","Localização"],["greide","Greide"],["topografia","Topografia"],["aproveitamento_uso","Aproveitamento/Uso"]]],
- ["Habitação e serviços",[["tamanho_edificacao","Tamanho"],["tempo_residencia","Tempo de residência"],["material_paredes","Paredes"],["material_cobertura","Cobertura"],["material_piso","Piso"],["agua_canalizada","Água canalizada"],["agua_proveniente","Água proveniente"],["escoadouro","Escoadouro"],["mais_uma_familia","+1 família?"],["num_pavimentos","Pavimentos"],["num_comodos","Nº cômodos"],["comodos_dormitorio","Dormitórios"],["num_banheiros","Banheiros"]]],
- ["Construção e demolição",[["constr_descricao","Descrição"],["constr_idade","Idade"],["constr_estado","Estado conserv."],["constr_area","Área (m²)"],["tipo_edificacao","Tipo edificação"],["faixa_dominio","Faixa de domínio"],["em_desnivel","Desnível"],["prioridade_demo","Prioridade"],["risco_impacto","Risco impacto"]]],
- ["Classificação",[["tipo_imovel","Tipo imóvel"],["classificacao_padrao","Padrão (A–H)"]]],
+ ["Ocupante",[["selagem","Selagem"],["nome","Nome"],["cpf_cnpj","CPF/CNPJ"],["rg_ie","RG/IE"],["estado_civil","Estado civil"],["profissao","Profissão"],["telefone","Telefone"],["email","E-mail"],["percentual_titularidade","Titularidade (%)"],["tipo_vinculo","Tipo de vínculo"],["municipio","Município"],["bairro","Bairro"],["endereco","Endereço"],["matricula","Matrícula"]]],
+ ["Documentação rural",[["doc_r_matricula","Matrícula"],["doc_r_ccir","CCIR"],["doc_r_cib_cafir","CIB/CAFIR"],["doc_r_itr","ITR"],["doc_r_cert_fiscal","Certidão fiscal"],["doc_r_car","CAR"],["doc_r_planta_memorial","Planta/memorial"],["doc_r_sigef","SIGEF"],["doc_r_rg_cpf","RG/CPF"],["doc_r_cert_estado_civil","Certidão estado civil"]]],
+ ["Documentação urbana",[["doc_u_matricula","Matrícula"],["doc_u_iptu","IPTU"],["doc_u_inscricao_imob","Inscrição imobiliária"],["doc_u_cnd_municipal","CND municipal"],["doc_u_planta","Planta"],["doc_u_habite_se","Habite-se"],["doc_u_regularidade_construcao","Regularidade da construção"],["doc_u_convencao_condominio","Convenção de condomínio"],["doc_u_servidoes_faixa","Servidões/faixa"],["doc_u_rg_cpf_estado_civil","RG/CPF/estado civil"],["doc_u_pj_contrato_social","Contrato social"]]],
+ ["Características da região",[["zona","Zona"],["infraestrutura_local","Infraestrutura"],["padrao_ocupacao","Padrão de ocupação"],["vias_acesso","Vias de acesso"],["localizacao_lote","Localização"],["greide","Greide"],["topografia","Topografia"],["aproveitamento_uso","Aproveitamento/Uso"],["obs_regiao","Observações da região"]]],
+ ["Habitação e serviços",[["tamanho_edificacao","Tamanho"],["tempo_residencia","Tempo de residência"],["material_paredes","Paredes"],["material_cobertura","Cobertura"],["material_piso","Piso"],["agua_canalizada","Água canalizada"],["agua_proveniente","Água proveniente"],["escoadouro","Escoadouro"],["mais_uma_familia","+1 família?"],["num_pavimentos","Pavimentos"],["pavimentos_ocupante","Pavimentos do ocupante"],["num_comodos","Nº cômodos"],["comodos_dormitorio","Dormitórios"],["num_banheiros","Banheiros"],["com_quartos","Quartos"],["com_salas","Salas"],["com_cozinhas","Cozinhas"],["com_banheiros","Banheiros"],["com_area_servico","Área de serviço"],["com_garagem","Garagem"],["com_varanda","Varanda"],["com_outros","Outros cômodos"],["com_outros_desc","Descrição dos outros cômodos"]]],
+ ["Construção e demolição",[["constr_descricao","Descrição"],["constr_idade","Idade"],["constr_estado","Estado conserv."],["constr_area","Área (m²)"],["constr_perimetro","Perímetro (m)"],["tipo_edificacao","Tipo edificação"],["faixa_dominio","Faixa de domínio"],["em_desnivel","Desnível"],["prioridade_demo","Prioridade"],["risco_impacto","Risco impacto"]]],
+ ["Classificação",[["tipo_imovel","Tipo imóvel"],["classificacao_padrao","Padrão (A–H)"],["area_total","Área total (m²)"]]],
+ ["Registro e origem",[["situacao","Situação"],["status_dwg","Classificação do DWG"],["km","KM"],["croqui","Croqui"],["croqui_dwg","Croqui DWG"],["fid_planilha","FID da planilha"],["observacoes","Observações"]]],
 ];
 const has=v=>!(v==null||v==='');
+const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function fichaHTML(p){
   let h='';
   for(const [nome,campos] of SEC){
     h+='<div class="sec"><div class="st">'+nome+'</div><div class="frm">';
     for(const [k,l] of campos){
-      const v=p[k]; h+='<div class="kv"><span class="k">'+l+'</span><span class="v'+(has(v)?'':' empty')+'">'+(has(v)?v:'—')+'</span></div>';
+      const v=p[k]; h+='<div class="kv"><span class="k">'+l+'</span><span class="v'+(has(v)?'':' empty')+'">'+(has(v)?esc(v):'—')+'</span></div>';
     }
     if(nome.startsWith('Características')){
       const mel=MEL.filter(([k])=>p[k]==1||p[k]==='1'||p[k]===true).map(([,l])=>l).join(', ');
@@ -324,7 +328,7 @@ const grupo=L.layerGroup().addTo(map);
 const marcadores=[]; const ativos=new Set();
 function render(){grupo.clearLayers();marcadores.forEach(m=>{if(ativos.has(m.status))grupo.addLayer(m.mk);});}
 
-fetch('dados.geojson?v=20260915-lo003').then(r=>r.json()).then(gj=>{
+fetch('dados.geojson?v=20260916-completos').then(r=>r.json()).then(gj=>{
   const feats=gj.features.filter(f=>f.geometry&&f.geometry.coordinates);
   // ordena por latitude p/ varredura
   feats.sort((a,b)=>b.geometry.coordinates[1]-a.geometry.coordinates[1]);

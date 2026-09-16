@@ -10,7 +10,7 @@ As outras imagens seguem a associação do projeto QGIS: `LO_002` usa `odm_ortho
 
 ## Classificação cadastral
 
-Os pontos públicos do mapa usam a mesma separação operacional do DWG: **Concluído** para `OCUPAÇÕES CADASTRADAS`, **A cadastrar** para `OCUPAÇÕES NÃO CADASTRADAS` e **Recusa** para a camada `RECUSA`. Os dados públicos não incluem nomes, CPF, telefone ou outros dados pessoais dos ocupantes.
+Os pontos públicos do mapa usam a mesma separação operacional do DWG: **Concluído** para `OCUPAÇÕES CADASTRADAS`, **A cadastrar** para `OCUPAÇÕES NÃO CADASTRADAS` e **Recusa** para a camada `RECUSA`. Por solicitação do responsável pelo projeto, a ficha completa dos registros **Concluído** foi publicada no mapa web, incluindo os campos pessoais existentes na base; os registros não concluídos permanecem com os dados cadastrais reduzidos.
 
 A camada privada `Croquis cadastrais` também usa a separação do DWG: verde para `OCUPAÇÕES CADASTRADAS`, laranja para `OCUPAÇÕES NÃO CADASTRADAS` e vermelho para `RECUSA`. O contorno dos croquis foi aumentado para **1,2 mm** para melhorar a leitura no QGIS e no QField.
 
