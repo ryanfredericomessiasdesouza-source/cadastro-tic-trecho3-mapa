@@ -432,10 +432,11 @@ searchInput.addEventListener('keydown',e=>{if(e.key==='Escape'){searchInput.valu
 document.addEventListener('click',e=>{if(!e.target.closest('.searchbox'))searchResults.classList.remove('show');});
 function buildSummary(feats,cont){
   const total=feats.length,done=cont['Concluído']||0,donePct=total?Math.round(done/total*100):0;
+  const areaTotal=feats.reduce((n,f)=>n+(Number(f.properties.constr_area)||0),0),perimTotal=feats.reduce((n,f)=>n+(Number(f.properties.constr_perimetro)||0),0);
   document.getElementById('summaryGrid').innerHTML='<div class="summary-card"><strong>'+total+'</strong><span>Imóveis mapeados</span></div><div class="summary-card"><strong>28</strong><span>Croquis vinculados</span></div><div class="summary-card"><strong>'+donePct+'%</strong><span>Cadastro concluído</span></div><div class="summary-card"><strong>4</strong><span>Imagens aéreas</span></div>';
   const colors={'Concluído':'#25C685','A cadastrar':'#7C84D6','Recusa':'#E34B4B'};
   document.getElementById('summaryStatusRows').innerHTML=['Concluído','A cadastrar','Recusa'].map(s=>{const n=cont[s]||0,pct=total?Math.round(n/total*100):0;return '<div class="ss-row"><span>'+s+'</span><div class="ss-bar"><i style="width:'+pct+'%;background:'+colors[s]+'"></i></div><b>'+n+'</b></div>';}).join('');
-  document.getElementById('summaryFoot').textContent='28 croquis vinculados · 4 imagens aéreas · selecione um imóvel para abrir sua ficha FC.';
+  document.getElementById('summaryFoot').textContent='28 croquis vinculados · área total: '+areaTotal.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})+' m² · perímetro total: '+perimTotal.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})+' m · selecione um imóvel para abrir sua ficha FC.';
 }
 
 fetch('dados.geojson?v=20260916-dimensoes').then(r=>r.json()).then(gj=>{
@@ -522,7 +523,7 @@ fetch('dados.geojson?v=20260916-dimensoes').then(r=>r.json()).then(gj=>{
       document.getElementById('row_'+id).classList.toggle('off',!e.target.checked);render();});},0);
   });
   // finaliza loader + anima
-  setTimeout(()=>{document.getElementById('loader').classList.add('gone');countUp();},550);
+  setTimeout(()=>{document.getElementById('loader').classList.add('gone');countUp();if(window.innerWidth>720)toggleSummary(true);},550);
 }).catch(e=>{
   document.getElementById('loader').innerHTML='<div class="lt" style="color:#ff9a5b">Erro ao carregar os dados</div>';
 });
