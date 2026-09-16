@@ -18,6 +18,8 @@ O mapa web também publica a camada vetorial `croquis.geojson`, com os **28 croq
 
 Os campos **Perímetro (m)** e **Área (m²)** dos imóveis que possuem croqui foram calculados a partir da geometria do croqui em EPSG:32723 e gravados na camada cadastral. Os valores também estão disponíveis no `dados.geojson` e no tooltip da camada web de croquis.
 
+Na seção **4. Construção e Demolição**, foi incluída a pergunta **“Pode ocorrer demolição parcial?”**, com opções **Sim** e **Não**. Quando a resposta for **Não**, o formulário QGIS/QField abre o campo **“Justificativa da não demolição parcial”**.
+
 ## Verificação
 
 | Item | Resultado |

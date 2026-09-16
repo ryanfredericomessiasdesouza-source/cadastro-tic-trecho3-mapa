@@ -366,14 +366,14 @@ const SEC=[
  ["1. Ocupante",[["selagem","Selagem"],["codigo","Código"],["cpf_cnpj","CPF/RG"],["nome","Nome do ocupante"],["telefone","Telefone"],["municipio","Município"],["endereco","Endereço"],["bairro","Bairro"]]],
  ["2. Região",[["infraestrutura_local","Infraestrutura do local"],["padrao_ocupacao","Padrão de ocupação da região"],["vias_acesso","Vias de acesso"],["localizacao_lote","Localização"],["greide","Greide"],["topografia","Topografia"],["aproveitamento_uso","Aproveitamento/Uso"],["obs_regiao","Observações"]]],
  ["3. Habitação e Serviços",[["tamanho_edificacao","Tamanho"],["tempo_residencia","Tempo de residência"],["material_paredes","Paredes"],["material_cobertura","Cobertura"],["material_piso","Piso"],["agua_canalizada","Água canalizada"],["agua_proveniente","Água proveniente"],["escoadouro","Escoadouro"],["mais_uma_familia","+1 família?"],["num_pavimentos","Pavimentos"],["pavimentos_ocupante","Pavimentos do ocupante"],["num_comodos","Nº cômodos"],["comodos_dormitorio","Dormitórios"],["num_banheiros","Banheiros"]]],
- ["4. Construção e Demolição",[["constr_descricao","Descrição"],["constr_idade","Idade"],["constr_estado","Estado de conservação"],["constr_perimetro","Perímetro (m)"],["constr_area","Área (m²)"],["tipo_edificacao","Tipo de edificação"],["faixa_dominio","Faixa de domínio"],["em_desnivel","Desnível"],["prioridade_demo","Prioridade"],["risco_impacto","Risco de impacto"]]],
+ ["4. Construção e Demolição",[["constr_descricao","Descrição"],["constr_idade","Idade"],["constr_estado","Estado de conservação"],["constr_perimetro","Perímetro (m)"],["constr_area","Área (m²)"],["tipo_edificacao","Tipo de edificação"],["faixa_dominio","Faixa de domínio"],["em_desnivel","Desnível"],["prioridade_demo","Prioridade"],["risco_impacto","Risco de impacto"],["demolicao_parcial","Pode ocorrer demolição parcial?"],["justificativa_demolicao","Justificativa da não demolição parcial"]]],
  ["5. Croqui e Fotos",[["croqui","Croqui"],["croqui_dwg","Croqui do DWG"]]],
 ];
 const has=v=>!(v==null||v==='');
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function fichaHTML(p){
   let h='';
-  const fichaFields=SEC.flatMap(([,campos])=>campos.map(([k])=>k));
+  const fichaFields=SEC.flatMap(([,campos])=>campos.map(([k])=>k)).filter(k=>k!=='justificativa_demolicao'||norm(p.demolicao_parcial)==='nao');
   const filled=fichaFields.filter(k=>has(p[k])).length, pct=Math.round(filled/fichaFields.length*100);
   const area=Number(p.constr_area),perim=Number(p.constr_perimetro);
   h+='<div class="insp-metrics"><div class="insp-metric"><b>'+(Number.isFinite(area)?area.toFixed(2)+' m²':'—')+'</b><span>Área do croqui</span></div><div class="insp-metric"><b>'+(Number.isFinite(perim)?perim.toFixed(2)+' m':'—')+'</b><span>Perímetro</span></div></div>';
@@ -381,6 +381,7 @@ function fichaHTML(p){
   for(const [nome,campos] of SEC){
     h+='<div class="sec"><div class="st">'+nome+'</div><div class="frm">';
     for(const [k,l] of campos){
+      if(k==='justificativa_demolicao'&&norm(p.demolicao_parcial)!=='nao')continue;
       const v=p[k]; h+='<div class="kv"><span class="k">'+l+'</span><span class="v'+(has(v)?'':' empty')+'">'+(has(v)?esc(v):'—')+'</span></div>';
     }
     if(nome.startsWith('Características')){

@@ -62,7 +62,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17079688,
-        "longitude": -46.89857668
+        "longitude": -46.89857668,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -126,7 +128,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16796961,
-        "longitude": -46.90046124
+        "longitude": -46.90046124,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -190,7 +194,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17074058,
-        "longitude": -46.89859096
+        "longitude": -46.89859096,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -254,7 +260,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.1682537,
-        "longitude": -46.90026283
+        "longitude": -46.90026283,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -318,7 +326,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16822827,
-        "longitude": -46.9002804
+        "longitude": -46.9002804,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -382,7 +392,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16820361,
-        "longitude": -46.90029741
+        "longitude": -46.90029741,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -446,7 +458,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16817333,
-        "longitude": -46.90031917
+        "longitude": -46.90031917,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -510,7 +524,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16813742,
-        "longitude": -46.90034434
+        "longitude": -46.90034434,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -574,7 +590,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16810259,
-        "longitude": -46.90036878
+        "longitude": -46.90036878,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -638,7 +656,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16807595,
-        "longitude": -46.90038655
+        "longitude": -46.90038655,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -702,7 +722,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16804965,
-        "longitude": -46.90040536
+        "longitude": -46.90040536,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -766,7 +788,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16802415,
-        "longitude": -46.90042335
+        "longitude": -46.90042335,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -830,7 +854,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16799693,
-        "longitude": -46.90044196
+        "longitude": -46.90044196,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -894,7 +920,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16795264,
-        "longitude": -46.90047244
+        "longitude": -46.90047244,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -958,7 +986,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16792397,
-        "longitude": -46.90049193
+        "longitude": -46.90049193,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -1022,7 +1052,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16789877,
-        "longitude": -46.90050953
+        "longitude": -46.90050953,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -1086,7 +1118,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16787462,
-        "longitude": -46.90052631
+        "longitude": -46.90052631,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -1150,7 +1184,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16784833,
-        "longitude": -46.90054516
+        "longitude": -46.90054516,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -1214,7 +1250,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16782148,
-        "longitude": -46.90055998
+        "longitude": -46.90055998,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -1278,7 +1316,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17064325,
-        "longitude": -46.89861875
+        "longitude": -46.89861875,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -1342,7 +1382,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17059053,
-        "longitude": -46.89864037
+        "longitude": -46.89864037,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -1406,7 +1448,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17052755,
-        "longitude": -46.89865864
+        "longitude": -46.89865864,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -1470,7 +1514,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17046967,
-        "longitude": -46.89869321
+        "longitude": -46.89869321,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -1534,7 +1580,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17041333,
-        "longitude": -46.89872908
+        "longitude": -46.89872908,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -1598,7 +1646,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17036093,
-        "longitude": -46.89876344
+        "longitude": -46.89876344,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -1662,7 +1712,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17032276,
-        "longitude": -46.89878865
+        "longitude": -46.89878865,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -1726,7 +1778,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.1702712,
-        "longitude": -46.89882494
+        "longitude": -46.89882494,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -1790,7 +1844,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17024701,
-        "longitude": -46.89884236
+        "longitude": -46.89884236,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -1854,7 +1910,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17021921,
-        "longitude": -46.89886226
+        "longitude": -46.89886226,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -1918,7 +1976,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17018788,
-        "longitude": -46.89888354
+        "longitude": -46.89888354,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -1982,7 +2042,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17014663,
-        "longitude": -46.89891233
+        "longitude": -46.89891233,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -2046,7 +2108,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17009472,
-        "longitude": -46.89894844
+        "longitude": -46.89894844,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -2110,7 +2174,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17006861,
-        "longitude": -46.898967
+        "longitude": -46.898967,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -2174,7 +2240,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17002807,
-        "longitude": -46.89899458
+        "longitude": -46.89899458,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -2238,7 +2306,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16997185,
-        "longitude": -46.89903455
+        "longitude": -46.89903455,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -2302,7 +2372,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.1699494,
-        "longitude": -46.89905756
+        "longitude": -46.89905756,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -2366,7 +2438,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16991747,
-        "longitude": -46.89907283
+        "longitude": -46.89907283,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -2430,7 +2504,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16989661,
-        "longitude": -46.89908723
+        "longitude": -46.89908723,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -2494,7 +2570,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16987056,
-        "longitude": -46.89910533
+        "longitude": -46.89910533,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -2558,7 +2636,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.1698218,
-        "longitude": -46.89913872
+        "longitude": -46.89913872,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -2622,7 +2702,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16979163,
-        "longitude": -46.8991597
+        "longitude": -46.8991597,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -2686,7 +2768,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16976851,
-        "longitude": -46.89917684
+        "longitude": -46.89917684,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -2750,7 +2834,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16974272,
-        "longitude": -46.89919503
+        "longitude": -46.89919503,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -2814,7 +2900,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16972158,
-        "longitude": -46.89921596
+        "longitude": -46.89921596,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -2878,7 +2966,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16968991,
-        "longitude": -46.89923317
+        "longitude": -46.89923317,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -2942,7 +3032,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16964791,
-        "longitude": -46.89926489
+        "longitude": -46.89926489,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -3006,7 +3098,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16959426,
-        "longitude": -46.89930711
+        "longitude": -46.89930711,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -3070,7 +3164,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16957704,
-        "longitude": -46.89932062
+        "longitude": -46.89932062,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -3134,7 +3230,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16954714,
-        "longitude": -46.8993443
+        "longitude": -46.8993443,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -3198,7 +3296,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16951812,
-        "longitude": -46.89936794
+        "longitude": -46.89936794,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -3262,7 +3362,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16947033,
-        "longitude": -46.89940913
+        "longitude": -46.89940913,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -3326,7 +3428,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.1694381,
-        "longitude": -46.8994476
+        "longitude": -46.8994476,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -3390,7 +3494,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16939855,
-        "longitude": -46.89947507
+        "longitude": -46.89947507,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -3454,7 +3560,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16936077,
-        "longitude": -46.89951076
+        "longitude": -46.89951076,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -3518,7 +3626,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16931422,
-        "longitude": -46.89955741
+        "longitude": -46.89955741,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -3582,7 +3692,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16927321,
-        "longitude": -46.89959653
+        "longitude": -46.89959653,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -3646,7 +3758,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.1692205,
-        "longitude": -46.89964422
+        "longitude": -46.89964422,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -3710,7 +3824,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16918266,
-        "longitude": -46.89967417
+        "longitude": -46.89967417,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -3774,7 +3890,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.1691467,
-        "longitude": -46.89969709
+        "longitude": -46.89969709,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -3838,7 +3956,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16910413,
-        "longitude": -46.89971974
+        "longitude": -46.89971974,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -3902,7 +4022,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16903402,
-        "longitude": -46.89975176
+        "longitude": -46.89975176,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -3966,7 +4088,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16901259,
-        "longitude": -46.89976106
+        "longitude": -46.89976106,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -4030,7 +4154,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16897554,
-        "longitude": -46.89977783
+        "longitude": -46.89977783,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -4094,7 +4220,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16894664,
-        "longitude": -46.89979157
+        "longitude": -46.89979157,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -4158,7 +4286,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16892085,
-        "longitude": -46.89980489
+        "longitude": -46.89980489,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -4222,7 +4352,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16889508,
-        "longitude": -46.89981869
+        "longitude": -46.89981869,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -4286,7 +4418,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16884073,
-        "longitude": -46.89985321
+        "longitude": -46.89985321,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -4350,7 +4484,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16881455,
-        "longitude": -46.89987166
+        "longitude": -46.89987166,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -4414,7 +4550,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16878948,
-        "longitude": -46.89988902
+        "longitude": -46.89988902,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -4478,7 +4616,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16876413,
-        "longitude": -46.89990679
+        "longitude": -46.89990679,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -4542,7 +4682,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16873727,
-        "longitude": -46.89992498
+        "longitude": -46.89992498,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -4606,7 +4748,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.1687085,
-        "longitude": -46.89994545
+        "longitude": -46.89994545,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -4670,7 +4814,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16867034,
-        "longitude": -46.89997194
+        "longitude": -46.89997194,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -4734,7 +4880,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16863912,
-        "longitude": -46.89999369
+        "longitude": -46.89999369,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -4798,7 +4946,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.1686144,
-        "longitude": -46.90001064
+        "longitude": -46.90001064,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -4862,7 +5012,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16858825,
-        "longitude": -46.90002919
+        "longitude": -46.90002919,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -4926,7 +5078,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16856314,
-        "longitude": -46.90004649
+        "longitude": -46.90004649,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -4990,7 +5144,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16853747,
-        "longitude": -46.90006482
+        "longitude": -46.90006482,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -5054,7 +5210,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16848864,
-        "longitude": -46.90009873
+        "longitude": -46.90009873,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -5118,7 +5276,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.1684614,
-        "longitude": -46.90011718
+        "longitude": -46.90011718,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -5182,7 +5342,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16843595,
-        "longitude": -46.90013944
+        "longitude": -46.90013944,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -5246,7 +5408,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16840877,
-        "longitude": -46.90015449
+        "longitude": -46.90015449,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -5310,7 +5474,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16838711,
-        "longitude": -46.90016935
+        "longitude": -46.90016935,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -5374,7 +5540,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16835521,
-        "longitude": -46.90019077
+        "longitude": -46.90019077,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -5438,7 +5606,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16830709,
-        "longitude": -46.90022564
+        "longitude": -46.90022564,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -5502,7 +5672,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16827594,
-        "longitude": -46.90024681
+        "longitude": -46.90024681,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -5566,7 +5738,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16999761,
-        "longitude": -46.89901702
+        "longitude": -46.89901702,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -5630,7 +5804,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.16962506,
-        "longitude": -46.89929142
+        "longitude": -46.89929142,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -5694,7 +5870,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17029574,
-        "longitude": -46.89880751
+        "longitude": -46.89880751,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -5758,7 +5936,9 @@
         "classificacao_padrao": null,
         "tipo_imovel": null,
         "latitude": -23.17011986,
-        "longitude": -46.89893054
+        "longitude": -46.89893054,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -5821,7 +6001,9 @@
         "fid_planilha": 93,
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 42.19,
-        "constr_perimetro": 29.76
+        "constr_perimetro": 29.76,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -5880,7 +6062,9 @@
         "fid_planilha": 94,
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 259.09,
-        "constr_perimetro": 71.77
+        "constr_perimetro": 71.77,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -5940,7 +6124,9 @@
         "fid_planilha": 95,
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 291.39,
-        "constr_perimetro": 75.54
+        "constr_perimetro": 75.54,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6000,7 +6186,9 @@
         "fid_planilha": 96,
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 134.44,
-        "constr_perimetro": 55.13
+        "constr_perimetro": 55.13,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6060,7 +6248,9 @@
         "fid_planilha": 97,
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 194.9,
-        "constr_perimetro": 74.27
+        "constr_perimetro": 74.27,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6120,7 +6310,9 @@
         "fid_planilha": 98,
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 271.81,
-        "constr_perimetro": 82.61
+        "constr_perimetro": 82.61,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6180,7 +6372,9 @@
         "fid_planilha": 99,
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 401.07,
-        "constr_perimetro": 96.82
+        "constr_perimetro": 96.82,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6240,7 +6434,9 @@
         "fid_planilha": 100,
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 425.91,
-        "constr_perimetro": 104.7
+        "constr_perimetro": 104.7,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6300,7 +6496,9 @@
         "fid_planilha": 101,
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 507.44,
-        "constr_perimetro": 112.11
+        "constr_perimetro": 112.11,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6360,7 +6558,9 @@
         "fid_planilha": 102,
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 567.27,
-        "constr_perimetro": 113.76
+        "constr_perimetro": 113.76,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6420,7 +6620,9 @@
         "fid_planilha": 103,
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 300.61,
-        "constr_perimetro": 69.84
+        "constr_perimetro": 69.84,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6444,7 +6646,9 @@
         "latitude": -23.10391703382205,
         "longitude": -46.941573637689615,
         "constr_area": 231.91,
-        "constr_perimetro": 60.97
+        "constr_perimetro": 60.97,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6519,7 +6723,9 @@
         "fid_planilha": 106,
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 247.31,
-        "constr_perimetro": 64.08
+        "constr_perimetro": 64.08,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6543,7 +6749,9 @@
         "latitude": -22.96830491171823,
         "longitude": -46.993755100259676,
         "constr_area": 186.79,
-        "constr_perimetro": 54.72
+        "constr_perimetro": 54.72,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6567,7 +6775,9 @@
         "latitude": -22.968184212304607,
         "longitude": -46.99379178232968,
         "constr_area": 288.04,
-        "constr_perimetro": 70.38
+        "constr_perimetro": 70.38,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6644,7 +6854,9 @@
         "fid_planilha": 109,
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 460.94,
-        "constr_perimetro": 88.76
+        "constr_perimetro": 88.76,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6673,7 +6885,9 @@
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4C5C",
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 144.85,
-        "constr_perimetro": 54.71
+        "constr_perimetro": 54.71,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6696,7 +6910,9 @@
         "latitude": -23.094037845855148,
         "longitude": -46.94753419316584,
         "constr_area": 115.74,
-        "constr_perimetro": 44.9
+        "constr_perimetro": 44.9,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6719,7 +6935,9 @@
         "latitude": -23.09379570009951,
         "longitude": -46.947498148841866,
         "constr_area": 121.04,
-        "constr_perimetro": 54.62
+        "constr_perimetro": 54.62,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6747,7 +6965,9 @@
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4E55",
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 268.3,
-        "constr_perimetro": 79.33
+        "constr_perimetro": 79.33,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6775,7 +6995,9 @@
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4E52",
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 234.61,
-        "constr_perimetro": 72.84
+        "constr_perimetro": 72.84,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6803,7 +7025,9 @@
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4E51",
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 187.48,
-        "constr_perimetro": 73.62
+        "constr_perimetro": 73.62,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6831,7 +7055,9 @@
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4E50",
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 175.4,
-        "constr_perimetro": 79.79
+        "constr_perimetro": 79.79,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6859,7 +7085,9 @@
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4ECF",
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 55.91,
-        "constr_perimetro": 29.65
+        "constr_perimetro": 29.65,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6882,7 +7110,9 @@
         "latitude": -23.093313338352154,
         "longitude": -46.947879073865856,
         "constr_area": 1055.45,
-        "constr_perimetro": 170.01
+        "constr_perimetro": 170.01,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6905,7 +7135,9 @@
         "latitude": -23.093147773627667,
         "longitude": -46.947734703458195,
         "constr_area": 89.37,
-        "constr_perimetro": 51.13
+        "constr_perimetro": 51.13,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6933,7 +7165,9 @@
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4E55",
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 268.3,
-        "constr_perimetro": 79.33
+        "constr_perimetro": 79.33,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
@@ -6961,7 +7195,9 @@
         "croqui_dwg": "ProjetoTICGeral15-09-26.dwg#4E55",
         "status_dwg": "OCUPAÇÕES CADASTRADAS",
         "constr_area": 268.3,
-        "constr_perimetro": 79.33
+        "constr_perimetro": 79.33,
+        "demolicao_parcial": null,
+        "justificativa_demolicao": null
       },
       "geometry": {
         "type": "Point",
