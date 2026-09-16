@@ -86,6 +86,9 @@
   .capbar{display:flex;flex-wrap:wrap;gap:5px;padding:8px 12px 12px}
   .cap{font-size:10px;color:var(--text);background:rgba(255,112,33,.13);border:1px solid rgba(255,112,33,.35);
     padding:3px 8px;border-radius:20px}
+  .croqui-legend{display:flex;flex-wrap:wrap;gap:5px 8px;padding:0 8px 8px 28px}
+  .cleg{display:inline-flex;align-items:center;gap:4px;font-size:9px;color:var(--muted)}
+  .cleg i{display:block;width:14px;height:4px;border-radius:3px}
 
   /* ---------- INSPECTOR (ficha) ---------- */
   .inspector{position:absolute;z-index:20;top:0;right:0;height:100%;width:360px;max-width:88vw;
@@ -252,6 +255,27 @@ FAIXA.forEach(cfg=>{
   }).catch(()=>{});
 });
 
+// ---- croquis dos imóveis, separados pelas classes do DWG ----
+const CROQUI_STYLE={
+  'OCUPAÇÕES CADASTRADAS':{cor:'#25C685',fill:'#25C685'},
+  'OCUPAÇÕES NÃO CADASTRADAS':{cor:'#F5A623',fill:'#F5A623'},
+  'RECUSA':{cor:'#E34B4B',fill:'#E34B4B'}
+};
+fetch('croquis.geojson?v=20260916-croquis').then(r=>r.json()).then(gj=>{
+  const croquiLayer=L.geoJSON(gj,{
+    style:f=>{const s=CROQUI_STYLE[f.properties.classificacao_dwg]||CROQUI_STYLE['OCUPAÇÕES NÃO CADASTRADAS'];return {color:s.cor,weight:4,opacity:.98,fillColor:s.fill,fillOpacity:.10};},
+    onEachFeature:(f,l)=>{const p=f.properties;l.bindTooltip(String(p.codigo||'Croqui'),{sticky:true,opacity:.92});}
+  }).addTo(map);
+  document.getElementById('layerlist').insertAdjacentHTML('beforeend',
+    '<label class="frow" id="row_croquis"><input type="checkbox" id="lyr_croquis" checked>'+
+    '<span class="chip" style="background:#25C685"></span><span class="nm">Croquis dos imóveis</span><span class="ct">'+gj.features.length+'</span></label>'+
+    '<div class="croqui-legend"><span class="cleg"><i style="background:#25C685"></i>Cadastradas</span><span class="cleg"><i style="background:#F5A623"></i>Não cadastradas</span><span class="cleg"><i style="background:#E34B4B"></i>Recusa</span></div>');
+  document.getElementById('lyr_croquis').addEventListener('change',e=>{
+    e.target.checked?croquiLayer.addTo(map):map.removeLayer(croquiLayer);
+    document.getElementById('row_croquis').classList.toggle('off',!e.target.checked);
+  });
+}).catch(()=>{});
+
 function hexA(h,a){const n=parseInt(h.slice(1),16);return 'rgba('+(n>>16&255)+','+(n>>8&255)+','+(n&255)+','+a+')';}
 // marcos quilométricos (referência)
 fetch('marcos_km.geojson').then(r=>r.json()).then(gj=>{
@@ -277,14 +301,11 @@ function icone(cor,i){
 // ---- formulario (secoes iguais ao QGIS) ----
 const MEL=[["mel_calcada","Calçada"],["mel_iluminacao","Iluminação"],["mel_coleta_lixo","Coleta de lixo"],["mel_internet","Internet"],["mel_esgoto","Esgoto"],["mel_luz","Luz domiciliar"],["mel_fossa","Fossa"],["mel_pavimentacao","Pavimentação"],["mel_gas","Gás"],["mel_telefone","Telefone"]];
 const SEC=[
- ["Ocupante",[["selagem","Selagem"],["nome","Nome"],["cpf_cnpj","CPF/CNPJ"],["rg_ie","RG/IE"],["estado_civil","Estado civil"],["profissao","Profissão"],["telefone","Telefone"],["email","E-mail"],["percentual_titularidade","Titularidade (%)"],["tipo_vinculo","Tipo de vínculo"],["municipio","Município"],["bairro","Bairro"],["endereco","Endereço"],["matricula","Matrícula"]]],
- ["Documentação rural",[["doc_r_matricula","Matrícula"],["doc_r_ccir","CCIR"],["doc_r_cib_cafir","CIB/CAFIR"],["doc_r_itr","ITR"],["doc_r_cert_fiscal","Certidão fiscal"],["doc_r_car","CAR"],["doc_r_planta_memorial","Planta/memorial"],["doc_r_sigef","SIGEF"],["doc_r_rg_cpf","RG/CPF"],["doc_r_cert_estado_civil","Certidão estado civil"]]],
- ["Documentação urbana",[["doc_u_matricula","Matrícula"],["doc_u_iptu","IPTU"],["doc_u_inscricao_imob","Inscrição imobiliária"],["doc_u_cnd_municipal","CND municipal"],["doc_u_planta","Planta"],["doc_u_habite_se","Habite-se"],["doc_u_regularidade_construcao","Regularidade da construção"],["doc_u_convencao_condominio","Convenção de condomínio"],["doc_u_servidoes_faixa","Servidões/faixa"],["doc_u_rg_cpf_estado_civil","RG/CPF/estado civil"],["doc_u_pj_contrato_social","Contrato social"]]],
- ["Características da região",[["zona","Zona"],["infraestrutura_local","Infraestrutura"],["padrao_ocupacao","Padrão de ocupação"],["vias_acesso","Vias de acesso"],["localizacao_lote","Localização"],["greide","Greide"],["topografia","Topografia"],["aproveitamento_uso","Aproveitamento/Uso"],["obs_regiao","Observações da região"]]],
- ["Habitação e serviços",[["tamanho_edificacao","Tamanho"],["tempo_residencia","Tempo de residência"],["material_paredes","Paredes"],["material_cobertura","Cobertura"],["material_piso","Piso"],["agua_canalizada","Água canalizada"],["agua_proveniente","Água proveniente"],["escoadouro","Escoadouro"],["mais_uma_familia","+1 família?"],["num_pavimentos","Pavimentos"],["pavimentos_ocupante","Pavimentos do ocupante"],["num_comodos","Nº cômodos"],["comodos_dormitorio","Dormitórios"],["num_banheiros","Banheiros"],["com_quartos","Quartos"],["com_salas","Salas"],["com_cozinhas","Cozinhas"],["com_banheiros","Banheiros"],["com_area_servico","Área de serviço"],["com_garagem","Garagem"],["com_varanda","Varanda"],["com_outros","Outros cômodos"],["com_outros_desc","Descrição dos outros cômodos"]]],
- ["Construção e demolição",[["constr_descricao","Descrição"],["constr_idade","Idade"],["constr_estado","Estado conserv."],["constr_area","Área (m²)"],["constr_perimetro","Perímetro (m)"],["tipo_edificacao","Tipo edificação"],["faixa_dominio","Faixa de domínio"],["em_desnivel","Desnível"],["prioridade_demo","Prioridade"],["risco_impacto","Risco impacto"]]],
- ["Classificação",[["tipo_imovel","Tipo imóvel"],["classificacao_padrao","Padrão (A–H)"],["area_total","Área total (m²)"]]],
- ["Registro e origem",[["situacao","Situação"],["status_dwg","Classificação do DWG"],["km","KM"],["croqui","Croqui"],["croqui_dwg","Croqui DWG"],["fid_planilha","FID da planilha"],["observacoes","Observações"]]],
+ ["1. Ocupante",[["selagem","Selagem"],["codigo","Código"],["cpf_cnpj","CPF/RG"],["nome","Nome do ocupante"],["telefone","Telefone"],["municipio","Município"],["endereco","Endereço"],["bairro","Bairro"]]],
+ ["2. Região",[["infraestrutura_local","Infraestrutura do local"],["padrao_ocupacao","Padrão de ocupação da região"],["vias_acesso","Vias de acesso"],["localizacao_lote","Localização"],["greide","Greide"],["topografia","Topografia"],["aproveitamento_uso","Aproveitamento/Uso"],["obs_regiao","Observações"]]],
+ ["3. Habitação e Serviços",[["tamanho_edificacao","Tamanho"],["tempo_residencia","Tempo de residência"],["material_paredes","Paredes"],["material_cobertura","Cobertura"],["material_piso","Piso"],["agua_canalizada","Água canalizada"],["agua_proveniente","Água proveniente"],["escoadouro","Escoadouro"],["mais_uma_familia","+1 família?"],["num_pavimentos","Pavimentos"],["pavimentos_ocupante","Pavimentos do ocupante"],["num_comodos","Nº cômodos"],["comodos_dormitorio","Dormitórios"],["num_banheiros","Banheiros"]]],
+ ["4. Construção e Demolição",[["constr_descricao","Descrição"],["constr_idade","Idade"],["constr_estado","Estado de conservação"],["constr_perimetro","Perímetro (m)"],["constr_area","Área construída (m²)"],["tipo_edificacao","Tipo de edificação"],["faixa_dominio","Faixa de domínio"],["em_desnivel","Desnível"],["prioridade_demo","Prioridade"],["risco_impacto","Risco de impacto"]]],
+ ["5. Croqui e Fotos",[["croqui","Croqui"],["croqui_dwg","Croqui do DWG"]]],
 ];
 const has=v=>!(v==null||v==='');
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

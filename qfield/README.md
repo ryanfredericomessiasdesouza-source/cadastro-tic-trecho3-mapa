@@ -14,6 +14,8 @@ Os pontos públicos do mapa usam a mesma separação operacional do DWG: **Concl
 
 A camada privada `Croquis cadastrais` também usa a separação do DWG: verde para `OCUPAÇÕES CADASTRADAS`, laranja para `OCUPAÇÕES NÃO CADASTRADAS` e vermelho para `RECUSA`. O contorno dos croquis foi aumentado para **1,2 mm** para melhorar a leitura no QGIS e no QField.
 
+O mapa web também publica a camada vetorial `croquis.geojson`, com os **28 croquis** do GeoPackage, separados por cor conforme a classe do DWG e com contorno espesso para leitura sobre a imagem aérea. A ficha aberta ao clicar em um ponto segue a ordem do formulário QGIS/modelo FC: `1. Ocupante`, `2. Região`, `3. Habitação e Serviços`, `4. Construção e Demolição` e `5. Croqui e Fotos`. O campo utilizado para a classificação construtiva é **Estado de conservação**, conforme a planilha cadastral.
+
 ## Verificação
 
 | Item | Resultado |
