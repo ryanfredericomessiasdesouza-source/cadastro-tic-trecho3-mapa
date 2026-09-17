@@ -6,7 +6,7 @@ O projeto QGIS/QField agora usa um único formulário por imóvel, com dois bloc
 
 ### 1. Cadastro de Imóvel
 
-- **Identificação do imóvel:** FC TBG Nova, FC Nº Antiga, Código TIC, Selagem, Ocupação, número, tipo, classificação, status, situação, trecho, KM e referências de DWG.
+- **Identificação do imóvel:** Código TIC, Selagem, Ocupação, número, tipo, classificação, status, situação, trecho, KM e referências de DWG.
 - **Localização e endereço:** UF, município, bairro, nome da propriedade, endereço, número, CEP, zona e coordenadas.
 - **Registro e documentação:** matrícula, cartório, livro de registro, RGI, área e documentos rurais/urbanos.
 - **Região — características e melhoramentos:** infraestrutura local, padrão de ocupação, vias de acesso, localização do lote, greide, topografia, aproveitamento/uso e melhoramentos urbanos.
@@ -26,7 +26,7 @@ O projeto QGIS/QField agora usa um único formulário por imóvel, com dois bloc
 
 Foram adicionados ao arquivo `cadastro_trecho3.gpkg`, na camada `cadastro_trecho3`, os campos identificados nas telas enviadas que não existiam na estrutura anterior:
 
-`fc_tbg_nova`, `fc_n_antiga`, `uf_imovel`, `numero_imovel`, `km_inicial`, `km_final`, `nome_propriedade`, `cep_imovel`, `numero_endereco`, `cartorio`, `livro_registro`, `numero_rgi`, `trecho`, `tipo_proprietario`, `origem_proprietario`, `data_nascimento`, `sexo`, `cep_proprietario`, `endereco_proprietario`, `numero_proprietario`, `complemento_proprietario`, `uf_proprietario` e `municipio_proprietario`.
+`uf_imovel`, `numero_imovel`, `km_inicial`, `km_final`, `nome_propriedade`, `proprietarios`, `cep_imovel`, `numero_endereco`, `cartorio`, `livro_registro`, `numero_rgi`, `trecho`, `tipo_proprietario`, `origem_proprietario`, `data_nascimento`, `sexo`, `cep_proprietario`, `endereco_proprietario`, `numero_proprietario`, `complemento_proprietario`, `uf_proprietario` e `municipio_proprietario`.
 
 Os campos foram criados vazios para preenchimento. Nenhum valor cadastral existente foi apagado ou sobrescrito.
 
