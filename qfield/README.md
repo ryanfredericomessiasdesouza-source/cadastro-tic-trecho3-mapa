@@ -24,6 +24,10 @@ Os campos **Perímetro (m)** e **Área (m²)** dos imóveis que possuem croqui f
 
 Na seção **4. Construção e Demolição**, foi incluída a pergunta **“Pode ocorrer demolição parcial?”**, com opções **Sim** e **Não**. Quando a resposta for **Não**, o formulário QGIS/QField abre o campo **“Justificativa da não demolição parcial”**.
 
+## Formulário fotográfico
+
+O formulário de coleta não exibe mais o campo visual de Croqui. Ele termina com a relação **5. Relatório fotográfico** e, depois das fotos, com **6. Observação final**. A relação de fotos é 1:N: o cadastrador pode adicionar várias imagens do mesmo imóvel ou cômodo, e cada imagem possui sua própria **Descrição da foto / local**. O passo a passo está em [`INSTRUCOES_FORMULARIO_FOTOGRAFICO.md`](INSTRUCOES_FORMULARIO_FOTOGRAFICO.md).
+
 ## Verificação
 
 | Item | Resultado |
