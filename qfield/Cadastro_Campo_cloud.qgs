@@ -651,13 +651,18 @@
             </config>
           </editWidget>
         </field>
-        <field name="municipio" configurationFlags="NoFlag">
-          <editWidget type="TextEdit">
+                <field name="municipio" configurationFlags="NoFlag">
+          <editWidget type="ValueMap">
             <config>
-              <Option/>
+              <Option type="Map"><Option name="map" type="List">
+              <Option type="Map"><Option name="Jundiaí" type="QString" value="Jundiaí"/></Option>
+              <Option type="Map"><Option name="Louveira" type="QString" value="Louveira"/></Option>
+              <Option type="Map"><Option name="Valinhos" type="QString" value="Valinhos"/></Option>
+              </Option></Option>
             </config>
           </editWidget>
         </field>
+
         <field name="zona" configurationFlags="NoFlag">
           <editWidget type="TextEdit">
             <config>
@@ -700,13 +705,19 @@
             </config>
           </editWidget>
         </field>
-        <field name="status" configurationFlags="NoFlag">
-          <editWidget type="TextEdit">
+                <field name="status" configurationFlags="NoFlag">
+          <editWidget type="ValueMap">
             <config>
-              <Option/>
+              <Option type="Map"><Option name="map" type="List">
+              <Option type="Map"><Option name="A cadastrar" type="QString" value="A cadastrar"/></Option>
+              <Option type="Map"><Option name="Concluído" type="QString" value="Concluído"/></Option>
+              <Option type="Map"><Option name="Não iniciado" type="QString" value="Não iniciado"/></Option>
+              <Option type="Map"><Option name="Recusa" type="QString" value="Recusa"/></Option>
+              </Option></Option>
             </config>
           </editWidget>
         </field>
+
         <field name="situacao" configurationFlags="NoFlag">
           <editWidget type="TextEdit">
             <config>
@@ -1764,7 +1775,42 @@
         </field>
               <field name="fc_tbg_nova" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
         <field name="fc_n_antiga" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
-        <field name="uf_imovel" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+                <field name="uf_imovel" configurationFlags="NoFlag">
+          <editWidget type="ValueMap">
+            <config>
+              <Option type="Map"><Option name="map" type="List">
+              <Option type="Map"><Option name="AC" type="QString" value="AC"/></Option>
+              <Option type="Map"><Option name="AL" type="QString" value="AL"/></Option>
+              <Option type="Map"><Option name="AP" type="QString" value="AP"/></Option>
+              <Option type="Map"><Option name="AM" type="QString" value="AM"/></Option>
+              <Option type="Map"><Option name="BA" type="QString" value="BA"/></Option>
+              <Option type="Map"><Option name="CE" type="QString" value="CE"/></Option>
+              <Option type="Map"><Option name="DF" type="QString" value="DF"/></Option>
+              <Option type="Map"><Option name="ES" type="QString" value="ES"/></Option>
+              <Option type="Map"><Option name="GO" type="QString" value="GO"/></Option>
+              <Option type="Map"><Option name="MA" type="QString" value="MA"/></Option>
+              <Option type="Map"><Option name="MT" type="QString" value="MT"/></Option>
+              <Option type="Map"><Option name="MS" type="QString" value="MS"/></Option>
+              <Option type="Map"><Option name="MG" type="QString" value="MG"/></Option>
+              <Option type="Map"><Option name="PA" type="QString" value="PA"/></Option>
+              <Option type="Map"><Option name="PB" type="QString" value="PB"/></Option>
+              <Option type="Map"><Option name="PR" type="QString" value="PR"/></Option>
+              <Option type="Map"><Option name="PE" type="QString" value="PE"/></Option>
+              <Option type="Map"><Option name="PI" type="QString" value="PI"/></Option>
+              <Option type="Map"><Option name="RJ" type="QString" value="RJ"/></Option>
+              <Option type="Map"><Option name="RN" type="QString" value="RN"/></Option>
+              <Option type="Map"><Option name="RS" type="QString" value="RS"/></Option>
+              <Option type="Map"><Option name="RO" type="QString" value="RO"/></Option>
+              <Option type="Map"><Option name="RR" type="QString" value="RR"/></Option>
+              <Option type="Map"><Option name="SC" type="QString" value="SC"/></Option>
+              <Option type="Map"><Option name="SP" type="QString" value="SP"/></Option>
+              <Option type="Map"><Option name="SE" type="QString" value="SE"/></Option>
+              <Option type="Map"><Option name="TO" type="QString" value="TO"/></Option>
+              </Option></Option>
+            </config>
+          </editWidget>
+        </field>
+
         <field name="numero_imovel" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
         <field name="km_inicial" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
         <field name="km_final" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
@@ -1775,16 +1821,75 @@
         <field name="livro_registro" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
         <field name="numero_rgi" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
         <field name="trecho" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
-        <field name="tipo_proprietario" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+                <field name="tipo_proprietario" configurationFlags="NoFlag">
+          <editWidget type="ValueMap">
+            <config>
+              <Option type="Map"><Option name="map" type="List">
+              <Option type="Map"><Option name="Pessoa Física" type="QString" value="Pessoa Física"/></Option>
+              <Option type="Map"><Option name="Pessoa Jurídica" type="QString" value="Pessoa Jurídica"/></Option>
+              <Option type="Map"><Option name="Outro" type="QString" value="Outro"/></Option>
+              </Option></Option>
+            </config>
+          </editWidget>
+        </field>
+
         <field name="origem_proprietario" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
         <field name="data_nascimento" configurationFlags="NoFlag"><editWidget type="DateTime"><config><Option/></config></editWidget></field>
-        <field name="sexo" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+                <field name="sexo" configurationFlags="NoFlag">
+          <editWidget type="ValueMap">
+            <config>
+              <Option type="Map"><Option name="map" type="List">
+              <Option type="Map"><Option name="Feminino" type="QString" value="Feminino"/></Option>
+              <Option type="Map"><Option name="Masculino" type="QString" value="Masculino"/></Option>
+              <Option type="Map"><Option name="Outro" type="QString" value="Outro"/></Option>
+              <Option type="Map"><Option name="Não informado" type="QString" value="Não informado"/></Option>
+              </Option></Option>
+            </config>
+          </editWidget>
+        </field>
+
         <field name="cep_proprietario" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
         <field name="endereco_proprietario" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
         <field name="numero_proprietario" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
         <field name="complemento_proprietario" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
-        <field name="uf_proprietario" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+                <field name="uf_proprietario" configurationFlags="NoFlag">
+          <editWidget type="ValueMap">
+            <config>
+              <Option type="Map"><Option name="map" type="List">
+              <Option type="Map"><Option name="AC" type="QString" value="AC"/></Option>
+              <Option type="Map"><Option name="AL" type="QString" value="AL"/></Option>
+              <Option type="Map"><Option name="AP" type="QString" value="AP"/></Option>
+              <Option type="Map"><Option name="AM" type="QString" value="AM"/></Option>
+              <Option type="Map"><Option name="BA" type="QString" value="BA"/></Option>
+              <Option type="Map"><Option name="CE" type="QString" value="CE"/></Option>
+              <Option type="Map"><Option name="DF" type="QString" value="DF"/></Option>
+              <Option type="Map"><Option name="ES" type="QString" value="ES"/></Option>
+              <Option type="Map"><Option name="GO" type="QString" value="GO"/></Option>
+              <Option type="Map"><Option name="MA" type="QString" value="MA"/></Option>
+              <Option type="Map"><Option name="MT" type="QString" value="MT"/></Option>
+              <Option type="Map"><Option name="MS" type="QString" value="MS"/></Option>
+              <Option type="Map"><Option name="MG" type="QString" value="MG"/></Option>
+              <Option type="Map"><Option name="PA" type="QString" value="PA"/></Option>
+              <Option type="Map"><Option name="PB" type="QString" value="PB"/></Option>
+              <Option type="Map"><Option name="PR" type="QString" value="PR"/></Option>
+              <Option type="Map"><Option name="PE" type="QString" value="PE"/></Option>
+              <Option type="Map"><Option name="PI" type="QString" value="PI"/></Option>
+              <Option type="Map"><Option name="RJ" type="QString" value="RJ"/></Option>
+              <Option type="Map"><Option name="RN" type="QString" value="RN"/></Option>
+              <Option type="Map"><Option name="RS" type="QString" value="RS"/></Option>
+              <Option type="Map"><Option name="RO" type="QString" value="RO"/></Option>
+              <Option type="Map"><Option name="RR" type="QString" value="RR"/></Option>
+              <Option type="Map"><Option name="SC" type="QString" value="SC"/></Option>
+              <Option type="Map"><Option name="SP" type="QString" value="SP"/></Option>
+              <Option type="Map"><Option name="SE" type="QString" value="SE"/></Option>
+              <Option type="Map"><Option name="TO" type="QString" value="TO"/></Option>
+              </Option></Option>
+            </config>
+          </editWidget>
+        </field>
+
         <field name="municipio_proprietario" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="proprietarios" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
 </fieldConfiguration>
       <aliases>
         <alias field="fid" index="0" name=""/>
@@ -1914,6 +2019,7 @@
         <alias field="complemento_proprietario" index="128" name="Complemento"/>
         <alias field="uf_proprietario" index="129" name="UF"/>
         <alias field="municipio_proprietario" index="130" name="Município"/>
+        <alias field="proprietarios" index="131" name="Proprietários"/>
 </aliases>
       <splitPolicies>
         <policy field="fid" policy="Duplicate"/>
@@ -2242,6 +2348,7 @@
         <default field="complemento_proprietario" applyOnUpdate="0" expression=""/>
         <default field="uf_proprietario" applyOnUpdate="0" expression=""/>
         <default field="municipio_proprietario" applyOnUpdate="0" expression=""/>
+        <default field="proprietarios" applyOnUpdate="0" expression=""/>
 </defaults>
       <constraints>
         <constraint field="fid" constraints="3" exp_strength="0" notnull_strength="1" unique_strength="1"/>
@@ -2368,6 +2475,7 @@
         <constraint field="complemento_proprietario" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
         <constraint field="uf_proprietario" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
         <constraint field="municipio_proprietario" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="proprietarios" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
 </constraints>
       <constraintExpressions>
         <constraint field="fid" exp="" desc=""/>
@@ -2492,6 +2600,7 @@
         <constraint field="complemento_proprietario" exp="" desc=""/>
         <constraint field="uf_proprietario" exp="" desc=""/>
         <constraint field="municipio_proprietario" exp="" desc=""/>
+        <constraint field="proprietarios" exp="" desc=""/>
 </constraintExpressions>
       <expressionfields/>
       <attributeactions>
@@ -2622,6 +2731,7 @@
           <column name="complemento_proprietario" type="field" hidden="0" width="-1"/>
           <column name="uf_proprietario" type="field" hidden="0" width="-1"/>
           <column name="municipio_proprietario" type="field" hidden="0" width="-1"/>
+          <column name="proprietarios" type="field" hidden="0" width="-1"/>
 </columns>
       </attributetableconfig>
       <conditionalstyles>
@@ -2669,6 +2779,7 @@ def my_form_open(diálogo, camada, feição):
           <attributeEditorField index="102" name="km" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="112" name="km_inicial" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="113" name="km_final" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="131" name="proprietarios" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="104" name="fid_planilha" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="105" name="status_dwg" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
         </attributeEditorContainer>
@@ -2940,6 +3051,7 @@ def my_form_open(diálogo, camada, feição):
         <field editable="1" name="complemento_proprietario"/>
         <field editable="1" name="uf_proprietario"/>
         <field editable="1" name="municipio_proprietario"/>
+        <field editable="1" name="proprietarios"/>
 </editable>
       <labelOnTop>
         <field labelOnTop="0" name="agua_canalizada"/>
@@ -3066,6 +3178,7 @@ def my_form_open(diálogo, camada, feição):
         <field labelOnTop="0" name="complemento_proprietario"/>
         <field labelOnTop="0" name="uf_proprietario"/>
         <field labelOnTop="0" name="municipio_proprietario"/>
+        <field labelOnTop="0" name="proprietarios"/>
 </labelOnTop>
       <reuseLastValue>
         <field reuseLastValue="0" name="agua_canalizada"/>
@@ -3192,6 +3305,7 @@ def my_form_open(diálogo, camada, feição):
         <field reuseLastValue="0" name="complemento_proprietario"/>
         <field reuseLastValue="0" name="uf_proprietario"/>
         <field reuseLastValue="0" name="municipio_proprietario"/>
+        <field reuseLastValue="0" name="proprietarios"/>
 </reuseLastValue>
       <dataDefinedFieldProperties/>
       <widgets/>

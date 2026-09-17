@@ -52,3 +52,17 @@ A cópia de segurança da base anterior é `cadastro_trecho3.pre_formulario_unic
 ## Observação sobre proprietários múltiplos
 
 Esta atualização cria o bloco de Proprietário dentro do formulário único, preservando a estrutura atual de um registro cadastral. Os campos de proprietário continuam na camada principal. Caso um imóvel possa ter vários proprietários independentes, a evolução recomendada é criar uma tabela filha `proprietarios` e uma relação 1:N; essa alteração não foi feita automaticamente nesta etapa para não modificar os vínculos existentes.
+
+## Planilha com opções de preenchimento
+
+A planilha `Cadastro_TIC_Formulario_Unico_Subdivisoes.xlsx` possui as seguintes abas:
+
+- **Formulário único:** sequência geral da ficha;
+- **Listas de opções:** uma linha para cada alternativa configurada nos campos selecionáveis;
+- **Cadastro Imóvel:** campos do bloco do imóvel;
+- **Cadastro Proprietário:** campos do bloco do proprietário;
+- **Base QGIS atual:** dados atuais da camada cadastral para conferência.
+
+Nas abas **Cadastro Imóvel** e **Cadastro Proprietário**, a coluna **Opções de preenchimento** apresenta as alternativas esperadas e a coluna **Valor / preenchimento** deve receber o valor escolhido pelo cadastrador. A última coluna é destacada em amarelo. Quando há lista configurada, a célula apresenta menu de seleção.
+
+As opções foram transcritas do QGS atual. Os campos dos prints que aparecem como seleção, mas não possuem uma lista oficial no projeto — especialmente **Tipo**, **Cartório** e **Proprietários** — estão indicados na planilha para definição da equipe. O campo **Proprietários** foi adicionado à camada cadastral como texto provisório; para seleção por busca será necessário cadastrar uma tabela oficial de proprietários e configurar uma relação.
