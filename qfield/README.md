@@ -38,3 +38,7 @@ O formulário de coleta não exibe mais o campo visual de Croqui. Ele termina co
 | Sistema de referência | EPSG:32723 |
 | Transparência | Máscara interna para remover a borda preta |
 | Tamanho publicado | Aproximadamente 24 MB |
+
+## Formulário único com subdivisões
+
+O formulário QGIS foi reorganizado em uma única ficha com os blocos **Cadastro de Imóvel** e **Cadastro de Proprietário**. As subdivisões incluem identificação, localização/endereço, registro/documentação, região, habitação e serviços, construção/demolição, relatório fotográfico, observação final, identificação do proprietário, endereço, vínculo/contato e documentos. Os campos novos das telas estão documentados em [`INSTRUCOES_FORMULARIO_UNICO.md`](INSTRUCOES_FORMULARIO_UNICO.md).

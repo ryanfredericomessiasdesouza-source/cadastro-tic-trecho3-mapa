@@ -1762,20 +1762,43 @@
             </config>
           </editWidget>
         </field>
-      </fieldConfiguration>
+              <field name="fc_tbg_nova" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="fc_n_antiga" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="uf_imovel" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="numero_imovel" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="km_inicial" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="km_final" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="nome_propriedade" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="cep_imovel" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="numero_endereco" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="cartorio" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="livro_registro" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="numero_rgi" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="trecho" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="tipo_proprietario" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="origem_proprietario" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="data_nascimento" configurationFlags="NoFlag"><editWidget type="DateTime"><config><Option/></config></editWidget></field>
+        <field name="sexo" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="cep_proprietario" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="endereco_proprietario" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="numero_proprietario" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="complemento_proprietario" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="uf_proprietario" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+        <field name="municipio_proprietario" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
+</fieldConfiguration>
       <aliases>
         <alias field="fid" index="0" name=""/>
         <alias field="codigo" index="1" name="Ocupação"/>
-        <alias field="tipo_imovel" index="2" name=""/>
+        <alias field="tipo_imovel" index="2" name="Tipo"/>
         <alias field="municipio" index="3" name="Município"/>
         <alias field="zona" index="4" name=""/>
         <alias field="endereco" index="5" name="Endereço"/>
-        <alias field="matricula" index="6" name=""/>
+        <alias field="matricula" index="6" name="Matrícula"/>
         <alias field="latitude" index="7" name=""/>
         <alias field="longitude" index="8" name=""/>
-        <alias field="area_total" index="9" name=""/>
-        <alias field="status" index="10" name=""/>
-        <alias field="situacao" index="11" name=""/>
+        <alias field="area_total" index="9" name="Área total"/>
+        <alias field="status" index="10" name="Status"/>
+        <alias field="situacao" index="11" name="Situação"/>
         <alias field="observacoes" index="12" name="Observação final"/>
         <alias field="doc_r_matricula" index="13" name=""/>
         <alias field="doc_r_ccir" index="14" name=""/>
@@ -1798,15 +1821,15 @@
         <alias field="doc_u_servidoes_faixa" index="31" name=""/>
         <alias field="doc_u_rg_cpf_estado_civil" index="32" name=""/>
         <alias field="doc_u_pj_contrato_social" index="33" name=""/>
-        <alias field="nome" index="34" name="Nome do ocupante"/>
-        <alias field="cpf_cnpj" index="35" name="CPF/RG"/>
-        <alias field="rg_ie" index="36" name=""/>
-        <alias field="estado_civil" index="37" name=""/>
-        <alias field="profissao" index="38" name=""/>
+        <alias field="nome" index="34" name="Nome"/>
+        <alias field="cpf_cnpj" index="35" name="CPF/CNPJ"/>
+        <alias field="rg_ie" index="36" name="RG/IE"/>
+        <alias field="estado_civil" index="37" name="Estado civil"/>
+        <alias field="profissao" index="38" name="Profissão"/>
         <alias field="telefone" index="39" name="Telefone"/>
-        <alias field="email" index="40" name=""/>
-        <alias field="percentual_titularidade" index="41" name=""/>
-        <alias field="tipo_vinculo" index="42" name=""/>
+        <alias field="email" index="40" name="E-mail"/>
+        <alias field="percentual_titularidade" index="41" name="% de titularidade"/>
+        <alias field="tipo_vinculo" index="42" name="Tipo de vínculo"/>
         <alias field="idade_aparente" index="43" name=""/>
         <alias field="vida_util" index="44" name=""/>
         <alias field="com_quartos" index="45" name=""/>
@@ -1864,11 +1887,34 @@
         <alias field="mel_gas" index="97" name="Gás"/>
         <alias field="mel_telefone" index="98" name="Telefone"/>
         <alias field="selagem" index="99" name="Selagem"/>
-        <alias field="codigo_tic" index="100" name="Ocupante"/>
+        <alias field="codigo_tic" index="100" name="Código TIC"/>
         <alias field="status_dwg" index="103" name="Classificação DWG"/>
         <alias field="demolicao_parcial" index="104" name="Pode ocorrer demolição parcial?"/>
         <alias field="justificativa_demolicao" index="105" name="Justificativa da não demolição parcial"/>
-      </aliases>
+              <alias field="fc_tbg_nova" index="108" name="FC TBG Nova"/>
+        <alias field="fc_n_antiga" index="109" name="FC Nº Antiga"/>
+        <alias field="uf_imovel" index="110" name="UF"/>
+        <alias field="numero_imovel" index="111" name="Número do imóvel"/>
+        <alias field="km_inicial" index="112" name="KM Inicial"/>
+        <alias field="km_final" index="113" name="KM Final"/>
+        <alias field="nome_propriedade" index="114" name="Nome da Propriedade"/>
+        <alias field="cep_imovel" index="115" name="CEP do imóvel"/>
+        <alias field="numero_endereco" index="116" name="Nº do endereço"/>
+        <alias field="cartorio" index="117" name="Cartório"/>
+        <alias field="livro_registro" index="118" name="Livro de Registro"/>
+        <alias field="numero_rgi" index="119" name="Nº RGI"/>
+        <alias field="trecho" index="120" name="Trecho"/>
+        <alias field="tipo_proprietario" index="121" name="Tipo"/>
+        <alias field="origem_proprietario" index="122" name="Origem"/>
+        <alias field="data_nascimento" index="123" name="Data de nascimento"/>
+        <alias field="sexo" index="124" name="Sexo"/>
+        <alias field="cep_proprietario" index="125" name="CEP"/>
+        <alias field="endereco_proprietario" index="126" name="Endereço"/>
+        <alias field="numero_proprietario" index="127" name="Número"/>
+        <alias field="complemento_proprietario" index="128" name="Complemento"/>
+        <alias field="uf_proprietario" index="129" name="UF"/>
+        <alias field="municipio_proprietario" index="130" name="Município"/>
+</aliases>
       <splitPolicies>
         <policy field="fid" policy="Duplicate"/>
         <policy field="codigo" policy="Duplicate"/>
@@ -2173,7 +2219,30 @@
         <default field="mel_telefone" applyOnUpdate="0" expression=""/>
         <default field="demolicao_parcial" applyOnUpdate="0" expression=""/>
         <default field="justificativa_demolicao" applyOnUpdate="0" expression=""/>
-      </defaults>
+              <default field="fc_tbg_nova" applyOnUpdate="0" expression=""/>
+        <default field="fc_n_antiga" applyOnUpdate="0" expression=""/>
+        <default field="uf_imovel" applyOnUpdate="0" expression=""/>
+        <default field="numero_imovel" applyOnUpdate="0" expression=""/>
+        <default field="km_inicial" applyOnUpdate="0" expression=""/>
+        <default field="km_final" applyOnUpdate="0" expression=""/>
+        <default field="nome_propriedade" applyOnUpdate="0" expression=""/>
+        <default field="cep_imovel" applyOnUpdate="0" expression=""/>
+        <default field="numero_endereco" applyOnUpdate="0" expression=""/>
+        <default field="cartorio" applyOnUpdate="0" expression=""/>
+        <default field="livro_registro" applyOnUpdate="0" expression=""/>
+        <default field="numero_rgi" applyOnUpdate="0" expression=""/>
+        <default field="trecho" applyOnUpdate="0" expression=""/>
+        <default field="tipo_proprietario" applyOnUpdate="0" expression=""/>
+        <default field="origem_proprietario" applyOnUpdate="0" expression=""/>
+        <default field="data_nascimento" applyOnUpdate="0" expression=""/>
+        <default field="sexo" applyOnUpdate="0" expression=""/>
+        <default field="cep_proprietario" applyOnUpdate="0" expression=""/>
+        <default field="endereco_proprietario" applyOnUpdate="0" expression=""/>
+        <default field="numero_proprietario" applyOnUpdate="0" expression=""/>
+        <default field="complemento_proprietario" applyOnUpdate="0" expression=""/>
+        <default field="uf_proprietario" applyOnUpdate="0" expression=""/>
+        <default field="municipio_proprietario" applyOnUpdate="0" expression=""/>
+</defaults>
       <constraints>
         <constraint field="fid" constraints="3" exp_strength="0" notnull_strength="1" unique_strength="1"/>
         <constraint field="codigo" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
@@ -2276,7 +2345,30 @@
         <constraint field="mel_telefone" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
         <constraint field="demolicao_parcial" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
         <constraint field="justificativa_demolicao" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
-      </constraints>
+              <constraint field="fc_tbg_nova" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="fc_n_antiga" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="uf_imovel" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="numero_imovel" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="km_inicial" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="km_final" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="nome_propriedade" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="cep_imovel" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="numero_endereco" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="cartorio" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="livro_registro" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="numero_rgi" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="trecho" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="tipo_proprietario" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="origem_proprietario" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="data_nascimento" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="sexo" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="cep_proprietario" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="endereco_proprietario" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="numero_proprietario" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="complemento_proprietario" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="uf_proprietario" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="municipio_proprietario" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+</constraints>
       <constraintExpressions>
         <constraint field="fid" exp="" desc=""/>
         <constraint field="codigo" exp="" desc=""/>
@@ -2377,7 +2469,30 @@
         <constraint field="mel_pavimentacao" exp="" desc=""/>
         <constraint field="mel_gas" exp="" desc=""/>
         <constraint field="mel_telefone" exp="" desc=""/>
-      </constraintExpressions>
+              <constraint field="fc_tbg_nova" exp="" desc=""/>
+        <constraint field="fc_n_antiga" exp="" desc=""/>
+        <constraint field="uf_imovel" exp="" desc=""/>
+        <constraint field="numero_imovel" exp="" desc=""/>
+        <constraint field="km_inicial" exp="" desc=""/>
+        <constraint field="km_final" exp="" desc=""/>
+        <constraint field="nome_propriedade" exp="" desc=""/>
+        <constraint field="cep_imovel" exp="" desc=""/>
+        <constraint field="numero_endereco" exp="" desc=""/>
+        <constraint field="cartorio" exp="" desc=""/>
+        <constraint field="livro_registro" exp="" desc=""/>
+        <constraint field="numero_rgi" exp="" desc=""/>
+        <constraint field="trecho" exp="" desc=""/>
+        <constraint field="tipo_proprietario" exp="" desc=""/>
+        <constraint field="origem_proprietario" exp="" desc=""/>
+        <constraint field="data_nascimento" exp="" desc=""/>
+        <constraint field="sexo" exp="" desc=""/>
+        <constraint field="cep_proprietario" exp="" desc=""/>
+        <constraint field="endereco_proprietario" exp="" desc=""/>
+        <constraint field="numero_proprietario" exp="" desc=""/>
+        <constraint field="complemento_proprietario" exp="" desc=""/>
+        <constraint field="uf_proprietario" exp="" desc=""/>
+        <constraint field="municipio_proprietario" exp="" desc=""/>
+</constraintExpressions>
       <expressionfields/>
       <attributeactions>
         <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
@@ -2484,7 +2599,30 @@
           <column name="mel_gas" type="field" hidden="0" width="-1"/>
           <column name="mel_telefone" type="field" hidden="0" width="-1"/>
           <column type="actions" hidden="1" width="-1"/>
-        </columns>
+                  <column name="fc_tbg_nova" type="field" hidden="0" width="-1"/>
+          <column name="fc_n_antiga" type="field" hidden="0" width="-1"/>
+          <column name="uf_imovel" type="field" hidden="0" width="-1"/>
+          <column name="numero_imovel" type="field" hidden="0" width="-1"/>
+          <column name="km_inicial" type="field" hidden="0" width="-1"/>
+          <column name="km_final" type="field" hidden="0" width="-1"/>
+          <column name="nome_propriedade" type="field" hidden="0" width="-1"/>
+          <column name="cep_imovel" type="field" hidden="0" width="-1"/>
+          <column name="numero_endereco" type="field" hidden="0" width="-1"/>
+          <column name="cartorio" type="field" hidden="0" width="-1"/>
+          <column name="livro_registro" type="field" hidden="0" width="-1"/>
+          <column name="numero_rgi" type="field" hidden="0" width="-1"/>
+          <column name="trecho" type="field" hidden="0" width="-1"/>
+          <column name="tipo_proprietario" type="field" hidden="0" width="-1"/>
+          <column name="origem_proprietario" type="field" hidden="0" width="-1"/>
+          <column name="data_nascimento" type="field" hidden="0" width="-1"/>
+          <column name="sexo" type="field" hidden="0" width="-1"/>
+          <column name="cep_proprietario" type="field" hidden="0" width="-1"/>
+          <column name="endereco_proprietario" type="field" hidden="0" width="-1"/>
+          <column name="numero_proprietario" type="field" hidden="0" width="-1"/>
+          <column name="complemento_proprietario" type="field" hidden="0" width="-1"/>
+          <column name="uf_proprietario" type="field" hidden="0" width="-1"/>
+          <column name="municipio_proprietario" type="field" hidden="0" width="-1"/>
+</columns>
       </attributetableconfig>
       <conditionalstyles>
         <rowstyles/>
@@ -2514,326 +2652,167 @@ def my_form_open(diálogo, camada, feição):
       <featformsuppress>0</featformsuppress>
       <editorlayout>tablayout</editorlayout>
       <attributeEditorForm>
-        <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-          <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
-        </labelStyle>
-        <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="1. Ocupante" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
-          <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-            <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-          </labelStyle>
-          <attributeEditorField index="99" name="selagem" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0"/>
-          </attributeEditorField>
-          <attributeEditorField index="1" name="codigo" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="35" name="cpf_cnpj" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="34" name="nome" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="39" name="telefone" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="3" name="municipio" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="5" name="endereco" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="55" name="bairro" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
+        <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0"><labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/></labelStyle>
+        <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="1. Cadastro de Imóvel" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
+        <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Identificação e registro" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
+          <attributeEditorField index="108" name="fc_tbg_nova" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="109" name="fc_n_antiga" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="101" name="codigo_tic" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="100" name="selagem" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="111" name="numero_imovel" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="2" name="codigo" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="3" name="tipo_imovel" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="55" name="classificacao_padrao" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="11" name="status" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="12" name="situacao" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="120" name="trecho" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="102" name="km" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="112" name="km_inicial" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="113" name="km_final" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="104" name="fid_planilha" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="105" name="status_dwg" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+        </attributeEditorContainer>
+        <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Localização e endereço" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
+          <attributeEditorField index="110" name="uf_imovel" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="4" name="municipio" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="56" name="bairro" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="114" name="nome_propriedade" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="6" name="endereco" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="116" name="numero_endereco" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="5" name="zona" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="8" name="latitude" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="9" name="longitude" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+        </attributeEditorContainer>
+        <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Registro e documentação" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
+          <attributeEditorField index="7" name="matricula" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="117" name="cartorio" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="118" name="livro_registro" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="119" name="numero_rgi" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="10" name="area_total" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+        <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Documentos do imóvel" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
+          <attributeEditorField index="14" name="doc_r_matricula" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="15" name="doc_r_ccir" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="16" name="doc_r_cib_cafir" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="17" name="doc_r_itr" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="18" name="doc_r_cert_fiscal" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="19" name="doc_r_car" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="20" name="doc_r_planta_memorial" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="21" name="doc_r_sigef" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="24" name="doc_u_matricula" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="25" name="doc_u_iptu" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="26" name="doc_u_inscricao_imob" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="27" name="doc_u_cnd_municipal" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="28" name="doc_u_planta" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="29" name="doc_u_habite_se" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="30" name="doc_u_regularidade_construcao" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="31" name="doc_u_convencao_condominio" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="32" name="doc_u_servidoes_faixa" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+        </attributeEditorContainer>
         </attributeEditorContainer>
         <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="2. Região" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
-          <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-            <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-          </labelStyle>
-          <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Características da Região" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-            <attributeEditorField index="60" name="infraestrutura_local" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="61" name="padrao_ocupacao" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="62" name="vias_acesso" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="63" name="localizacao_lote" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="64" name="greide" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="65" name="topografia" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="66" name="aproveitamento_uso" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-          </attributeEditorContainer>
-          <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="2" name="Melhoramentos Urbanos" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-            <attributeEditorField index="89" name="mel_calcada" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="90" name="mel_iluminacao" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="91" name="mel_coleta_lixo" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="92" name="mel_internet" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="93" name="mel_esgoto" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="94" name="mel_luz" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="95" name="mel_fossa" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="96" name="mel_pavimentacao" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="97" name="mel_gas" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="98" name="mel_telefone" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-          </attributeEditorContainer>
+          <attributeEditorField index="61" name="infraestrutura_local" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="62" name="padrao_ocupacao" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="63" name="vias_acesso" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="64" name="localizacao_lote" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="65" name="greide" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="66" name="topografia" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="67" name="aproveitamento_uso" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="90" name="mel_calcada" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="91" name="mel_iluminacao" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="92" name="mel_coleta_lixo" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="93" name="mel_internet" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="94" name="mel_esgoto" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="95" name="mel_luz" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="96" name="mel_fossa" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="97" name="mel_pavimentacao" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="98" name="mel_gas" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="99" name="mel_telefone" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
         </attributeEditorContainer>
         <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="3. Habitação e Serviços" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
-          <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-            <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-          </labelStyle>
-          <attributeEditorField index="67" name="tamanho_edificacao" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="56" name="tempo_residencia" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="68" name="material_paredes" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="69" name="material_cobertura" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="70" name="material_piso" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="71" name="agua_canalizada" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="72" name="agua_proveniente" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="73" name="escoadouro" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="74" name="mais_uma_familia" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="81" name="num_pavimentos" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="82" name="pavimentos_ocupante" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="83" name="num_comodos" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="84" name="comodos_dormitorio" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
-          <attributeEditorField index="85" name="num_banheiros" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-          </attributeEditorField>
+          <attributeEditorField index="68" name="tamanho_edificacao" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="57" name="tempo_residencia" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="69" name="material_paredes" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="70" name="material_cobertura" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="71" name="material_piso" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="72" name="agua_canalizada" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="73" name="agua_proveniente" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="74" name="escoadouro" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="75" name="mais_uma_familia" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="44" name="idade_aparente" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="45" name="vida_util" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="46" name="com_quartos" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="47" name="com_salas" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="48" name="com_cozinhas" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="49" name="com_banheiros" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="50" name="com_area_servico" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="51" name="com_garagem" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="52" name="com_varanda" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="53" name="com_outros" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="54" name="com_outros_desc" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="82" name="num_pavimentos" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="83" name="pavimentos_ocupante" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="84" name="num_comodos" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="85" name="comodos_dormitorio" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="86" name="num_banheiros" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
         </attributeEditorContainer>
         <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="4. Construção e Demolição" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
-          <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-            <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-          </labelStyle>
-          <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Caracterização das Construções" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-            <attributeEditorField index="58" name="constr_descricao" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="86" name="constr_idade" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="80" name="constr_estado" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="54" name="classificacao_padrao" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="87" name="constr_perimetro" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="88" name="constr_area" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-          </attributeEditorContainer>
-          <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Informações para Demolição" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-              <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-            </labelStyle>
-            <attributeEditorField index="75" name="tipo_edificacao" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="76" name="faixa_dominio" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="77" name="em_desnivel" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="78" name="prioridade_demo" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="79" name="risco_impacto" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorField index="104" name="demolicao_parcial" showLabel="1" horizontalStretch="0" verticalStretch="0">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-            </attributeEditorField>
-            <attributeEditorContainer visibilityExpressionEnabled="1" visibilityExpression="&quot;demolicao_parcial&quot; = 'Não'" collapsed="0" collapsedExpression="" columnCount="1" name="Justificativa da não demolição parcial" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
-              <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-              </labelStyle>
-              <attributeEditorField index="105" name="justificativa_demolicao" showLabel="1" horizontalStretch="0" verticalStretch="0">
-                <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-                  <labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="Helvetica,12,-1,5,50,0,0,0,0,0"/>
-                </labelStyle>
-              </attributeEditorField>
-            </attributeEditorContainer>
-          </attributeEditorContainer>
+          <attributeEditorField index="59" name="constr_descricao" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="87" name="constr_idade" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="81" name="constr_estado" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="88" name="constr_perimetro" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="89" name="constr_area" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="76" name="tipo_edificacao" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="77" name="faixa_dominio" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="78" name="em_desnivel" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="79" name="prioridade_demo" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="80" name="risco_impacto" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="106" name="demolicao_parcial" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+        <attributeEditorContainer visibilityExpressionEnabled="1" visibilityExpression="&quot;demolicao_parcial&quot; = 'Não'" collapsed="0" collapsedExpression="" columnCount="1" name="Justificativa da não demolição parcial" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
+          <attributeEditorField index="107" name="justificativa_demolicao" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+        </attributeEditorContainer>
         </attributeEditorContainer>
         <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="5. Relatório fotográfico" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
-          <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0"/>
           <attributeEditorRelation relation="cad_fotos" forceSuppressFormPopup="0" label="Relatório fotográfico" name="cad_fotos" nmRelationId="" relationWidgetTypeId="" showLabel="1" horizontalStretch="0" verticalStretch="0">
             <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0"/>
-            <editor_configuration type="Map">
-              <Option name="buttons" type="QString" value="AllButtons"/>
-            </editor_configuration>
+            <editor_configuration type="Map"><Option name="buttons" type="QString" value="AllButtons"/></editor_configuration>
           </attributeEditorRelation>
         </attributeEditorContainer>
         <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="6. Observação final" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
-          <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0"/>
-          <attributeEditorField index="12" name="observacoes" showLabel="1" horizontalStretch="0" verticalStretch="0">
-            <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0"/>
-          </attributeEditorField>
+          <attributeEditorField index="13" name="observacoes" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+        </attributeEditorContainer>
+        </attributeEditorContainer>
+        <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="7. Cadastro de Proprietário" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
+        <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Identificação do proprietário" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
+          <attributeEditorField index="121" name="tipo_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="35" name="nome" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="36" name="cpf_cnpj" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="37" name="rg_ie" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="122" name="origem_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="123" name="data_nascimento" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="124" name="sexo" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+        </attributeEditorContainer>
+        <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Endereço do proprietário" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
+          <attributeEditorField index="125" name="cep_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="126" name="endereco_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="127" name="numero_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="128" name="complemento_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="129" name="uf_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="130" name="municipio_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+        </attributeEditorContainer>
+        <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Vínculo e contato" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
+          <attributeEditorField index="43" name="tipo_vinculo" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="42" name="percentual_titularidade" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="38" name="estado_civil" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="39" name="profissao" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="40" name="telefone" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="41" name="email" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+        </attributeEditorContainer>
+        <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Documentos do proprietário" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
+          <attributeEditorField index="22" name="doc_r_rg_cpf" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="23" name="doc_r_cert_estado_civil" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="33" name="doc_u_rg_cpf_estado_civil" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="34" name="doc_u_pj_contrato_social" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+        </attributeEditorContainer>
         </attributeEditorContainer>
       </attributeEditorForm>
       <editable>
@@ -2938,7 +2917,30 @@ def my_form_open(diálogo, camada, feição):
         <field editable="1" name="zona"/>
         <field editable="1" name="demolicao_parcial"/>
         <field editable="1" name="justificativa_demolicao"/>
-      </editable>
+              <field editable="1" name="fc_tbg_nova"/>
+        <field editable="1" name="fc_n_antiga"/>
+        <field editable="1" name="uf_imovel"/>
+        <field editable="1" name="numero_imovel"/>
+        <field editable="1" name="km_inicial"/>
+        <field editable="1" name="km_final"/>
+        <field editable="1" name="nome_propriedade"/>
+        <field editable="1" name="cep_imovel"/>
+        <field editable="1" name="numero_endereco"/>
+        <field editable="1" name="cartorio"/>
+        <field editable="1" name="livro_registro"/>
+        <field editable="1" name="numero_rgi"/>
+        <field editable="1" name="trecho"/>
+        <field editable="1" name="tipo_proprietario"/>
+        <field editable="1" name="origem_proprietario"/>
+        <field editable="1" name="data_nascimento"/>
+        <field editable="1" name="sexo"/>
+        <field editable="1" name="cep_proprietario"/>
+        <field editable="1" name="endereco_proprietario"/>
+        <field editable="1" name="numero_proprietario"/>
+        <field editable="1" name="complemento_proprietario"/>
+        <field editable="1" name="uf_proprietario"/>
+        <field editable="1" name="municipio_proprietario"/>
+</editable>
       <labelOnTop>
         <field labelOnTop="0" name="agua_canalizada"/>
         <field labelOnTop="0" name="agua_proveniente"/>
@@ -3041,7 +3043,30 @@ def my_form_open(diálogo, camada, feição):
         <field labelOnTop="0" name="zona"/>
         <field labelOnTop="0" name="demolicao_parcial"/>
         <field labelOnTop="0" name="justificativa_demolicao"/>
-      </labelOnTop>
+              <field labelOnTop="0" name="fc_tbg_nova"/>
+        <field labelOnTop="0" name="fc_n_antiga"/>
+        <field labelOnTop="0" name="uf_imovel"/>
+        <field labelOnTop="0" name="numero_imovel"/>
+        <field labelOnTop="0" name="km_inicial"/>
+        <field labelOnTop="0" name="km_final"/>
+        <field labelOnTop="0" name="nome_propriedade"/>
+        <field labelOnTop="0" name="cep_imovel"/>
+        <field labelOnTop="0" name="numero_endereco"/>
+        <field labelOnTop="0" name="cartorio"/>
+        <field labelOnTop="0" name="livro_registro"/>
+        <field labelOnTop="0" name="numero_rgi"/>
+        <field labelOnTop="0" name="trecho"/>
+        <field labelOnTop="0" name="tipo_proprietario"/>
+        <field labelOnTop="0" name="origem_proprietario"/>
+        <field labelOnTop="0" name="data_nascimento"/>
+        <field labelOnTop="0" name="sexo"/>
+        <field labelOnTop="0" name="cep_proprietario"/>
+        <field labelOnTop="0" name="endereco_proprietario"/>
+        <field labelOnTop="0" name="numero_proprietario"/>
+        <field labelOnTop="0" name="complemento_proprietario"/>
+        <field labelOnTop="0" name="uf_proprietario"/>
+        <field labelOnTop="0" name="municipio_proprietario"/>
+</labelOnTop>
       <reuseLastValue>
         <field reuseLastValue="0" name="agua_canalizada"/>
         <field reuseLastValue="0" name="agua_proveniente"/>
@@ -3144,7 +3169,30 @@ def my_form_open(diálogo, camada, feição):
         <field reuseLastValue="0" name="zona"/>
         <field reuseLastValue="0" name="demolicao_parcial"/>
         <field reuseLastValue="0" name="justificativa_demolicao"/>
-      </reuseLastValue>
+              <field reuseLastValue="0" name="fc_tbg_nova"/>
+        <field reuseLastValue="0" name="fc_n_antiga"/>
+        <field reuseLastValue="0" name="uf_imovel"/>
+        <field reuseLastValue="0" name="numero_imovel"/>
+        <field reuseLastValue="0" name="km_inicial"/>
+        <field reuseLastValue="0" name="km_final"/>
+        <field reuseLastValue="0" name="nome_propriedade"/>
+        <field reuseLastValue="0" name="cep_imovel"/>
+        <field reuseLastValue="0" name="numero_endereco"/>
+        <field reuseLastValue="0" name="cartorio"/>
+        <field reuseLastValue="0" name="livro_registro"/>
+        <field reuseLastValue="0" name="numero_rgi"/>
+        <field reuseLastValue="0" name="trecho"/>
+        <field reuseLastValue="0" name="tipo_proprietario"/>
+        <field reuseLastValue="0" name="origem_proprietario"/>
+        <field reuseLastValue="0" name="data_nascimento"/>
+        <field reuseLastValue="0" name="sexo"/>
+        <field reuseLastValue="0" name="cep_proprietario"/>
+        <field reuseLastValue="0" name="endereco_proprietario"/>
+        <field reuseLastValue="0" name="numero_proprietario"/>
+        <field reuseLastValue="0" name="complemento_proprietario"/>
+        <field reuseLastValue="0" name="uf_proprietario"/>
+        <field reuseLastValue="0" name="municipio_proprietario"/>
+</reuseLastValue>
       <dataDefinedFieldProperties/>
       <widgets/>
       <previewExpression>"com_outros_desc"</previewExpression>
