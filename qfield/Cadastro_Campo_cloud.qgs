@@ -1773,8 +1773,6 @@
             </config>
           </editWidget>
         </field>
-              <field name="fc_tbg_nova" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
-        <field name="fc_n_antiga" configurationFlags="NoFlag"><editWidget type="TextEdit"><config><Option/></config></editWidget></field>
                 <field name="uf_imovel" configurationFlags="NoFlag">
           <editWidget type="ValueMap">
             <config>
@@ -1893,133 +1891,131 @@
 </fieldConfiguration>
       <aliases>
         <alias field="fid" index="0" name=""/>
-        <alias field="codigo" index="1" name="Ocupação"/>
-        <alias field="tipo_imovel" index="2" name="Tipo"/>
-        <alias field="municipio" index="3" name="Município"/>
-        <alias field="zona" index="4" name=""/>
-        <alias field="endereco" index="5" name="Endereço"/>
-        <alias field="matricula" index="6" name="Matrícula"/>
-        <alias field="latitude" index="7" name=""/>
-        <alias field="longitude" index="8" name=""/>
-        <alias field="area_total" index="9" name="Área total"/>
-        <alias field="status" index="10" name="Status"/>
-        <alias field="situacao" index="11" name="Situação"/>
-        <alias field="observacoes" index="12" name="Observação final"/>
-        <alias field="doc_r_matricula" index="13" name=""/>
-        <alias field="doc_r_ccir" index="14" name=""/>
-        <alias field="doc_r_cib_cafir" index="15" name=""/>
-        <alias field="doc_r_itr" index="16" name=""/>
-        <alias field="doc_r_cert_fiscal" index="17" name=""/>
-        <alias field="doc_r_car" index="18" name=""/>
-        <alias field="doc_r_planta_memorial" index="19" name=""/>
-        <alias field="doc_r_sigef" index="20" name=""/>
-        <alias field="doc_r_rg_cpf" index="21" name=""/>
-        <alias field="doc_r_cert_estado_civil" index="22" name=""/>
-        <alias field="doc_u_matricula" index="23" name=""/>
-        <alias field="doc_u_iptu" index="24" name=""/>
-        <alias field="doc_u_inscricao_imob" index="25" name=""/>
-        <alias field="doc_u_cnd_municipal" index="26" name=""/>
-        <alias field="doc_u_planta" index="27" name=""/>
-        <alias field="doc_u_habite_se" index="28" name=""/>
-        <alias field="doc_u_regularidade_construcao" index="29" name=""/>
-        <alias field="doc_u_convencao_condominio" index="30" name=""/>
-        <alias field="doc_u_servidoes_faixa" index="31" name=""/>
-        <alias field="doc_u_rg_cpf_estado_civil" index="32" name=""/>
-        <alias field="doc_u_pj_contrato_social" index="33" name=""/>
-        <alias field="nome" index="34" name="Nome"/>
-        <alias field="cpf_cnpj" index="35" name="CPF/CNPJ"/>
-        <alias field="rg_ie" index="36" name="RG/IE"/>
-        <alias field="estado_civil" index="37" name="Estado civil"/>
-        <alias field="profissao" index="38" name="Profissão"/>
-        <alias field="telefone" index="39" name="Telefone"/>
-        <alias field="email" index="40" name="E-mail"/>
-        <alias field="percentual_titularidade" index="41" name="% de titularidade"/>
-        <alias field="tipo_vinculo" index="42" name="Tipo de vínculo"/>
-        <alias field="idade_aparente" index="43" name=""/>
-        <alias field="vida_util" index="44" name=""/>
-        <alias field="com_quartos" index="45" name=""/>
-        <alias field="com_salas" index="46" name=""/>
-        <alias field="com_cozinhas" index="47" name=""/>
-        <alias field="com_banheiros" index="48" name=""/>
-        <alias field="com_area_servico" index="49" name=""/>
-        <alias field="com_garagem" index="50" name=""/>
-        <alias field="com_varanda" index="51" name=""/>
-        <alias field="com_outros" index="52" name=""/>
-        <alias field="com_outros_desc" index="53" name=""/>
-        <alias field="classificacao_padrao" index="54" name="Classificação (padrão A–H)"/>
-        <alias field="bairro" index="55" name="Bairro"/>
-        <alias field="tempo_residencia" index="56" name="Tempo de residência"/>
-        <alias field="obs_regiao" index="57" name="Observação"/>
-        <alias field="constr_descricao" index="58" name="Descrição"/>
-        <alias field="croqui" index="59" name="Croqui do imóvel (anexo)"/>
-        <alias field="infraestrutura_local" index="60" name="Infraestrutura do Local"/>
-        <alias field="padrao_ocupacao" index="61" name="Padrão de Ocupação da Região"/>
-        <alias field="vias_acesso" index="62" name="Vias de Acesso"/>
-        <alias field="localizacao_lote" index="63" name="Localização"/>
-        <alias field="greide" index="64" name="Greide"/>
-        <alias field="topografia" index="65" name="Topografia"/>
-        <alias field="aproveitamento_uso" index="66" name="Aproveitamento/Uso"/>
-        <alias field="tamanho_edificacao" index="67" name="Tamanho da edificação"/>
-        <alias field="material_paredes" index="68" name="Material — paredes externas"/>
-        <alias field="material_cobertura" index="69" name="Material — cobertura"/>
-        <alias field="material_piso" index="70" name="Material — piso"/>
-        <alias field="agua_canalizada" index="71" name="Água canalizada em algum cômodo?"/>
-        <alias field="agua_proveniente" index="72" name="Água proveniente de"/>
-        <alias field="escoadouro" index="73" name="Escoadouro do(s) banheiro(s)"/>
-        <alias field="mais_uma_familia" index="74" name="Pertence a mais de uma família?"/>
-        <alias field="tipo_edificacao" index="75" name="Tipo de edificação"/>
-        <alias field="faixa_dominio" index="76" name="Está dentro da faixa de domínio?"/>
-        <alias field="em_desnivel" index="77" name="Está em desnível?"/>
-        <alias field="prioridade_demo" index="78" name="Prioridade"/>
-        <alias field="risco_impacto" index="79" name="Risco de impactar outras construções"/>
-        <alias field="constr_estado" index="80" name="Estado de conservação"/>
-        <alias field="num_pavimentos" index="81" name="Quantidade de pavimentos"/>
-        <alias field="pavimentos_ocupante" index="82" name="Pavimentos deste ocupante"/>
-        <alias field="num_comodos" index="83" name="Número de cômodos"/>
-        <alias field="comodos_dormitorio" index="84" name="Cômodos usados como dormitório"/>
-        <alias field="num_banheiros" index="85" name="Quantos banheiros?"/>
-        <alias field="constr_idade" index="86" name="Idade"/>
-        <alias field="constr_perimetro" index="87" name="Perímetro (m)"/>
-        <alias field="constr_area" index="88" name="Área (m²)"/>
-        <alias field="mel_calcada" index="89" name="Calçada"/>
-        <alias field="mel_iluminacao" index="90" name="Iluminação Pública"/>
-        <alias field="mel_coleta_lixo" index="91" name="Coleta de Lixo"/>
-        <alias field="mel_internet" index="92" name="Internet"/>
-        <alias field="mel_esgoto" index="93" name="Esgoto"/>
-        <alias field="mel_luz" index="94" name="Luz Domiciliar"/>
-        <alias field="mel_fossa" index="95" name="Fossa"/>
-        <alias field="mel_pavimentacao" index="96" name="Pavimentação"/>
-        <alias field="mel_gas" index="97" name="Gás"/>
-        <alias field="mel_telefone" index="98" name="Telefone"/>
-        <alias field="selagem" index="99" name="Selagem"/>
-        <alias field="codigo_tic" index="100" name="Código TIC"/>
-        <alias field="status_dwg" index="103" name="Classificação DWG"/>
-        <alias field="demolicao_parcial" index="104" name="Pode ocorrer demolição parcial?"/>
-        <alias field="justificativa_demolicao" index="105" name="Justificativa da não demolição parcial"/>
-              <alias field="fc_tbg_nova" index="108" name="FC TBG Nova"/>
-        <alias field="fc_n_antiga" index="109" name="FC Nº Antiga"/>
-        <alias field="uf_imovel" index="110" name="UF"/>
-        <alias field="numero_imovel" index="111" name="Número do imóvel"/>
-        <alias field="km_inicial" index="112" name="KM Inicial"/>
-        <alias field="km_final" index="113" name="KM Final"/>
-        <alias field="nome_propriedade" index="114" name="Nome da Propriedade"/>
-        <alias field="cep_imovel" index="115" name="CEP do imóvel"/>
-        <alias field="numero_endereco" index="116" name="Nº do endereço"/>
-        <alias field="cartorio" index="117" name="Cartório"/>
-        <alias field="livro_registro" index="118" name="Livro de Registro"/>
-        <alias field="numero_rgi" index="119" name="Nº RGI"/>
-        <alias field="trecho" index="120" name="Trecho"/>
-        <alias field="tipo_proprietario" index="121" name="Tipo"/>
-        <alias field="origem_proprietario" index="122" name="Origem"/>
-        <alias field="data_nascimento" index="123" name="Data de nascimento"/>
-        <alias field="sexo" index="124" name="Sexo"/>
-        <alias field="cep_proprietario" index="125" name="CEP"/>
-        <alias field="endereco_proprietario" index="126" name="Endereço"/>
-        <alias field="numero_proprietario" index="127" name="Número"/>
-        <alias field="complemento_proprietario" index="128" name="Complemento"/>
-        <alias field="uf_proprietario" index="129" name="UF"/>
-        <alias field="municipio_proprietario" index="130" name="Município"/>
-        <alias field="proprietarios" index="131" name="Proprietários"/>
+        <alias field="codigo" index="2" name="Ocupação"/>
+        <alias field="tipo_imovel" index="3" name="Tipo"/>
+        <alias field="municipio" index="4" name="Município"/>
+        <alias field="zona" index="5" name=""/>
+        <alias field="endereco" index="6" name="Endereço"/>
+        <alias field="matricula" index="7" name="Matrícula"/>
+        <alias field="latitude" index="8" name=""/>
+        <alias field="longitude" index="9" name=""/>
+        <alias field="area_total" index="10" name="Área total"/>
+        <alias field="status" index="11" name="Status"/>
+        <alias field="situacao" index="12" name="Situação"/>
+        <alias field="observacoes" index="13" name="Observação final"/>
+        <alias field="doc_r_matricula" index="14" name=""/>
+        <alias field="doc_r_ccir" index="15" name=""/>
+        <alias field="doc_r_cib_cafir" index="16" name=""/>
+        <alias field="doc_r_itr" index="17" name=""/>
+        <alias field="doc_r_cert_fiscal" index="18" name=""/>
+        <alias field="doc_r_car" index="19" name=""/>
+        <alias field="doc_r_planta_memorial" index="20" name=""/>
+        <alias field="doc_r_sigef" index="21" name=""/>
+        <alias field="doc_r_rg_cpf" index="22" name=""/>
+        <alias field="doc_r_cert_estado_civil" index="23" name=""/>
+        <alias field="doc_u_matricula" index="24" name=""/>
+        <alias field="doc_u_iptu" index="25" name=""/>
+        <alias field="doc_u_inscricao_imob" index="26" name=""/>
+        <alias field="doc_u_cnd_municipal" index="27" name=""/>
+        <alias field="doc_u_planta" index="28" name=""/>
+        <alias field="doc_u_habite_se" index="29" name=""/>
+        <alias field="doc_u_regularidade_construcao" index="30" name=""/>
+        <alias field="doc_u_convencao_condominio" index="31" name=""/>
+        <alias field="doc_u_servidoes_faixa" index="32" name=""/>
+        <alias field="doc_u_rg_cpf_estado_civil" index="33" name=""/>
+        <alias field="doc_u_pj_contrato_social" index="34" name=""/>
+        <alias field="nome" index="35" name="Nome"/>
+        <alias field="cpf_cnpj" index="36" name="CPF/CNPJ"/>
+        <alias field="rg_ie" index="37" name="RG/IE"/>
+        <alias field="estado_civil" index="38" name="Estado civil"/>
+        <alias field="profissao" index="39" name="Profissão"/>
+        <alias field="telefone" index="40" name="Telefone"/>
+        <alias field="email" index="41" name="E-mail"/>
+        <alias field="percentual_titularidade" index="42" name="% de titularidade"/>
+        <alias field="tipo_vinculo" index="43" name="Tipo de vínculo"/>
+        <alias field="idade_aparente" index="44" name=""/>
+        <alias field="vida_util" index="45" name=""/>
+        <alias field="com_quartos" index="46" name=""/>
+        <alias field="com_salas" index="47" name=""/>
+        <alias field="com_cozinhas" index="48" name=""/>
+        <alias field="com_banheiros" index="49" name=""/>
+        <alias field="com_area_servico" index="50" name=""/>
+        <alias field="com_garagem" index="51" name=""/>
+        <alias field="com_varanda" index="52" name=""/>
+        <alias field="com_outros" index="53" name=""/>
+        <alias field="com_outros_desc" index="54" name=""/>
+        <alias field="classificacao_padrao" index="55" name="Classificação (padrão A–H)"/>
+        <alias field="bairro" index="56" name="Bairro"/>
+        <alias field="tempo_residencia" index="57" name="Tempo de residência"/>
+        <alias field="obs_regiao" index="58" name="Observação"/>
+        <alias field="constr_descricao" index="59" name="Descrição"/>
+        <alias field="croqui" index="60" name="Croqui do imóvel (anexo)"/>
+        <alias field="infraestrutura_local" index="61" name="Infraestrutura do Local"/>
+        <alias field="padrao_ocupacao" index="62" name="Padrão de Ocupação da Região"/>
+        <alias field="vias_acesso" index="63" name="Vias de Acesso"/>
+        <alias field="localizacao_lote" index="64" name="Localização"/>
+        <alias field="greide" index="65" name="Greide"/>
+        <alias field="topografia" index="66" name="Topografia"/>
+        <alias field="aproveitamento_uso" index="67" name="Aproveitamento/Uso"/>
+        <alias field="tamanho_edificacao" index="68" name="Tamanho da edificação"/>
+        <alias field="material_paredes" index="69" name="Material — paredes externas"/>
+        <alias field="material_cobertura" index="70" name="Material — cobertura"/>
+        <alias field="material_piso" index="71" name="Material — piso"/>
+        <alias field="agua_canalizada" index="72" name="Água canalizada em algum cômodo?"/>
+        <alias field="agua_proveniente" index="73" name="Água proveniente de"/>
+        <alias field="escoadouro" index="74" name="Escoadouro do(s) banheiro(s)"/>
+        <alias field="mais_uma_familia" index="75" name="Pertence a mais de uma família?"/>
+        <alias field="tipo_edificacao" index="76" name="Tipo de edificação"/>
+        <alias field="faixa_dominio" index="77" name="Está dentro da faixa de domínio?"/>
+        <alias field="em_desnivel" index="78" name="Está em desnível?"/>
+        <alias field="prioridade_demo" index="79" name="Prioridade"/>
+        <alias field="risco_impacto" index="80" name="Risco de impactar outras construções"/>
+        <alias field="constr_estado" index="81" name="Estado de conservação"/>
+        <alias field="num_pavimentos" index="82" name="Quantidade de pavimentos"/>
+        <alias field="pavimentos_ocupante" index="83" name="Pavimentos deste ocupante"/>
+        <alias field="num_comodos" index="84" name="Número de cômodos"/>
+        <alias field="comodos_dormitorio" index="85" name="Cômodos usados como dormitório"/>
+        <alias field="num_banheiros" index="86" name="Quantos banheiros?"/>
+        <alias field="constr_idade" index="87" name="Idade"/>
+        <alias field="constr_perimetro" index="88" name="Perímetro (m)"/>
+        <alias field="constr_area" index="89" name="Área (m²)"/>
+        <alias field="mel_calcada" index="90" name="Calçada"/>
+        <alias field="mel_iluminacao" index="91" name="Iluminação Pública"/>
+        <alias field="mel_coleta_lixo" index="92" name="Coleta de Lixo"/>
+        <alias field="mel_internet" index="93" name="Internet"/>
+        <alias field="mel_esgoto" index="94" name="Esgoto"/>
+        <alias field="mel_luz" index="95" name="Luz Domiciliar"/>
+        <alias field="mel_fossa" index="96" name="Fossa"/>
+        <alias field="mel_pavimentacao" index="97" name="Pavimentação"/>
+        <alias field="mel_gas" index="98" name="Gás"/>
+        <alias field="mel_telefone" index="99" name="Telefone"/>
+        <alias field="selagem" index="100" name="Selagem"/>
+        <alias field="codigo_tic" index="101" name="Código TIC"/>
+        <alias field="status_dwg" index="105" name="Classificação DWG"/>
+        <alias field="demolicao_parcial" index="106" name="Pode ocorrer demolição parcial?"/>
+        <alias field="justificativa_demolicao" index="107" name="Justificativa da não demolição parcial"/>
+        <alias field="uf_imovel" index="108" name="UF"/>
+        <alias field="numero_imovel" index="109" name="Número do imóvel"/>
+        <alias field="km_inicial" index="110" name="KM Inicial"/>
+        <alias field="km_final" index="111" name="KM Final"/>
+        <alias field="nome_propriedade" index="112" name="Nome da Propriedade"/>
+        <alias field="cep_imovel" index="113" name="CEP do imóvel"/>
+        <alias field="numero_endereco" index="114" name="Nº do endereço"/>
+        <alias field="cartorio" index="115" name="Cartório"/>
+        <alias field="livro_registro" index="116" name="Livro de Registro"/>
+        <alias field="numero_rgi" index="117" name="Nº RGI"/>
+        <alias field="trecho" index="118" name="Trecho"/>
+        <alias field="tipo_proprietario" index="119" name="Tipo"/>
+        <alias field="origem_proprietario" index="120" name="Origem"/>
+        <alias field="data_nascimento" index="121" name="Data de nascimento"/>
+        <alias field="sexo" index="122" name="Sexo"/>
+        <alias field="cep_proprietario" index="123" name="CEP"/>
+        <alias field="endereco_proprietario" index="124" name="Endereço"/>
+        <alias field="numero_proprietario" index="125" name="Número"/>
+        <alias field="complemento_proprietario" index="126" name="Complemento"/>
+        <alias field="uf_proprietario" index="127" name="UF"/>
+        <alias field="municipio_proprietario" index="128" name="Município"/>
+        <alias field="proprietarios" index="129" name="Proprietários"/>
 </aliases>
       <splitPolicies>
         <policy field="fid" policy="Duplicate"/>
@@ -2325,8 +2321,6 @@
         <default field="mel_telefone" applyOnUpdate="0" expression=""/>
         <default field="demolicao_parcial" applyOnUpdate="0" expression=""/>
         <default field="justificativa_demolicao" applyOnUpdate="0" expression=""/>
-              <default field="fc_tbg_nova" applyOnUpdate="0" expression=""/>
-        <default field="fc_n_antiga" applyOnUpdate="0" expression=""/>
         <default field="uf_imovel" applyOnUpdate="0" expression=""/>
         <default field="numero_imovel" applyOnUpdate="0" expression=""/>
         <default field="km_inicial" applyOnUpdate="0" expression=""/>
@@ -2452,8 +2446,6 @@
         <constraint field="mel_telefone" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
         <constraint field="demolicao_parcial" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
         <constraint field="justificativa_demolicao" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
-              <constraint field="fc_tbg_nova" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
-        <constraint field="fc_n_antiga" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
         <constraint field="uf_imovel" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
         <constraint field="numero_imovel" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
         <constraint field="km_inicial" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
@@ -2577,8 +2569,6 @@
         <constraint field="mel_pavimentacao" exp="" desc=""/>
         <constraint field="mel_gas" exp="" desc=""/>
         <constraint field="mel_telefone" exp="" desc=""/>
-              <constraint field="fc_tbg_nova" exp="" desc=""/>
-        <constraint field="fc_n_antiga" exp="" desc=""/>
         <constraint field="uf_imovel" exp="" desc=""/>
         <constraint field="numero_imovel" exp="" desc=""/>
         <constraint field="km_inicial" exp="" desc=""/>
@@ -2708,8 +2698,6 @@
           <column name="mel_gas" type="field" hidden="0" width="-1"/>
           <column name="mel_telefone" type="field" hidden="0" width="-1"/>
           <column type="actions" hidden="1" width="-1"/>
-                  <column name="fc_tbg_nova" type="field" hidden="0" width="-1"/>
-          <column name="fc_n_antiga" type="field" hidden="0" width="-1"/>
           <column name="uf_imovel" type="field" hidden="0" width="-1"/>
           <column name="numero_imovel" type="field" hidden="0" width="-1"/>
           <column name="km_inicial" type="field" hidden="0" width="-1"/>
@@ -2765,40 +2753,38 @@ def my_form_open(diálogo, camada, feição):
         <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0"><labelFont bold="0" strikethrough="0" style="" italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/></labelStyle>
         <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="1. Cadastro de Imóvel" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
         <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Identificação e registro" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
-          <attributeEditorField index="108" name="fc_tbg_nova" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="109" name="fc_n_antiga" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="101" name="codigo_tic" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="100" name="selagem" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="111" name="numero_imovel" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="109" name="numero_imovel" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="2" name="codigo" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="3" name="tipo_imovel" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="55" name="classificacao_padrao" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="11" name="status" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="12" name="situacao" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="120" name="trecho" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="118" name="trecho" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="102" name="km" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="112" name="km_inicial" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="113" name="km_final" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="131" name="proprietarios" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="110" name="km_inicial" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="111" name="km_final" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="129" name="proprietarios" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="104" name="fid_planilha" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="105" name="status_dwg" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
         </attributeEditorContainer>
         <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Localização e endereço" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
-          <attributeEditorField index="110" name="uf_imovel" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="108" name="uf_imovel" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="4" name="municipio" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="56" name="bairro" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="114" name="nome_propriedade" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="112" name="nome_propriedade" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="6" name="endereco" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="116" name="numero_endereco" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="114" name="numero_endereco" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="5" name="zona" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="8" name="latitude" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="9" name="longitude" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
         </attributeEditorContainer>
         <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Registro e documentação" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
           <attributeEditorField index="7" name="matricula" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="117" name="cartorio" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="118" name="livro_registro" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="119" name="numero_rgi" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="115" name="cartorio" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="116" name="livro_registro" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="117" name="numero_rgi" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="10" name="area_total" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
         <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Documentos do imóvel" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
           <attributeEditorField index="14" name="doc_r_matricula" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
@@ -2894,21 +2880,21 @@ def my_form_open(diálogo, camada, feição):
         </attributeEditorContainer>
         <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="7. Cadastro de Proprietário" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
         <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Identificação do proprietário" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
-          <attributeEditorField index="121" name="tipo_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="119" name="tipo_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="35" name="nome" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="36" name="cpf_cnpj" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
           <attributeEditorField index="37" name="rg_ie" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="122" name="origem_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="123" name="data_nascimento" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="124" name="sexo" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="120" name="origem_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="121" name="data_nascimento" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="122" name="sexo" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
         </attributeEditorContainer>
         <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Endereço do proprietário" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
-          <attributeEditorField index="125" name="cep_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="126" name="endereco_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="127" name="numero_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="128" name="complemento_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="129" name="uf_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
-          <attributeEditorField index="130" name="municipio_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="123" name="cep_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="124" name="endereco_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="125" name="numero_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="126" name="complemento_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="127" name="uf_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
+          <attributeEditorField index="128" name="municipio_proprietario" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
         </attributeEditorContainer>
         <attributeEditorContainer visibilityExpressionEnabled="0" visibilityExpression="" collapsed="0" collapsedExpression="" columnCount="1" name="Vínculo e contato" type="GroupBox" showLabel="1" horizontalStretch="0" collapsedExpressionEnabled="0" verticalStretch="0" groupBox="1">
           <attributeEditorField index="43" name="tipo_vinculo" showLabel="1" horizontalStretch="0" verticalStretch="0"/>
@@ -3028,8 +3014,6 @@ def my_form_open(diálogo, camada, feição):
         <field editable="1" name="zona"/>
         <field editable="1" name="demolicao_parcial"/>
         <field editable="1" name="justificativa_demolicao"/>
-              <field editable="1" name="fc_tbg_nova"/>
-        <field editable="1" name="fc_n_antiga"/>
         <field editable="1" name="uf_imovel"/>
         <field editable="1" name="numero_imovel"/>
         <field editable="1" name="km_inicial"/>
@@ -3155,8 +3139,6 @@ def my_form_open(diálogo, camada, feição):
         <field labelOnTop="0" name="zona"/>
         <field labelOnTop="0" name="demolicao_parcial"/>
         <field labelOnTop="0" name="justificativa_demolicao"/>
-              <field labelOnTop="0" name="fc_tbg_nova"/>
-        <field labelOnTop="0" name="fc_n_antiga"/>
         <field labelOnTop="0" name="uf_imovel"/>
         <field labelOnTop="0" name="numero_imovel"/>
         <field labelOnTop="0" name="km_inicial"/>
@@ -3282,8 +3264,6 @@ def my_form_open(diálogo, camada, feição):
         <field reuseLastValue="0" name="zona"/>
         <field reuseLastValue="0" name="demolicao_parcial"/>
         <field reuseLastValue="0" name="justificativa_demolicao"/>
-              <field reuseLastValue="0" name="fc_tbg_nova"/>
-        <field reuseLastValue="0" name="fc_n_antiga"/>
         <field reuseLastValue="0" name="uf_imovel"/>
         <field reuseLastValue="0" name="numero_imovel"/>
         <field reuseLastValue="0" name="km_inicial"/>

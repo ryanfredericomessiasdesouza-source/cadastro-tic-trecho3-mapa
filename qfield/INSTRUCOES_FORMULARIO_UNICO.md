@@ -66,3 +66,8 @@ A planilha `Cadastro_TIC_Formulario_Unico_Subdivisoes.xlsx` possui as seguintes 
 Nas abas **Cadastro Imóvel** e **Cadastro Proprietário**, a coluna **Opções de preenchimento** apresenta as alternativas esperadas e a coluna **Valor / preenchimento** deve receber o valor escolhido pelo cadastrador. A última coluna é destacada em amarelo. Quando há lista configurada, a célula apresenta menu de seleção.
 
 As opções foram transcritas do QGS atual. Os campos dos prints que aparecem como seleção, mas não possuem uma lista oficial no projeto — especialmente **Tipo**, **Cartório** e **Proprietários** — estão indicados na planilha para definição da equipe. O campo **Proprietários** foi adicionado à camada cadastral como texto provisório; para seleção por busca será necessário cadastrar uma tabela oficial de proprietários e configurar uma relação.
+
+
+### Revisão de escopo
+
+Os campos FC TBG Nova e FC Nº Antiga foram removidos por serem específicos de TBG e não fazerem parte do cadastro TIC desta ficha. Os campos já existentes no formulário foram mantidos uma única vez, sem duplicação.
