@@ -141,7 +141,7 @@
     </individual-layer-settings>
   </snapping-settings>
   <relations>
-    <relation strength="Association" id="cad_fotos" name="Fotos" referencingLayer="Fotos_ea227751_1b03_4354_abfc_ed84f0fbe297" referencedLayer="Cadastro_Campo_95ebeac1_b72a_4851_9362_1b8aeb8eca6e">
+    <relation strength="Composition" id="cad_fotos" name="Fotos" referencingLayer="Fotos_ea227751_1b03_4354_abfc_ed84f0fbe297" referencedLayer="Cadastro_Campo_95ebeac1_b72a_4851_9362_1b8aeb8eca6e">
       <fieldRef referencingField="id_imovel" referencedField="fid"/>
     </relation>
       <relation strength="Association" id="cad_croquis" name="Croquis" referencingLayer="Croquis_Cadastrais_8d9564121c3d4a0ebf89d6f5" referencedLayer="Cadastro_Campo_95ebeac1_b72a_4851_9362_1b8aeb8eca6e">
@@ -604,7 +604,7 @@
       <legend showLabelLegend="0" type="default-vector"/>
       <referencedLayers/>
       <referencingLayers>
-        <relation strength="Association" id="cad_fotos" name="Fotos" referencingLayer="Fotos_ea227751_1b03_4354_abfc_ed84f0fbe297" providerKey="ogr" layerId="Fotos_ea227751_1b03_4354_abfc_ed84f0fbe297" layerName="Fotos" referencedLayer="Cadastro_Campo_95ebeac1_b72a_4851_9362_1b8aeb8eca6e" dataSource="./cadastro_trecho3.gpkg|layername=fotos_trecho3">
+        <relation strength="Composition" id="cad_fotos" name="Fotos" referencingLayer="Fotos_ea227751_1b03_4354_abfc_ed84f0fbe297" providerKey="ogr" layerId="Fotos_ea227751_1b03_4354_abfc_ed84f0fbe297" layerName="Fotos" referencedLayer="Cadastro_Campo_95ebeac1_b72a_4851_9362_1b8aeb8eca6e" dataSource="./cadastro_trecho3.gpkg|layername=fotos_trecho3">
           <fieldRef referencingField="id_imovel" referencedField="fid"/>
         </relation>
       </referencingLayers>
@@ -4334,7 +4334,7 @@ def my_form_open(diálogo, camada, feição):
       </geometryOptions>
       <legend showLabelLegend="0" type="default-vector"/>
       <referencedLayers>
-        <relation strength="Association" id="cad_fotos" name="Fotos" referencingLayer="Fotos_ea227751_1b03_4354_abfc_ed84f0fbe297" providerKey="ogr" layerId="Cadastro_Campo_95ebeac1_b72a_4851_9362_1b8aeb8eca6e" layerName="Cadastro_Campo" referencedLayer="Cadastro_Campo_95ebeac1_b72a_4851_9362_1b8aeb8eca6e" dataSource="./cadastro_trecho3.gpkg|layername=cadastro_trecho3">
+        <relation strength="Composition" id="cad_fotos" name="Fotos" referencingLayer="Fotos_ea227751_1b03_4354_abfc_ed84f0fbe297" providerKey="ogr" layerId="Cadastro_Campo_95ebeac1_b72a_4851_9362_1b8aeb8eca6e" layerName="Cadastro_Campo" referencedLayer="Cadastro_Campo_95ebeac1_b72a_4851_9362_1b8aeb8eca6e" dataSource="./cadastro_trecho3.gpkg|layername=cadastro_trecho3">
           <fieldRef referencingField="id_imovel" referencedField="fid"/>
         </relation>
       </referencedLayers>

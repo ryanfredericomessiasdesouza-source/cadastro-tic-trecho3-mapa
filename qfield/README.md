@@ -26,7 +26,7 @@ Na seção **4. Construção e Demolição**, foi incluída a pergunta **“Pode
 
 ## Formulário fotográfico
 
-O formulário de coleta não exibe mais o campo visual de Croqui. Ele termina com a relação **5. Relatório fotográfico** e, depois das fotos, com **6. Observação final**. A relação de fotos é 1:N: o cadastrador pode adicionar várias imagens do mesmo imóvel ou cômodo, e cada imagem possui sua própria **Descrição da foto / local**. O passo a passo está em [`INSTRUCOES_FORMULARIO_FOTOGRAFICO.md`](INSTRUCOES_FORMULARIO_FOTOGRAFICO.md).
+O formulário de coleta não exibe mais o campo visual de Croqui. Ele termina com a relação **5. Relatório fotográfico** e, depois das fotos, com **6. Observação final**. A relação de fotos é 1:N e foi configurada como `Composition`: no QField 4.2 ou mais recente, preferencialmente 4.3, a relação pode aparecer como galeria com captura rápida. O cadastrador pode adicionar várias imagens do mesmo imóvel ou cômodo, e cada imagem possui sua própria **Descrição da foto / local**. O passo a passo está em [`INSTRUCOES_FORMULARIO_FOTOGRAFICO.md`](INSTRUCOES_FORMULARIO_FOTOGRAFICO.md).
 
 ## Verificação
 
