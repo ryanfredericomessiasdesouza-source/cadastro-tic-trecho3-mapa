@@ -6,6 +6,10 @@ A versão publicada aqui é uma cópia compactada do raster usada para respeitar
 
 O arquivo `Cadastro_Campo_cloud.qgs` referencia o raster relativo `./JU0014_sem_borda.tif`. As demais camadas e bases do projeto permanecem gerenciadas no QFieldCloud e não são duplicadas nesta pasta.
 
+O pacote também inclui `referencias_tic.gpkg`, com as cinco camadas recebidas e já apontadas pelo QGS: **Vetorização — polígonos** (143 feições), **Vetorização — linhas** (485), **Vetorização — pontos** (110), **Áreas Executivo / Reassentamento** (87 polígonos) e **PAR — áreas** (44 polígonos). Todas ficam no grupo aberto **REFERÊNCIAS RECEBIDAS — VISÍVEIS** e entram ligadas por padrão.
+
+O DXF binário foi convertido e tratado como UTM 23S / WGS 84 (EPSG:32723), mesma referência usada no DWG cadastral anterior, e as camadas foram gravadas no GeoPackage em WGS 84 (EPSG:4326). As entidades de metadados na origem `(0,0)` foram descartadas para não deslocar o enquadramento do projeto.
+
 As outras imagens seguem a associação do projeto QGIS: `LO_002` usa `odm_orthophoto1.tif`, `LO_003` usa `odm_orthophoto2.tif` e `VA_004` usa `odm_orthophoto.tif`. Os nomes dos arquivos são mantidos por compatibilidade com o projeto; a conferência espacial confirmou que os pontos `LO-001`, `LO-003` e `VA-004` caem, respectivamente, nas áreas das camadas `LO_002`, `LO_003` e `VA_004`.
 
 ## Classificação cadastral
