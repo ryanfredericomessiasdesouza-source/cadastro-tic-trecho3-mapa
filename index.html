@@ -296,14 +296,15 @@ L.control.zoom({position:'bottomright'}).addTo(map);
 
 // ---- faixa e KMs do arquivo FaixadeServidão.dxf ----
 fetch('faixa_servidao.geojson').then(r=>r.json()).then(gj=>{
-  const ly=L.geoJSON(gj,{interactive:false,style:{color:'#3E2800',weight:5,opacity:.95,dashArray:'12 7'}}).addTo(map);
+  const faixaBase=L.geoJSON(gj,{interactive:false,style:{color:'#422800',weight:5.5,opacity:.95}}).addTo(map);
+  const ly=L.geoJSON(gj,{interactive:false,style:{color:'#FFD800',weight:3.2,opacity:.99,dashArray:'12 7'}}).addTo(map);
   const id='fx_servidao';
   document.getElementById('faixalist').insertAdjacentHTML('beforeend',
     '<label class="frow" id="row_'+id+'"><input type="checkbox" id="'+id+'" checked>'+
     '<span class="swatch" style="background:transparent;border:2px dashed #FFD800"></span>'+
     '<span class="nm">Faixa de Servidão — recebida</span><span class="ct">'+gj.features.length+'</span></label>');
   setTimeout(()=>document.getElementById(id).addEventListener('change',e=>{
-    e.target.checked?ly.addTo(map):map.removeLayer(ly);
+    if(e.target.checked){faixaBase.addTo(map);ly.addTo(map);}else{map.removeLayer(faixaBase);map.removeLayer(ly);}
     document.getElementById('row_'+id).classList.toggle('off',!e.target.checked);}),0);
 }).catch(()=>{});
 
