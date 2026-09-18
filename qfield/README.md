@@ -6,7 +6,7 @@ A versão publicada aqui é uma cópia compactada do raster usada para respeitar
 
 O arquivo `Cadastro_Campo_cloud.qgs` referencia o raster relativo `./JU0014_sem_borda.tif`. As demais camadas e bases do projeto permanecem gerenciadas no QFieldCloud e não são duplicadas nesta pasta.
 
-O pacote também inclui `referencias_tic.gpkg`, com as cinco camadas recebidas e já apontadas pelo QGS: **Vetorização — polígonos** (143 feições), **Vetorização — linhas** (485), **Vetorização — pontos** (110), **Áreas Executivo / Reassentamento** (87 polígonos) e **PAR — áreas** (44 polígonos). Todas ficam no grupo aberto **REFERÊNCIAS RECEBIDAS — VISÍVEIS** e entram ligadas por padrão.
+O pacote também inclui `referencias_tic.gpkg`, com as cinco camadas recebidas e já apontadas pelo QGS: **Vetorização — polígonos** (142 feições após a retirada do quadrado vazio), **Vetorização — linhas** (485), **Vetorização — pontos** (110), **Áreas Executivo / Reassentamento** (87 polígonos) e **PAR — áreas** (44 polígonos). Todas ficam no grupo aberto **REFERÊNCIAS RECEBIDAS — VISÍVEIS** e entram ligadas por padrão.
 
 O DXF binário foi convertido e tratado como UTM 23S / WGS 84 (EPSG:32723), mesma referência usada no DWG cadastral anterior, e as camadas foram gravadas no GeoPackage em WGS 84 (EPSG:4326). As entidades de metadados na origem `(0,0)` foram descartadas para não deslocar o enquadramento do projeto.
 
@@ -42,3 +42,7 @@ O formulário de coleta não exibe mais o campo visual de Croqui. Ele termina co
 ## Formulário único com subdivisões
 
 O formulário QGIS foi reorganizado em uma única ficha com os blocos **Cadastro de Imóvel** e **Cadastro de Proprietário**. As subdivisões incluem identificação, localização/endereço, registro/documentação, região, habitação e serviços, construção/demolição, relatório fotográfico, observação final, identificação do proprietário, endereço, vínculo/contato e documentos. Os campos novos das telas estão documentados em [`INSTRUCOES_FORMULARIO_UNICO.md`](INSTRUCOES_FORMULARIO_UNICO.md).
+
+## Faixa de servidão e KMs recebidos
+
+O arquivo `faixa_servidao.gpkg` substitui as antigas camadas de faixa CPTM/RUMO e os marcos quilométricos anteriores. Ele contém **8 trechos de faixa** com simbologia amarela tracejada e **81 KMs** do próprio DXF recebido, de `64+140 m` a `91+420 m`, com rótulos e halo branco. O QGS mantém esse grupo ligado e aberto por padrão para evitar sobreposição e duplicidade.
