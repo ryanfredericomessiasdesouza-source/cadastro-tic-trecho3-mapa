@@ -31,7 +31,7 @@ O grupo **FAIXA DE SERVIDÃO — arquivo recebido** fica aberto e ligado por pad
 
 As camadas **FAIXA DE DOMÍNIO RUMO**, **Domínios_CPTM_L7**, **KM TIC Jundiaí — completa** e **Marcos KM** foram retiradas do projeto para evitar sobreposição e duplicidade.
 
-A camada **Vetorização — polígonos** permanece no grupo **REFERÊNCIAS RECEBIDAS — VISÍVEIS**. Foi removida somente a feição identificada como quadrado vazio, `FID 89 / EntityHandle F82`, da classe `Edificações`; as demais referências foram preservadas.
+A camada **Vetorização — pontos** foi retirada da árvore do projeto. A camada **Vetorização — polígonos** permanece no grupo **REFERÊNCIAS RECEBIDAS — VISÍVEIS**. As camadas **Áreas Executivo / Reassentamento** e **PAR — áreas** permanecem ligadas, mas foram configuradas somente como linhas vermelhas tracejadas, sem preenchimento. Foi removida somente a feição identificada como quadrado vazio, `FID 89 / EntityHandle F82`, da classe `Edificações`; as demais referências foram preservadas.
 
 ## Sistema de referência
 

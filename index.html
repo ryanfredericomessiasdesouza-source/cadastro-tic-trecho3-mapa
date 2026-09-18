@@ -312,6 +312,25 @@ fetch('faixa_servidao.geojson').then(r=>r.json()).then(gj=>{
     document.getElementById('row_'+id).classList.toggle('off',!e.target.checked);}),0);
 }).catch(()=>{});
 
+// ---- áreas recebidas: somente contorno vermelho tracejado ----
+const AREAS_RECEBIDAS=[
+  {id:'exec',nome:'Áreas Executivo / Reassentamento',url:'areas_executivo_reassentamento.geojson'},
+  {id:'par',nome:'PAR — áreas',url:'areas_par.geojson'}
+];
+AREAS_RECEBIDAS.forEach(cfg=>{
+  fetch(cfg.url).then(r=>r.json()).then(gj=>{
+    const ly=L.geoJSON(gj,{pane:'faixaPane',interactive:false,style:{color:'#E31B23',weight:2.4,opacity:.98,fill:false,dashArray:'10 6'}}).addTo(map);
+    const id='area_'+cfg.id;
+    document.getElementById('faixalist').insertAdjacentHTML('beforeend',
+      '<label class="frow" id="row_'+id+'"><input type="checkbox" id="'+id+'" checked>'+
+      '<span class="swatch" style="background:transparent;border:2px dashed #E31B23"></span>'+
+      '<span class="nm">'+cfg.nome+'</span><span class="ct">'+gj.features.length+'</span></label>');
+    setTimeout(()=>document.getElementById(id).addEventListener('change',e=>{
+      e.target.checked?ly.addTo(map):map.removeLayer(ly);
+      document.getElementById('row_'+id).classList.toggle('off',!e.target.checked);}),0);
+  }).catch(()=>{});
+});
+
 // ---- croquis dos imóveis, separados pelas classes do DWG ----
 const CROQUI_STYLE={
   'OCUPAÇÕES CADASTRADAS':{cor:'#25C685',fill:'#25C685'},

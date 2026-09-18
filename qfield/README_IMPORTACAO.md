@@ -22,15 +22,15 @@ Os três arquivos enviados foram consolidados em `referencias_tic.gpkg`, sem alt
 |---|---|---|---|
 | `Vetorização — polígonos` | `vetorização.dxf` | 142 polígonos após a retirada do quadrado vazio | Ligada |
 | `Vetorização — linhas` | `vetorização.dxf` | 485 linhas | Ligada |
-| `Vetorização — pontos` | `vetorização.dxf` | 110 pontos | Ligada |
-| `Áreas Executivo / Reassentamento` | `ÁreasExecutivo-Reassentamento.kml` | 87 áreas | Ligada |
-| `PAR — áreas` | `PAR.kmz` | 44 áreas | Ligada |
+| `Vetorização — pontos` | `vetorização.dxf` | 110 pontos | Removida do projeto |
+| `Áreas Executivo / Reassentamento` | `ÁreasExecutivo-Reassentamento.kml` | 87 áreas, sem preenchimento | Ligada |
+| `PAR — áreas` | `PAR.kmz` | 44 áreas, sem preenchimento | Ligada |
 
 O DXF recebido estava em **DXF binário e sem CRS declarado**. Ele foi convertido para leitura pelo QGIS e tratado como **UTM 23S / WGS 84 (EPSG:32723)**, a mesma referência adotada para o DWG cadastral anterior, sendo reprojetado para WGS 84 (EPSG:4326). As entidades de metadados localizadas na origem `(0,0)` foram descartadas para evitar que o enquadramento do projeto fosse deslocado para fora da área de trabalho.
 
 As novas camadas ficam dentro do grupo aberto **REFERÊNCIAS RECEBIDAS — VISÍVEIS**, logo abaixo de `Croquis cadastrais`, com cores fortes e linhas espessas para facilitar a visualização no QGIS e no QField.
 
-Na revisão visual, a vetorização foi categorizada por tema: polígonos de edificações em azul, calçadas em cinza e piscinas em ciano; linhas ferroviárias em preto, limites de ocupação em magenta, lotes em laranja e limites de faixa em vermelho. As áreas Executivo/Reassentamento foram configuradas em verde translúcido e as áreas PAR em laranja translúcido, ambas com contorno espesso. A imagem `JU0014` permanece como voo principal ligado por padrão; os demais voos ficam disponíveis na legenda, mas desligados inicialmente para não encobrir as referências. Foi removida somente a feição identificada como quadrado vazio, `FID 89 / EntityHandle F82`, mantendo as demais 142 feições de polígonos.
+Na revisão visual, a vetorização foi categorizada por tema: polígonos de edificações em azul, calçadas em cinza e piscinas em ciano; linhas ferroviárias em preto, limites de ocupação em magenta, lotes em laranja e limites de faixa em vermelho. A camada `Vetorização — pontos` foi retirada da árvore do projeto. As áreas Executivo/Reassentamento e PAR permanecem ligadas, mas agora aparecem somente como contorno vermelho tracejado, sem preenchimento, para não encobrir a imagem aérea e as demais referências. A imagem `JU0014` permanece como voo principal ligado por padrão; os demais voos ficam disponíveis na legenda, mas desligados inicialmente para não encobrir as referências. Foi removida somente a feição identificada como quadrado vazio, `FID 89 / EntityHandle F82`, mantendo as demais 142 feições de polígonos.
 
 ## Faixa de servidão e KMs recebidos
 
