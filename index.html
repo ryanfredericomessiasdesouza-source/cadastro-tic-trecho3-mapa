@@ -294,22 +294,18 @@ summaryToggle.addEventListener('click',()=>toggleSummary(!summaryPanel.classList
 summaryClose.addEventListener('click',()=>toggleSummary(false));
 L.control.zoom({position:'bottomright'}).addTo(map);
 
-// ---- faixas de domínio (polígonos sob os pontos) ----
-const FAIXA=[{id:'rumo',nome:'Faixa RUMO',url:'faixa_rumo.geojson',cor:'#FF7021'},
-             {id:'cptm',nome:'Faixa CPTM',url:'faixa_cptm.geojson',cor:'#35D0E0'}];
-FAIXA.forEach(cfg=>{
-  fetch(cfg.url).then(r=>r.json()).then(gj=>{
-    const ly=L.geoJSON(gj,{interactive:false,style:{color:cfg.cor,weight:1.2,fillColor:cfg.cor,fillOpacity:.14}}).addTo(map);
-    const id='fx_'+cfg.id;
-    document.getElementById('faixalist').insertAdjacentHTML('beforeend',
-      '<label class="frow" id="row_'+id+'"><input type="checkbox" id="'+id+'" checked>'+
-      '<span class="swatch" style="background:'+cfg.cor+'40;border:1.5px solid '+cfg.cor+'"></span>'+
-      '<span class="nm">'+cfg.nome+'</span></label>');
-    setTimeout(()=>document.getElementById(id).addEventListener('change',e=>{
-      e.target.checked?ly.addTo(map):map.removeLayer(ly);
-      document.getElementById('row_'+id).classList.toggle('off',!e.target.checked);}),0);
-  }).catch(()=>{});
-});
+// ---- faixa e KMs do arquivo FaixadeServidão.dxf ----
+fetch('faixa_servidao.geojson').then(r=>r.json()).then(gj=>{
+  const ly=L.geoJSON(gj,{interactive:false,style:{color:'#3E2800',weight:5,opacity:.95,dashArray:'12 7'}}).addTo(map);
+  const id='fx_servidao';
+  document.getElementById('faixalist').insertAdjacentHTML('beforeend',
+    '<label class="frow" id="row_'+id+'"><input type="checkbox" id="'+id+'" checked>'+
+    '<span class="swatch" style="background:transparent;border:2px dashed #FFD800"></span>'+
+    '<span class="nm">Faixa de Servidão — recebida</span><span class="ct">'+gj.features.length+'</span></label>');
+  setTimeout(()=>document.getElementById(id).addEventListener('change',e=>{
+    e.target.checked?ly.addTo(map):map.removeLayer(ly);
+    document.getElementById('row_'+id).classList.toggle('off',!e.target.checked);}),0);
+}).catch(()=>{});
 
 // ---- croquis dos imóveis, separados pelas classes do DWG ----
 const CROQUI_STYLE={
@@ -339,17 +335,17 @@ fetch('croquis.geojson?v=20260916-dimensoes').then(r=>r.json()).then(gj=>{
 }).catch(()=>{});
 
 function hexA(h,a){const n=parseInt(h.slice(1),16);return 'rgba('+(n>>16&255)+','+(n>>8&255)+','+(n&255)+','+a+')';}
-// marcos quilométricos (referência)
-fetch('marcos_km.geojson').then(r=>r.json()).then(gj=>{
+// marcos quilométricos que acompanham a faixa recebida
+fetch('km_faixa_servidao.geojson').then(r=>r.json()).then(gj=>{
   const kmLayer=L.geoJSON(gj,{
-    pointToLayer:(f,ll)=>L.circleMarker(ll,{radius:2.5,color:'#FFD54A',weight:1,fillColor:'#FFD54A',fillOpacity:.9}),
-    onEachFeature:(f,l)=>{const p=f.properties;l.bindPopup('<b>KM '+(p.km||'—')+'</b><br>'+(p.codigo_km||'')+' · '+(p.ferrovia||''));}
+    pointToLayer:(f,ll)=>L.circleMarker(ll,{radius:3.3,color:'#422800',weight:1.4,fillColor:'#FFD800',fillOpacity:.98}),
+    onEachFeature:(f,l)=>{const p=f.properties;l.bindPopup('<b>KM '+(p.label||'—')+'</b><br>'+((p.km_m||'')+' m'));}
   }).addTo(map);
   const id='fx_km';
   document.getElementById('faixalist').insertAdjacentHTML('beforeend',
     '<label class="frow" id="row_'+id+'"><input type="checkbox" id="'+id+'" checked>'+
-    '<span class="swatch" style="background:#FFD54A;border-radius:50%;border:1.5px solid #FFD54A"></span>'+
-    '<span class="nm">Marcos KM</span></label>');
+    '<span class="swatch" style="background:#FFD800;border-radius:50%;border:1.5px solid #422800"></span>'+
+    '<span class="nm">KM — Faixa de Servidão</span><span class="ct">'+gj.features.length+'</span></label>');
   setTimeout(()=>document.getElementById(id).addEventListener('change',e=>{
     e.target.checked?kmLayer.addTo(map):map.removeLayer(kmLayer);
     document.getElementById('row_'+id).classList.toggle('off',!e.target.checked);}),0);
