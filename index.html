@@ -357,8 +357,7 @@ const VETOR_CORES={
   'Edificações':'#2F6BFF',
   'Linha-Ferrea':'#111111',
   'Lotes OC':'#FF7A00',
-  'Limite Faixa':'#E3263E',
-  'Guia':'#FFFFFF'
+  'Limite Faixa':'#E3263E'
 };
 function addVetorToggle(id,nome,cor,gj,ly){
   document.getElementById('vetorlist').insertAdjacentHTML('beforeend',
@@ -369,14 +368,14 @@ function addVetorToggle(id,nome,cor,gj,ly){
     e.target.checked?ly.addTo(map):map.removeLayer(ly);
     document.getElementById('row_'+id).classList.toggle('off',!e.target.checked);}),0);
 }
-fetch('vetorizacao_linhas_20260923.geojson').then(r=>r.json()).then(gj=>{
+fetch('vetorizacao_linhas_20260923_v2.geojson').then(r=>r.json()).then(gj=>{
   const ly=L.geoJSON(gj,{pane:'vetorPane',interactive:true,
     style:f=>({color:VETOR_CORES[f.properties.Layer]||'#FFFFFF',weight:2.4,opacity:.95}),
     onEachFeature:(f,l)=>{const p=f.properties,tema=p.Layer||'Linha';
       l.bindTooltip(tema,{sticky:true,opacity:.9});
       l.bindPopup('<b>Vetorização — '+tema+'</b>'+(p.Text?'<br>'+p.Text:''));}
   }).addTo(map);
-  addVetorToggle('vet_linhas','Vetorização — linhas','linear-gradient(135deg,#2F6BFF 0 20%,#111111 20% 40%,#FF7A00 40% 60%,#E3263E 60% 80%,#20C77A 80%)',gj,ly);
+  addVetorToggle('vet_linhas','Vetorização — linhas','linear-gradient(135deg,#2F6BFF 0 25%,#111111 25% 50%,#FF7A00 50% 75%,#E3263E 75%)',gj,ly);
   document.getElementById('vetorlist').insertAdjacentHTML('beforeend',
     '<div class="croqui-legend vetor-legend">'+
     '<span class="cleg"><i style="background:#2F6BFF"></i>Edificações</span>'+
