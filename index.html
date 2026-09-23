@@ -369,7 +369,7 @@ function addVetorToggle(id,nome,cor,gj,ly){
     e.target.checked?ly.addTo(map):map.removeLayer(ly);
     document.getElementById('row_'+id).classList.toggle('off',!e.target.checked);}),0);
 }
-fetch('vetorizacao_linhas.geojson?v=20260923-sem-calcada-limiteoc-piscinas').then(r=>r.json()).then(gj=>{
+fetch('vetorizacao_linhas_20260923.geojson').then(r=>r.json()).then(gj=>{
   const ly=L.geoJSON(gj,{pane:'vetorPane',interactive:true,
     style:f=>({color:VETOR_CORES[f.properties.Layer]||'#FFFFFF',weight:2.4,opacity:.95}),
     onEachFeature:(f,l)=>{const p=f.properties,tema=p.Layer||'Linha';
