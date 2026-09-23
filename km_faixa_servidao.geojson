@@ -1,87 +1,1310 @@
 {
-"type": "FeatureCollection",
-"name": "km_faixa_servidao",
-"features": [
-{ "type": "Feature", "properties": { "label": "64+140 m", "km_m": 64140.0, "origem": "DXF FaixadeServidão / 422" }, "geometry": { "type": "Point", "coordinates": [ -46.8981941, -23.1718849 ] } },
-{ "type": "Feature", "properties": { "label": "64+160 m", "km_m": 64160.0, "origem": "DXF FaixadeServidão / 427" }, "geometry": { "type": "Point", "coordinates": [ -46.8983026, -23.1717347 ] } },
-{ "type": "Feature", "properties": { "label": "64+180 m", "km_m": 64180.0, "origem": "DXF FaixadeServidão / 42C" }, "geometry": { "type": "Point", "coordinates": [ -46.8984108, -23.1715845 ] } },
-{ "type": "Feature", "properties": { "label": "64+200 m", "km_m": 64200.0, "origem": "DXF FaixadeServidão / 431" }, "geometry": { "type": "Point", "coordinates": [ -46.8985196, -23.1714344 ] } },
-{ "type": "Feature", "properties": { "label": "64+220 m", "km_m": 64220.0, "origem": "DXF FaixadeServidão / 436" }, "geometry": { "type": "Point", "coordinates": [ -46.898628, -23.1712842 ] } },
-{ "type": "Feature", "properties": { "label": "64+240 m", "km_m": 64240.0, "origem": "DXF FaixadeServidão / 43B" }, "geometry": { "type": "Point", "coordinates": [ -46.898739, -23.1711309 ] } },
-{ "type": "Feature", "properties": { "label": "64+260 m", "km_m": 64260.0, "origem": "DXF FaixadeServidão / 440" }, "geometry": { "type": "Point", "coordinates": [ -46.8988478, -23.1709809 ] } },
-{ "type": "Feature", "properties": { "label": "64+280 m", "km_m": 64280.0, "origem": "DXF FaixadeServidão / 445" }, "geometry": { "type": "Point", "coordinates": [ -46.8989566, -23.1708309 ] } },
-{ "type": "Feature", "properties": { "label": "64+300 m", "km_m": 64300.0, "origem": "DXF FaixadeServidão / 44A" }, "geometry": { "type": "Point", "coordinates": [ -46.8990653, -23.1706809 ] } },
-{ "type": "Feature", "properties": { "label": "64+320 m", "km_m": 64320.0, "origem": "DXF FaixadeServidão / 44F" }, "geometry": { "type": "Point", "coordinates": [ -46.8991741, -23.170531 ] } },
-{ "type": "Feature", "properties": { "label": "64+340 m", "km_m": 64340.0, "origem": "DXF FaixadeServidão / 454" }, "geometry": { "type": "Point", "coordinates": [ -46.8992829, -23.170381 ] } },
-{ "type": "Feature", "properties": { "label": "64+360 m", "km_m": 64360.0, "origem": "DXF FaixadeServidão / 459" }, "geometry": { "type": "Point", "coordinates": [ -46.8993917, -23.170231 ] } },
-{ "type": "Feature", "properties": { "label": "64+380 m", "km_m": 64380.0, "origem": "DXF FaixadeServidão / 45E" }, "geometry": { "type": "Point", "coordinates": [ -46.8995004, -23.170081 ] } },
-{ "type": "Feature", "properties": { "label": "64+400 m", "km_m": 64400.0, "origem": "DXF FaixadeServidão / 463" }, "geometry": { "type": "Point", "coordinates": [ -46.8996092, -23.169931 ] } },
-{ "type": "Feature", "properties": { "label": "64+420 m", "km_m": 64420.0, "origem": "DXF FaixadeServidão / 468" }, "geometry": { "type": "Point", "coordinates": [ -46.899718, -23.1697811 ] } },
-{ "type": "Feature", "properties": { "label": "64+440 m", "km_m": 64440.0, "origem": "DXF FaixadeServidão / 46D" }, "geometry": { "type": "Point", "coordinates": [ -46.8998268, -23.1696311 ] } },
-{ "type": "Feature", "properties": { "label": "64+460 m", "km_m": 64460.0, "origem": "DXF FaixadeServidão / 472" }, "geometry": { "type": "Point", "coordinates": [ -46.8999356, -23.1694811 ] } },
-{ "type": "Feature", "properties": { "label": "64+480 m", "km_m": 64480.0, "origem": "DXF FaixadeServidão / 477" }, "geometry": { "type": "Point", "coordinates": [ -46.9000443, -23.1693311 ] } },
-{ "type": "Feature", "properties": { "label": "64+500 m", "km_m": 64500.0, "origem": "DXF FaixadeServidão / 47C" }, "geometry": { "type": "Point", "coordinates": [ -46.9001531, -23.1691811 ] } },
-{ "type": "Feature", "properties": { "label": "64+520 m", "km_m": 64520.0, "origem": "DXF FaixadeServidão / 481" }, "geometry": { "type": "Point", "coordinates": [ -46.9002619, -23.1690311 ] } },
-{ "type": "Feature", "properties": { "label": "64+540 m", "km_m": 64540.0, "origem": "DXF FaixadeServidão / 486" }, "geometry": { "type": "Point", "coordinates": [ -46.9003741, -23.1688764 ] } },
-{ "type": "Feature", "properties": { "label": "64+560 m", "km_m": 64560.0, "origem": "DXF FaixadeServidão / 48B" }, "geometry": { "type": "Point", "coordinates": [ -46.9004828, -23.1687265 ] } },
-{ "type": "Feature", "properties": { "label": "64+580 m", "km_m": 64580.0, "origem": "DXF FaixadeServidão / 490" }, "geometry": { "type": "Point", "coordinates": [ -46.9005916, -23.1685765 ] } },
-{ "type": "Feature", "properties": { "label": "64+600 m", "km_m": 64600.0, "origem": "DXF FaixadeServidão / 495" }, "geometry": { "type": "Point", "coordinates": [ -46.9007004, -23.1684265 ] } },
-{ "type": "Feature", "properties": { "label": "64+620 m", "km_m": 64620.0, "origem": "DXF FaixadeServidão / 49A" }, "geometry": { "type": "Point", "coordinates": [ -46.9008092, -23.1682765 ] } },
-{ "type": "Feature", "properties": { "label": "64+640 m", "km_m": 64640.0, "origem": "DXF FaixadeServidão / 49F" }, "geometry": { "type": "Point", "coordinates": [ -46.9009179, -23.1681265 ] } },
-{ "type": "Feature", "properties": { "label": "64+660 m", "km_m": 64660.0, "origem": "DXF FaixadeServidão / 4A4" }, "geometry": { "type": "Point", "coordinates": [ -46.9010256, -23.1679789 ] } },
-{ "type": "Feature", "properties": { "label": "64+680 m", "km_m": 64680.0, "origem": "DXF FaixadeServidão / 4A9" }, "geometry": { "type": "Point", "coordinates": [ -46.901135, -23.1678296 ] } },
-{ "type": "Feature", "properties": { "label": "73+500 m", "km_m": 73500.0, "origem": "DXF FaixadeServidão / 78B" }, "geometry": { "type": "Point", "coordinates": [ -46.9412666, -23.1045623 ] } },
-{ "type": "Feature", "properties": { "label": "73+520 m", "km_m": 73520.0, "origem": "DXF FaixadeServidão / 790" }, "geometry": { "type": "Point", "coordinates": [ -46.9412693, -23.1043817 ] } },
-{ "type": "Feature", "properties": { "label": "73+540 m", "km_m": 73540.0, "origem": "DXF FaixadeServidão / 795" }, "geometry": { "type": "Point", "coordinates": [ -46.9412836, -23.104201 ] } },
-{ "type": "Feature", "properties": { "label": "73+560 m", "km_m": 73560.0, "origem": "DXF FaixadeServidão / 79A" }, "geometry": { "type": "Point", "coordinates": [ -46.9413063, -23.1040238 ] } },
-{ "type": "Feature", "properties": { "label": "73+580 m", "km_m": 73580.0, "origem": "DXF FaixadeServidão / 79F" }, "geometry": { "type": "Point", "coordinates": [ -46.9413346, -23.1038455 ] } },
-{ "type": "Feature", "properties": { "label": "73+600 m", "km_m": 73600.0, "origem": "DXF FaixadeServidão / 7A4" }, "geometry": { "type": "Point", "coordinates": [ -46.9413726, -23.1036696 ] } },
-{ "type": "Feature", "properties": { "label": "73+620 m", "km_m": 73620.0, "origem": "DXF FaixadeServidão / 7A9" }, "geometry": { "type": "Point", "coordinates": [ -46.9414194, -23.1034923 ] } },
-{ "type": "Feature", "properties": { "label": "73+640 m", "km_m": 73640.0, "origem": "DXF FaixadeServidão / 7AE" }, "geometry": { "type": "Point", "coordinates": [ -46.9414744, -23.1033179 ] } },
-{ "type": "Feature", "properties": { "label": "73+660 m", "km_m": 73660.0, "origem": "DXF FaixadeServidão / 7B3" }, "geometry": { "type": "Point", "coordinates": [ -46.9415375, -23.1031478 ] } },
-{ "type": "Feature", "properties": { "label": "73+680 m", "km_m": 73680.0, "origem": "DXF FaixadeServidão / 7B8" }, "geometry": { "type": "Point", "coordinates": [ -46.9416081, -23.1029811 ] } },
-{ "type": "Feature", "properties": { "label": "73+700 m", "km_m": 73700.0, "origem": "DXF FaixadeServidão / 7BD" }, "geometry": { "type": "Point", "coordinates": [ -46.9416901, -23.1028141 ] } },
-{ "type": "Feature", "properties": { "label": "73+720 m", "km_m": 73720.0, "origem": "DXF FaixadeServidão / 7C2" }, "geometry": { "type": "Point", "coordinates": [ -46.9417771, -23.1026544 ] } },
-{ "type": "Feature", "properties": { "label": "73+740 m", "km_m": 73740.0, "origem": "DXF FaixadeServidão / 7C7" }, "geometry": { "type": "Point", "coordinates": [ -46.9418712, -23.1024931 ] } },
-{ "type": "Feature", "properties": { "label": "73+760 m", "km_m": 73760.0, "origem": "DXF FaixadeServidão / 7CC" }, "geometry": { "type": "Point", "coordinates": [ -46.9419746, -23.1023416 ] } },
-{ "type": "Feature", "properties": { "label": "73+780 m", "km_m": 73780.0, "origem": "DXF FaixadeServidão / 7D1" }, "geometry": { "type": "Point", "coordinates": [ -46.942076, -23.1021947 ] } },
-{ "type": "Feature", "properties": { "label": "73+800 m", "km_m": 73800.0, "origem": "DXF FaixadeServidão / 7D6" }, "geometry": { "type": "Point", "coordinates": [ -46.9421849, -23.1020519 ] } },
-{ "type": "Feature", "properties": { "label": "73+820 m", "km_m": 73820.0, "origem": "DXF FaixadeServidão / 7DB" }, "geometry": { "type": "Point", "coordinates": [ -46.9423001, -23.1019107 ] } },
-{ "type": "Feature", "properties": { "label": "73+840 m", "km_m": 73840.0, "origem": "DXF FaixadeServidão / 7E0" }, "geometry": { "type": "Point", "coordinates": [ -46.9424238, -23.1017638 ] } },
-{ "type": "Feature", "properties": { "label": "73+860 m", "km_m": 73860.0, "origem": "DXF FaixadeServidão / 7E5" }, "geometry": { "type": "Point", "coordinates": [ -46.9425495, -23.1016325 ] } },
-{ "type": "Feature", "properties": { "label": "73+880 m", "km_m": 73880.0, "origem": "DXF FaixadeServidão / 7EA" }, "geometry": { "type": "Point", "coordinates": [ -46.9426947, -23.1014848 ] } },
-{ "type": "Feature", "properties": { "label": "73+900 m", "km_m": 73900.0, "origem": "DXF FaixadeServidão / 7EF" }, "geometry": { "type": "Point", "coordinates": [ -46.9428332, -23.1013575 ] } },
-{ "type": "Feature", "properties": { "label": "74+780 m", "km_m": 74780.0, "origem": "DXF FaixadeServidão / 7F4" }, "geometry": { "type": "Point", "coordinates": [ -46.9472345, -23.0950261 ] } },
-{ "type": "Feature", "properties": { "label": "74+800 m", "km_m": 74800.0, "origem": "DXF FaixadeServidão / 7F9" }, "geometry": { "type": "Point", "coordinates": [ -46.9472463, -23.0948458 ] } },
-{ "type": "Feature", "properties": { "label": "74+820 m", "km_m": 74820.0, "origem": "DXF FaixadeServidão / 7FE" }, "geometry": { "type": "Point", "coordinates": [ -46.947261, -23.0946744 ] } },
-{ "type": "Feature", "properties": { "label": "74+840 m", "km_m": 74840.0, "origem": "DXF FaixadeServidão / 803" }, "geometry": { "type": "Point", "coordinates": [ -46.9472822, -23.0944946 ] } },
-{ "type": "Feature", "properties": { "label": "74+860 m", "km_m": 74860.0, "origem": "DXF FaixadeServidão / 808" }, "geometry": { "type": "Point", "coordinates": [ -46.9473108, -23.0943167 ] } },
-{ "type": "Feature", "properties": { "label": "74+880 m", "km_m": 74880.0, "origem": "DXF FaixadeServidão / 80D" }, "geometry": { "type": "Point", "coordinates": [ -46.9473402, -23.0941407 ] } },
-{ "type": "Feature", "properties": { "label": "74+900 m", "km_m": 74900.0, "origem": "DXF FaixadeServidão / 812" }, "geometry": { "type": "Point", "coordinates": [ -46.9473804, -23.0939639 ] } },
-{ "type": "Feature", "properties": { "label": "74+920 m", "km_m": 74920.0, "origem": "DXF FaixadeServidão / 817" }, "geometry": { "type": "Point", "coordinates": [ -46.9474301, -23.0937865 ] } },
-{ "type": "Feature", "properties": { "label": "74+940 m", "km_m": 74940.0, "origem": "DXF FaixadeServidão / 81C" }, "geometry": { "type": "Point", "coordinates": [ -46.9474813, -23.0936109 ] } },
-{ "type": "Feature", "properties": { "label": "74+960 m", "km_m": 74960.0, "origem": "DXF FaixadeServidão / 821" }, "geometry": { "type": "Point", "coordinates": [ -46.9475398, -23.093442 ] } },
-{ "type": "Feature", "properties": { "label": "74+980 m", "km_m": 74980.0, "origem": "DXF FaixadeServidão / 826" }, "geometry": { "type": "Point", "coordinates": [ -46.9476056, -23.0932749 ] } },
-{ "type": "Feature", "properties": { "label": "75+000 m", "km_m": 75000.0, "origem": "DXF FaixadeServidão / 82B" }, "geometry": { "type": "Point", "coordinates": [ -46.9476752, -23.0931065 ] } },
-{ "type": "Feature", "properties": { "label": "75+020 m", "km_m": 75020.0, "origem": "DXF FaixadeServidão / 830" }, "geometry": { "type": "Point", "coordinates": [ -46.9477487, -23.0929388 ] } },
-{ "type": "Feature", "properties": { "label": "75+040 m", "km_m": 75040.0, "origem": "DXF FaixadeServidão / 835" }, "geometry": { "type": "Point", "coordinates": [ -46.9478387, -23.0927772 ] } },
-{ "type": "Feature", "properties": { "label": "75+060 m", "km_m": 75060.0, "origem": "DXF FaixadeServidão / 83A" }, "geometry": { "type": "Point", "coordinates": [ -46.9479292, -23.0926198 ] } },
-{ "type": "Feature", "properties": { "label": "75+080 m", "km_m": 75080.0, "origem": "DXF FaixadeServidão / 83F" }, "geometry": { "type": "Point", "coordinates": [ -46.9480275, -23.0924603 ] } },
-{ "type": "Feature", "properties": { "label": "75+100 m", "km_m": 75100.0, "origem": "DXF FaixadeServidão / 844" }, "geometry": { "type": "Point", "coordinates": [ -46.9481289, -23.0923093 ] } },
-{ "type": "Feature", "properties": { "label": "91+140 m", "km_m": 91140.0, "origem": "DXF FaixadeServidão / 849" }, "geometry": { "type": "Point", "coordinates": [ -46.9934245, -22.969412 ] } },
-{ "type": "Feature", "properties": { "label": "91+160 m", "km_m": 91160.0, "origem": "DXF FaixadeServidão / 84E" }, "geometry": { "type": "Point", "coordinates": [ -46.993497, -22.9692444 ] } },
-{ "type": "Feature", "properties": { "label": "91+180 m", "km_m": 91180.0, "origem": "DXF FaixadeServidão / 853" }, "geometry": { "type": "Point", "coordinates": [ -46.9935694, -22.9690767 ] } },
-{ "type": "Feature", "properties": { "label": "91+200 m", "km_m": 91200.0, "origem": "DXF FaixadeServidão / 858" }, "geometry": { "type": "Point", "coordinates": [ -46.9936418, -22.968909 ] } },
-{ "type": "Feature", "properties": { "label": "91+220 m", "km_m": 91220.0, "origem": "DXF FaixadeServidão / 85D" }, "geometry": { "type": "Point", "coordinates": [ -46.9937142, -22.9687413 ] } },
-{ "type": "Feature", "properties": { "label": "91+240 m", "km_m": 91240.0, "origem": "DXF FaixadeServidão / 862" }, "geometry": { "type": "Point", "coordinates": [ -46.9937844, -22.9685728 ] } },
-{ "type": "Feature", "properties": { "label": "91+260 m", "km_m": 91260.0, "origem": "DXF FaixadeServidão / 867" }, "geometry": { "type": "Point", "coordinates": [ -46.99386, -22.9683982 ] } },
-{ "type": "Feature", "properties": { "label": "91+280 m", "km_m": 91280.0, "origem": "DXF FaixadeServidão / 86C" }, "geometry": { "type": "Point", "coordinates": [ -46.993929, -22.9682293 ] } },
-{ "type": "Feature", "properties": { "label": "91+300 m", "km_m": 91300.0, "origem": "DXF FaixadeServidão / 871" }, "geometry": { "type": "Point", "coordinates": [ -46.9939981, -22.9680604 ] } },
-{ "type": "Feature", "properties": { "label": "91+320 m", "km_m": 91320.0, "origem": "DXF FaixadeServidão / 876" }, "geometry": { "type": "Point", "coordinates": [ -46.9940671, -22.9678915 ] } },
-{ "type": "Feature", "properties": { "label": "91+340 m", "km_m": 91340.0, "origem": "DXF FaixadeServidão / 87B" }, "geometry": { "type": "Point", "coordinates": [ -46.9941326, -22.9677192 ] } },
-{ "type": "Feature", "properties": { "label": "91+360 m", "km_m": 91360.0, "origem": "DXF FaixadeServidão / 880" }, "geometry": { "type": "Point", "coordinates": [ -46.9941848, -22.9675436 ] } },
-{ "type": "Feature", "properties": { "label": "91+380 m", "km_m": 91380.0, "origem": "DXF FaixadeServidão / 885" }, "geometry": { "type": "Point", "coordinates": [ -46.9942315, -22.9673648 ] } },
-{ "type": "Feature", "properties": { "label": "91+400 m", "km_m": 91400.0, "origem": "DXF FaixadeServidão / 88A" }, "geometry": { "type": "Point", "coordinates": [ -46.9942659, -22.9671864 ] } },
-{ "type": "Feature", "properties": { "label": "91+420 m", "km_m": 91420.0, "origem": "DXF FaixadeServidão / 88F" }, "geometry": { "type": "Point", "coordinates": [ -46.9942942, -22.9670089 ] } }
-]
+  "type": "FeatureCollection",
+  "name": "KM — faixaelinha.dxf",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+140 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3095",
+        "km_m": "64+140 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.89831975637589,
+          -23.171879140615783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+160 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3096",
+        "km_m": "64+160 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.89842615466867,
+          -23.17172774667194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+180 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3097",
+        "km_m": "64+180 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.89852947882885,
+          -23.171574489525664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+200 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3098",
+        "km_m": "64+200 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.89863280276183,
+          -23.171421232324313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+220 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3099",
+        "km_m": "64+220 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.898736126467604,
+          -23.171267975067842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+240 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3100",
+        "km_m": "64+240 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.89883944994618,
+          -23.171114717756282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+260 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3101",
+        "km_m": "64+260 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.89894493187021,
+          -23.170962734808885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+280 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3102",
+        "km_m": "64+280 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.89905184025438,
+          -23.17081159408131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+300 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3103",
+        "km_m": "64+300 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.89915874840579,
+          -23.170660453294268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+320 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3104",
+        "km_m": "64+320 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.899265656324474,
+          -23.170509312447727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+340 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3105",
+        "km_m": "64+340 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.89937256401041,
+          -23.17035817154171
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+360 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3106",
+        "km_m": "64+360 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.899480679918376,
+          -23.17020777091516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+380 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3107",
+        "km_m": "64+380 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.899589553555856,
+          -23.170057834581026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+400 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3108",
+        "km_m": "64+400 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.89969842695771,
+          -23.169907898184885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+420 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3109",
+        "km_m": "64+420 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.89980730012397,
+          -23.16975796172683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+440 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3110",
+        "km_m": "64+440 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.899916173054606,
+          -23.16960802520679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+460 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3111",
+        "km_m": "64+460 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.9000246079719,
+          -23.16945781810965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+480 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3112",
+        "km_m": "64+480 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.90013278091396,
+          -23.169307449214468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+500 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3113",
+        "km_m": "64+500 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.90024095362142,
+          -23.169157080258245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+520 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3114",
+        "km_m": "64+520 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.9003491260943,
+          -23.169006711240932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+540 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3115",
+        "km_m": "64+540 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.9004572983326,
+          -23.168856342162595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+560 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3116",
+        "km_m": "64+560 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.90056474201514,
+          -23.168705528500528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+580 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3117",
+        "km_m": "64+580 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.900671767401725,
+          -23.16855445961869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+600 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3118",
+        "km_m": "64+600 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.900778792555414,
+          -23.168403390677234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+620 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3119",
+        "km_m": "64+620 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.90088581747623,
+          -23.168252321676164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+640 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3120",
+        "km_m": "64+640 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.90099284216417,
+          -23.168101252615518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+660 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3121",
+        "km_m": "64+660 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.90109646518524,
+          -23.1679481947999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "64+680 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3122",
+        "km_m": "64+680 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.90119819322369,
+          -23.16779402913441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+520 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3564",
+        "km_m": "73+520 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.941211955825636,
+          -23.104385879516474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+540 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3565",
+        "km_m": "73+540 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94121465085945,
+          -23.104205302429957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+560 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3566",
+        "km_m": "73+560 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94124897344186,
+          -23.10402789451072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+580 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3567",
+        "km_m": "73+580 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94128814202962,
+          -23.10385097217682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+600 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3568",
+        "km_m": "73+600 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94132731053231,
+          -23.103674049836414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+620 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3569",
+        "km_m": "73+620 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.941366478949924,
+          -23.103497127489554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+640 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3570",
+        "km_m": "73+640 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.941405647282465,
+          -23.103320205136185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+660 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3571",
+        "km_m": "73+660 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.941476114093405,
+          -23.103152147075832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+680 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3572",
+        "km_m": "73+680 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.941550736379334,
+          -23.102985265940585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+700 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3573",
+        "km_m": "73+700 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94162535849428,
+          -23.102818384779265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+720 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3574",
+        "km_m": "73+720 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94169998043823,
+          -23.10265150359184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+740 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3575",
+        "km_m": "73+740 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.941774602211204,
+          -23.102484622378295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+760 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3576",
+        "km_m": "73+760 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94188070292333,
+          -23.10233331915239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+500 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3563",
+        "km_m": "73+500 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94120926080377,
+          -23.10456645659955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+780 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3577",
+        "km_m": "73+780 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.941989359014215,
+          -23.102183280557345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+800 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3578",
+        "km_m": "73+800 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94209801487079,
+          -23.102033241901214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+820 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3579",
+        "km_m": "73+820 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94220667049304,
+          -23.101883203183924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+840 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3580",
+        "km_m": "73+840 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94231532588099,
+          -23.101733164405513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+860 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3581",
+        "km_m": "73+860 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94245310903356,
+          -23.10160533130915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+880 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3582",
+        "km_m": "73+880 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94259155500138,
+          -23.101478003604097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "73+900 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3583",
+        "km_m": "73+900 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94273000070783,
+          -23.10135067579334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "74+780 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3627",
+        "km_m": "74+780 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94715680637602,
+          -23.09502915763365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "74+800 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3628",
+        "km_m": "74+800 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94716858176647,
+          -23.094848891968738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "74+820 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3629",
+        "km_m": "74+820 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94718035714456,
+          -23.09466862630119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "74+840 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3630",
+        "km_m": "74+840 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94719368404938,
+          -23.09448855396593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "74+860 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3631",
+        "km_m": "74+860 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94723388694749,
+          -23.094311830607776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "74+880 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3632",
+        "km_m": "74+880 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94727408975795,
+          -23.094135107242813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "74+900 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3633",
+        "km_m": "74+900 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94731429248075,
+          -23.09395838387108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "74+920 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3634",
+        "km_m": "74+920 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94735449511591,
+          -23.093781660492546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "74+940 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3635",
+        "km_m": "74+940 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94739647303946,
+          -23.09360542950793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "74+960 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3636",
+        "km_m": "74+960 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94746799754131,
+          -23.09343739328979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "74+980 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3637",
+        "km_m": "74+980 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94753952187919,
+          -23.093269357048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "75+000 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3638",
+        "km_m": "75+000 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.9476110460531,
+          -23.09310132078253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "75+020 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3639",
+        "km_m": "75+020 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94768257006303,
+          -23.092933284493405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "75+040 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3640",
+        "km_m": "75+040 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94775594281145,
+          -23.092766078898865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "75+060 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3641",
+        "km_m": "75+060 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.94785448054457,
+          -23.09261018006802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "75+080 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3642",
+        "km_m": "75+080 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.947953018059565,
+          -23.092454281188243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "75+100 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK3643",
+        "km_m": "75+100 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.948051555356436,
+          -23.09229838225952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "91+140 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK4445",
+        "km_m": "91+140 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.99336541804361,
+          -22.96939397668158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "91+160 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK4446",
+        "km_m": "91+160 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.99343784540196,
+          -22.9692262936909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "91+180 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK4447",
+        "km_m": "91+180 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.99351027259572,
+          -22.969058610676335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "91+200 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK4448",
+        "km_m": "91+200 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.9935826996249,
+          -22.968890927637915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "91+220 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK4449",
+        "km_m": "91+220 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.993655126489514,
+          -22.968723244575614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "91+240 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK4450",
+        "km_m": "91+240 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.993725280432,
+          -22.96855474230274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "91+260 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK4451",
+        "km_m": "91+260 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.99379433652475,
+          -22.968385844359034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "91+280 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK4452",
+        "km_m": "91+280 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.99386339246051,
+          -22.968216946393937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "91+300 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK4453",
+        "km_m": "91+300 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.99393244823928,
+          -22.968048048407415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "91+320 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK4454",
+        "km_m": "91+320 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.99400150386106,
+          -22.967879150399494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "91+340 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK4455",
+        "km_m": "91+340 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.99405061339771,
+          -22.96770489575493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "91+360 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK4456",
+        "km_m": "91+360 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.99408986384266,
+          -22.96752799340103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "91+380 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK4457",
+        "km_m": "91+380 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.994129114203474,
+          -22.967351091040904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "91+400 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK4458",
+        "km_m": "91+400 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.99416836448016,
+          -22.96717418867453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "91+420 m",
+        "origem": "faixaelinha.dxf",
+        "bloco": "BLK4459",
+        "km_m": "91+420 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.99420761467271,
+          -22.96699728630193
+        ]
+      }
+    }
+  ],
+  "qgis_style": {
+    "color": "#422800",
+    "fillColor": "#FFD800",
+    "radius": 3.3,
+    "weight": 1.4,
+    "fillOpacity": 0.98,
+    "labelField": "label"
+  }
 }
