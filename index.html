@@ -356,10 +356,7 @@ AREAS_RECEBIDAS.forEach(cfg=>{
 const VETOR_CORES={
   'Edificações':'#2F6BFF',
   'Linha-Ferrea':'#111111',
-  'Limite OC':'#F000A8',
   'Lotes OC':'#FF7A00',
-  'Calçada':'#B9C0CC',
-  'Piscinas':'#00D8E8',
   'Limite Faixa':'#E3263E',
   'Guia':'#FFFFFF'
 };
@@ -372,22 +369,19 @@ function addVetorToggle(id,nome,cor,gj,ly){
     e.target.checked?ly.addTo(map):map.removeLayer(ly);
     document.getElementById('row_'+id).classList.toggle('off',!e.target.checked);}),0);
 }
-fetch('vetorizacao_linhas.geojson').then(r=>r.json()).then(gj=>{
+fetch('vetorizacao_linhas.geojson?v=20260923-sem-calcada-limiteoc-piscinas').then(r=>r.json()).then(gj=>{
   const ly=L.geoJSON(gj,{pane:'vetorPane',interactive:true,
     style:f=>({color:VETOR_CORES[f.properties.Layer]||'#FFFFFF',weight:2.4,opacity:.95}),
     onEachFeature:(f,l)=>{const p=f.properties,tema=p.Layer||'Linha';
       l.bindTooltip(tema,{sticky:true,opacity:.9});
       l.bindPopup('<b>Vetorização — '+tema+'</b>'+(p.Text?'<br>'+p.Text:''));}
   }).addTo(map);
-  addVetorToggle('vet_linhas','Vetorização — linhas','linear-gradient(135deg,#2F6BFF 0 14%,#111111 14% 28%,#F000A8 28% 42%,#FF7A00 42% 56%,#B9C0CC 56% 70%,#00D8E8 70% 84%,#E3263E 84%)',gj,ly);
+  addVetorToggle('vet_linhas','Vetorização — linhas','linear-gradient(135deg,#2F6BFF 0 20%,#111111 20% 40%,#FF7A00 40% 60%,#E3263E 60% 80%,#20C77A 80%)',gj,ly);
   document.getElementById('vetorlist').insertAdjacentHTML('beforeend',
     '<div class="croqui-legend vetor-legend">'+
     '<span class="cleg"><i style="background:#2F6BFF"></i>Edificações</span>'+
     '<span class="cleg"><i style="background:#111111"></i>Ferrovia</span>'+
-    '<span class="cleg"><i style="background:#F000A8"></i>Limite OC</span>'+
     '<span class="cleg"><i style="background:#FF7A00"></i>Lotes</span>'+
-    '<span class="cleg"><i style="background:#B9C0CC"></i>Calçada</span>'+
-    '<span class="cleg"><i style="background:#00D8E8"></i>Piscinas</span>'+
     '<span class="cleg"><i style="background:#E3263E"></i>Faixa</span></div>');
 }).catch(()=>{});
 // ---- croquis dos imóveis, separados pelas classes do DWG ----
